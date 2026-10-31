@@ -1,0 +1,675 @@
+{
+ "title": "MMM Marketing Hub",
+ "summary": "Reach is building, but no new money yet: $149.99 a month was lost or at risk on two failed cards.",
+ "updated": "Sat 31 Oct 2026, 18:16 London",
+ "data_as_of": "2026-10-31 ~17:30 London",
+ "cards": [
+  {
+   "label": "Reach",
+   "value": "412",
+   "sub": "views: YouTube 185, X 133, Facebook 94"
+  },
+  {
+   "label": "Best post",
+   "value": "Demand vs Offer",
+   "sub": "119 YouTube views, 9 likes"
+  },
+  {
+   "label": "Revenue this week",
+   "value": "$50",
+   "sub": "vs $70 last week (-29%)"
+  },
+  {
+   "label": "At risk",
+   "value": "$149.99",
+   "sub": "a month, two failed cards",
+   "tone": "danger"
+  },
+  {
+   "label": "New paid",
+   "value": "0",
+   "sub": "paid members flat at 20"
+  },
+  {
+   "label": "Followers",
+   "value": "551 / 603",
+   "sub": "X followers / YouTube subscribers"
+  }
+ ],
+ "batch": {
+  "goals": "Grow followers on X, YouTube and Facebook with daily teaching, move viewers to the free learning material on maxmaserati.com and then the free trial (Try it for free on about 1 in 4 posts), and lift comments with one engagement post a day. Theme: Demand vs Offer in the New York morning.",
+  "status": "Awaiting Max's approval. Nothing is in Buffer yet.",
+  "rows": [
+   [
+    "Sun 1",
+    "09:00",
+    "Stat card",
+    "1h BuBC+ took the high 83%",
+    "X, FB, YT community",
+    "2,029 candles, Jun 2024 to Oct 2026",
+    null
+   ],
+   [
+    "Sun 1",
+    "13:30",
+    "Video",
+    "#10 A gap is a sponge, not a wall",
+    "YT, FB",
+    "1,119 NQ gaps: 82.5% touched, 73.9% filled",
+    null
+   ],
+   [
+    "Sun 1",
+    "18:00",
+    "Engagement",
+    "Timeframe lean poll",
+    "X poll (Max), FB, YT community",
+    "Which candle sets your lean for the New York open?",
+    null
+   ],
+   [
+    "Sun 1",
+    "22:00",
+    "Video",
+    "#4 One chart, three engines",
+    "YT, FB, X",
+    "Already scheduled",
+    null
+   ],
+   [
+    "Mon 2",
+    "09:00",
+    "Stat card",
+    "15m BeBC+ took the low 79%",
+    "X, FB, YT community",
+    "7,816 candles, Dec 2022 to Dec 2025",
+    null
+   ],
+   [
+    "Mon 2",
+    "13:30",
+    "Video",
+    "#11 Same steps. Bigger stairs.",
+    "YT, FB",
+    "Median run: Asia 6.5 pts, London 10, New York morning 26.6",
+    null
+   ],
+   [
+    "Mon 2",
+    "18:00",
+    "Engagement",
+    "Spot the Candle #1",
+    "All",
+    "Buy Offer or sell Demand? Answer tomorrow.",
+    null
+   ],
+   [
+    "Mon 2",
+    "21:30",
+    "Video",
+    "#5 BC+ vs BC-",
+    "YT, FB, X",
+    "Already scheduled",
+    null
+   ],
+   [
+    "Tue 3",
+    "09:00",
+    "Stat card",
+    "Weekly BuBC+ took the high 88%",
+    "X, FB, YT community",
+    "328 weeks, Sep 2000 to Oct 2026",
+    null
+   ],
+   [
+    "Tue 3",
+    "13:30",
+    "Video",
+    "#12 Buy the first breakout after 10 AM? (Try free)",
+    "YT, FB",
+    "Rule tested on 763 NQ days",
+    null
+   ],
+   [
+    "Tue 3",
+    "18:00",
+    "Engagement",
+    "Gap question + Quiz #1 answer",
+    "All",
+    "Wall or tested first? Answer: sell Demand.",
+    null
+   ],
+   [
+    "Tue 3",
+    "21:30",
+    "Video",
+    "#6 By 10 AM",
+    "YT, FB, X",
+    "Already scheduled",
+    null
+   ],
+   [
+    "Wed 4",
+    "09:00",
+    "Stat card",
+    "5m BuBC- back to 50% first 70%",
+    "X, FB, YT community",
+    "16,105 candles",
+    null
+   ],
+   [
+    "Wed 4",
+    "13:30",
+    "Video",
+    "#13 Most runs are two candles long",
+    "YT, FB",
+    "Run length in BCs",
+    null
+   ],
+   [
+    "Wed 4",
+    "18:00",
+    "Engagement",
+    "Spot the Candle #2",
+    "All",
+    "Where did Demand end: A, B or C?",
+    null
+   ],
+   [
+    "Wed 4",
+    "21:30",
+    "Video",
+    "#14 When a day closes strong",
+    "YT, FB, X",
+    "Replaces #7",
+    null
+   ],
+   [
+    "Thu 5",
+    "09:00",
+    "Stat card",
+    "09:30 BC+ next TGT first 85% (Try free)",
+    "X, FB, YT community",
+    "180 days, Dec 2022 to Dec 2025",
+    null
+   ],
+   [
+    "Thu 5",
+    "13:00",
+    "Email",
+    "Weekly teaching email",
+    "Members + leads",
+    "Draft 06, needs a send tool",
+    null
+   ],
+   [
+    "Thu 5",
+    "13:30",
+    "Video",
+    "#15 Right lean, still red at 10:30? Normal.",
+    "YT, FB",
+    "The dip comes early",
+    null
+   ],
+   [
+    "Thu 5",
+    "18:00",
+    "Engagement",
+    "Down 30 at 10:15 poll + Quiz #2 answer",
+    "X poll (Max), FB, YT community",
+    "Hold / Cut / Add / Didn't size for it",
+    null
+   ],
+   [
+    "Thu 5",
+    "21:30",
+    "Video",
+    "#8 News rule (NFP)",
+    "YT, FB, X",
+    "Already scheduled",
+    null
+   ],
+   [
+    "Fri 6",
+    "09:00",
+    "Stat card",
+    "15m BuC2+ took the high 80%",
+    "X, FB, YT community",
+    "1,779 candles",
+    null
+   ],
+   [
+    "Fri 6",
+    "12:00",
+    "Video",
+    "#16 Demand vs Offer on the way down",
+    "YT, FB",
+    "Lands before the 13:30 jobs report",
+    null
+   ],
+   [
+    "Fri 6",
+    "18:00",
+    "Engagement",
+    "Spot the Candle #3",
+    "All",
+    "Is the marked candle a BC+ or a BC-?",
+    null
+   ],
+   [
+    "Fri 6",
+    "21:30",
+    "Video",
+    "#17 One 4-hour candle can set your morning (Try free)",
+    "YT, FB, X",
+    "Replaces #9",
+    null
+   ],
+   [
+    "Sat 7",
+    "18:00",
+    "Engagement",
+    "Weekly prompt + Quiz #3 answer",
+    "All",
+    "What did the market teach you this week?",
+    null
+   ],
+   [
+    "Ongoing",
+    "Triggered",
+    "Email",
+    "Welcome 1 to 3, trial ending, failed payment",
+    "Whop members and leads",
+    "Drafts; need Whop dashboard email or an email tool",
+    null
+   ]
+  ],
+  "notes": [
+   [
+    "New videos #10 to #17",
+    "Rendered on the box. Watch players appear here once they are hosted on Whop.",
+    "Hosting pending",
+    "warning"
+   ],
+   [
+    "6 email drafts",
+    "Welcome 1, 2 and 3, trial ending, failed payment and the Thu weekly teaching email.",
+    "Needs send tool",
+    "neutral"
+   ],
+   [
+    "By hand",
+    "X polls (Sun, Thu) are posted by Max in the X app. YouTube community posts go through YouTube Studio.",
+    "Max",
+    "neutral"
+   ]
+  ]
+ },
+ "posts": [
+  {
+   "title": "Combos study",
+   "short": "Combos",
+   "when": "Wed 28 Oct 17:41",
+   "status": "Published",
+   "youtube": "https://www.youtube.com/shorts/Y4fzf0v-iPs",
+   "facebook": "https://www.facebook.com/reel/1840195467052746/",
+   "x": "https://x.com/188479184/status/2115499113038962776",
+   "video": null,
+   "yt_views": 31,
+   "fb_impr": 14,
+   "x_impr": 40,
+   "likes": 3,
+   "comments": 1
+  },
+  {
+   "title": "X.M4 T3 break",
+   "short": "X.M4",
+   "when": "Wed 28 Oct 17:44",
+   "status": "Published",
+   "youtube": "https://www.youtube.com/shorts/uO_CSzmak0Y",
+   "facebook": "https://www.facebook.com/reel/29159893800308621/",
+   "x": "https://x.com/188479184/status/2115499852901597306",
+   "video": null,
+   "yt_views": 35,
+   "fb_impr": 30,
+   "x_impr": 56,
+   "likes": 3,
+   "comments": 1
+  },
+  {
+   "title": "Demand vs Offer",
+   "short": "Demand",
+   "when": "Fri 30 Oct 11:48",
+   "status": "Published",
+   "youtube": "https://www.youtube.com/watch?v=CKm2JVTFZlw",
+   "facebook": "https://www.facebook.com/reel/1160869083039117/",
+   "x": "https://x.com/188479184/status/2116135246798209133",
+   "video": null,
+   "yt_views": 119,
+   "fb_impr": 50,
+   "x_impr": 31,
+   "likes": 9,
+   "comments": 0
+  },
+  {
+   "title": "Coin flip",
+   "short": "Coin flip",
+   "when": "Sat 31 Oct 17:30",
+   "status": "Published",
+   "youtube": "https://www.youtube.com/watch?v=BAV_D0vy8I0",
+   "facebook": "https://www.facebook.com/reel/1112948778379997",
+   "x": "https://x.com/188479184/status/2116583682559365307",
+   "video": "https://assets-2-prod.whop.com/public/uploads/2026-10-31/db1691f7-7979-47c7-99b1-db7ca82c3fe4/video.mp4",
+   "yt_views": 0,
+   "fb_impr": 0,
+   "x_impr": 6,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "title": "Three engines",
+   "when": "Sun 1 Nov 22:00",
+   "status": "Scheduled",
+   "video": "https://assets-2-prod.whop.com/public/uploads/2026-10-31/3797b0ec-301e-4136-a775-904abf0e21aa/video.mp4",
+   "youtube": null,
+   "facebook": null,
+   "x": null
+  },
+  {
+   "title": "BC+ vs BC-",
+   "when": "Mon 2 Nov 21:30",
+   "status": "Scheduled",
+   "video": "https://assets-2-prod.whop.com/public/uploads/2026-10-31/703f87e3-f2be-43fa-8055-9cca1a4b5ec8/video.mp4",
+   "youtube": null,
+   "facebook": null,
+   "x": null
+  },
+  {
+   "title": "By 10 AM",
+   "when": "Tue 3 Nov 21:30",
+   "status": "Scheduled",
+   "video": "https://assets-2-prod.whop.com/public/uploads/2026-10-31/fc068a13-7704-405e-b7a7-5b173c6575be/video.mp4",
+   "youtube": null,
+   "facebook": null,
+   "x": null
+  },
+  {
+   "title": "News rule (NFP)",
+   "when": "Thu 5 Nov 21:30",
+   "status": "Scheduled",
+   "video": "https://assets-2-prod.whop.com/public/uploads/2026-10-31/71ab3f21-3392-4031-8684-3f94de8cccf9/video.mp4",
+   "youtube": null,
+   "facebook": null,
+   "x": null
+  }
+ ],
+ "channels": [
+  {
+   "name": "YouTube",
+   "value": 185,
+   "meta": "views"
+  },
+  {
+   "name": "X",
+   "value": 133,
+   "meta": "impressions"
+  },
+  {
+   "name": "Facebook",
+   "value": 94,
+   "meta": "impressions"
+  }
+ ],
+ "engagement": {
+  "likes": 15,
+  "comments": 2,
+  "clicks": 1
+ },
+ "visits": [
+  {
+   "date": "2026-10-16",
+   "v": 15
+  },
+  {
+   "date": "2026-10-17",
+   "v": 13
+  },
+  {
+   "date": "2026-10-18",
+   "v": 9
+  },
+  {
+   "date": "2026-10-19",
+   "v": 73
+  },
+  {
+   "date": "2026-10-20",
+   "v": 20
+  },
+  {
+   "date": "2026-10-21",
+   "v": 35
+  },
+  {
+   "date": "2026-10-22",
+   "v": 17
+  },
+  {
+   "date": "2026-10-23",
+   "v": 18
+  },
+  {
+   "date": "2026-10-24",
+   "v": 8
+  },
+  {
+   "date": "2026-10-25",
+   "v": 6
+  },
+  {
+   "date": "2026-10-26",
+   "v": 6
+  },
+  {
+   "date": "2026-10-27",
+   "v": 52
+  },
+  {
+   "date": "2026-10-28",
+   "v": 34
+  },
+  {
+   "date": "2026-10-29",
+   "v": 11
+  },
+  {
+   "date": "2026-10-30",
+   "v": 5
+  },
+  {
+   "date": "2026-10-31",
+   "v": 21
+  }
+ ],
+ "pipeline": [
+  [
+   "Free sign-ups (October)",
+   "7",
+   "Free Mastery claims 1 to 21 Oct, none upgraded yet"
+  ],
+  [
+   "Open paid trial",
+   "1",
+   "Trialist on Perfect Entry, ends Tue 3 Nov 19:53, then $70 a month"
+  ],
+  [
+   "Paid active",
+   "20",
+   "Flat from 17 to 31 Oct"
+  ],
+  [
+   "Canceled (October trials)",
+   "6",
+   "Includes one Pro member closed 29 Oct after a blocked renewal"
+  ],
+  [
+   "Failed payments (2 weeks)",
+   "3",
+   "Perfect Entry $70 on 18 and 27 Oct, Pro $79.99 on 26 Oct"
+  ]
+ ],
+ "watchlist": [
+  [
+   "Trialist, Perfect Entry",
+   "The $70 charge on 27 Oct failed for insufficient funds. Trial ends Tue 3 Nov 19:53. Card-update DM sent 31 Oct.",
+   "At risk",
+   "danger"
+  ],
+  [
+   "Pro member, MMM Pro",
+   "The $79.99 renewal was blocked by the card network and Whop closed the membership on 29 Oct. Rejoin DM sent 31 Oct.",
+   "Win back",
+   "warning"
+  ]
+ ],
+ "revenue": {
+  "this_week": {
+   "label": "25 to 31 Oct",
+   "usd": 50.0,
+   "renewals": 2
+  },
+  "last_week": {
+   "label": "18 to 24 Oct",
+   "usd": 70.0,
+   "renewals": 2
+  },
+  "change": "-$20.00 (-29%)",
+  "not_collected": 149.99,
+  "failed": [
+   {
+    "product": "MMM Pro",
+    "usd": 79.99,
+    "date": "2026-10-26",
+    "reason": "card blocked (network restriction)"
+   },
+   {
+    "product": "MMM Perfect Entry",
+    "usd": 70.0,
+    "date": "2026-10-27",
+    "reason": "insufficient funds"
+   }
+  ]
+ },
+ "backtest": {
+  "caption": "Study claims vs recomputed on Yahoo NQ data, Aug to Oct 2026 (1h from Jun 2024).",
+  "rows": [
+   [
+    "11:30 close above 09:30",
+    "51.5%",
+    "52.0%",
+    "Confirmed"
+   ],
+   [
+    "Out of 09:30-10:00 range by 11:30",
+    "94.4%",
+    "84.0%",
+    "Lower"
+   ],
+   [
+    "Out of both sides",
+    "14.4%",
+    "10.0% to 16.0%",
+    "Confirmed"
+   ],
+   [
+    "High or low of the morning in by 10:00",
+    "83.1%",
+    "86.0%",
+    "Confirmed"
+   ],
+   [
+    "15m bull BC+ takes the high",
+    "80%",
+    "82.1%",
+    "Confirmed"
+   ],
+   [
+    "1h bull BC+ takes the high",
+    "83%",
+    "83.3%",
+    "Confirmed"
+   ],
+   [
+    "15m bull BC- takes the high",
+    "49%",
+    "52.0%",
+    "Close"
+   ],
+   [
+    "5m bull BC+ / BC- takes the high",
+    "79% / 48%",
+    "79.8% / 49.3%",
+    "Confirmed"
+   ],
+   [
+    "363,348 combos, 1 survivor",
+    "PF 1.32, t 3.02",
+    "Needs full grid engine",
+    "Unverifiable"
+   ],
+   [
+    "X.M4 T3+",
+    "WR 71.8%, PF 1.71",
+    "Needs Max's engine and 1m data",
+    "Unverifiable"
+   ]
+  ],
+  "note": "The range-break figure came out at 84% on 5m closes; 1m data would settle it, so marketing says \"most days\". The combos and X.M4 claims are kept out of marketing until they can be verified."
+ },
+ "approvals": [
+  [
+   "DM to the Perfect Entry trialist",
+   "Card-update note sent 31 Oct 17:58. Watching for a new card before Tue 3 Nov 19:53.",
+   "Sent",
+   "success"
+  ],
+  [
+   "DM to the lapsed Pro member",
+   "Rejoin note with the card_recovery tagged link sent 31 Oct 17:58.",
+   "Sent",
+   "success"
+  ],
+  [
+   "DMs to 7 October free sign-ups",
+   "Upgrade note with the free_upgrade tagged link, sent 31 Oct 17:58 to 17:59.",
+   "Sent",
+   "success"
+  ],
+  [
+   "Weekly batch, Nov 1 to 7",
+   "27 rows: 8 new videos, 4 already scheduled, 6 stat cards, 7 engagement posts, email drafts.",
+   "Awaiting approval",
+   "warning"
+  ],
+  [
+   "Website analytics (Whop pixel)",
+   "Merged 31 Oct 18:12. Tracking is live on maxmaserati.com.",
+   "Done",
+   "success"
+  ]
+ ],
+ "next_moves": [
+  "Answer replies to the 9 DMs within a few hours.",
+  "If the trialist updates the card before Tue 3 Nov 19:53, retry the failed $70 charge (with Max's OK).",
+  "Track rejoins and upgrades from the card_recovery and free_upgrade links.",
+  "Make more posts like Demand vs Offer: one clear chart idea per video.",
+  "Use the new website tracking to see which posts bring visitors to Whop.",
+  "Say \"most days\" for the range break until 1m data confirms the figure."
+ ],
+ "links": {
+  "site": "https://www.maxmaserati.com",
+  "whop": "https://whop.com/mmmtrading",
+  "x": "https://x.com/Emaxmaserati"
+ },
+ "footer": "Education only. Not financial advice. Hypothetical results based on past data. Past results don't guarantee future results."
+}
