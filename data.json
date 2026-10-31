@@ -1,7 +1,7 @@
 {
  "title": "MMM Marketing Hub",
  "summary": "Reach is building, but no new money yet: $149.99 a month was lost or at risk on two failed cards.",
- "updated": "Sat 31 Oct 2026, 18:19 London",
+ "updated": "Sat 31 Oct 2026, 19:18 London",
  "data_as_of": "2026-10-31 ~17:30 London",
  "cards": [
   {
@@ -559,6 +559,105 @@
     "reason": "insufficient funds"
    }
   ]
+ },
+ "scoreboard": {
+  "title": "Targets vs results",
+  "window": "1 to 30 Nov 2026",
+  "day": 0,
+  "days": 30,
+  "note": "These are targets we are aiming for, not forecasts. Actuals come from Whop (read-only) and are counts only. Wise payers on 100% codes count as paid.",
+  "baselines": [
+   [
+    "Whop page visits",
+    "674 in Oct (1,054 in Sep)"
+   ],
+   [
+    "Revenue",
+    "about $1,100 a month (Oct $1,110)"
+   ],
+   [
+    "Average revenue per paying member",
+    "about $79"
+   ],
+   [
+    "New Pro trials",
+    "0 since 28 Oct"
+   ]
+  ],
+  "rows": [
+   {
+    "label": "Whop page visits",
+    "target": "1,000+",
+    "prorated": 0.0,
+    "actual": 0,
+    "unit": "",
+    "pct": 0,
+    "status": "Not started"
+   },
+   {
+    "label": "Free Master Class sign-ups",
+    "target": "30 (target)",
+    "prorated": 0.0,
+    "actual": 0,
+    "unit": "",
+    "pct": 0,
+    "status": "Not started"
+   },
+   {
+    "label": "Pro trials started",
+    "target": "5 to 10",
+    "prorated": 0.0,
+    "actual": 0,
+    "unit": "",
+    "pct": 0,
+    "status": "Not started"
+   },
+   {
+    "label": "Trial to paid",
+    "target": "about 33%",
+    "prorated": 33,
+    "actual": 0,
+    "unit": "%",
+    "pct": 0,
+    "status": "Not started"
+   },
+   {
+    "label": "New paying members",
+    "target": "2 to 3",
+    "prorated": 0.0,
+    "actual": 0,
+    "unit": "",
+    "pct": 0,
+    "status": "Not started"
+   },
+   {
+    "label": "Added recurring revenue",
+    "target": "+$160 to $240 a month",
+    "prorated": 0.0,
+    "actual": 0,
+    "unit": "$",
+    "pct": 0,
+    "status": "Not started"
+   }
+  ],
+  "channels": [
+   {
+    "name": "YouTube",
+    "trials": null,
+    "sales": null
+   },
+   {
+    "name": "Facebook",
+    "trials": null,
+    "sales": null
+   },
+   {
+    "name": "X",
+    "trials": null,
+    "sales": null
+   }
+  ],
+  "channel_note": "Not enough data yet: no tracked trials or sales from UTM links so far."
  },
  "backtest": {
   "caption": "Study claims vs recomputed on Yahoo NQ data, Aug to Oct 2026 (1h from Jun 2024).",
