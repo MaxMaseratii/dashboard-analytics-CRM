@@ -458,7 +458,7 @@ setInterval(()=>{$("#clock").textContent=new Date().toLocaleTimeString("en-GB",{
 let D=null;
 const S={batchView:store.get("batchView","board"),batchDay:"All",batchType:"All",batchQ:"",vidFilter:"All",postSort:{k:"when",dir:1},range:"all",chOff:new Set(),btFilter:"All",gallery:[],gi:0};
 
-const SECTIONS=[["glance","At a glance","grid"],["targets","Targets","target"],["batch","Next week","cal"],["calendar","Posts & videos","film"],["channels","Channels","chart"],["crm","Pipeline","users"],["revenue","Revenue","dollar"],["backtest","Backtest check","flask"],["approval","Approvals","checkc"],["next","Next moves","list"]];
+const SECTIONS=[["glance","At a glance","grid"],["targets","Targets","target"],["batch","Next week","cal"],["calendar","Posts & videos","film"],["channels","Channels","chart"],["tradingview","TradingView","chart"],["crm","Pipeline","users"],["revenue","Revenue","dollar"],["backtest","Backtest check","flask"],["approval","Approvals","checkc"],["next","Next moves","list"]];
 
 /* ================= load ================= */
 function load(){
@@ -502,11 +502,11 @@ function render(){
   </div>
 </div>
 <div class="kpis" id="glance">${kpis()}</div>
-${secTargets()}${secBatch()}${secPosts()}${secChannels()}${secCrm()}${secRevenue()}${secBacktest()}${secApprovals()}${secMoves()}
+${secTargets()}${secBatch()}${secPosts()}${secChannels()}${secTV()}${secCrm()}${secRevenue()}${secBacktest()}${secApprovals()}${secMoves()}
 <footer><div>${esc(D.footer)}</div><div class="links">${D.links?.site?`<a href="${esc(D.links.site)}" target="_blank" rel="noopener">maxmaserati.com</a>`:""}${D.links?.whop?`<a href="${esc(D.links.whop)}" target="_blank" rel="noopener">Whop</a>`:""}${D.links?.x?`<a href="${esc(D.links.x)}" target="_blank" rel="noopener">X</a>`:""}</div></footer>`;
 
   $$(".kpi .v[data-raw]").forEach(countUp);
-  drawBatch();drawPosts();drawVisits();drawReachPost();drawBacktest();
+  drawBatch();drawPosts();drawVisits();drawTV();drawReachPost();drawBacktest();
   wire();
   requestAnimationFrame(()=>$$("[data-w]").forEach(el=>el.style.width=el.dataset.w));
   $$("#nav a").forEach(a=>{if(!document.getElementById(a.dataset.sec))a.remove()});
@@ -713,6 +713,10 @@ function drawVisits(){
   let mark="";
   if(first){const fd=new Date(first).toISOString().slice(0,10);const fi=pts.findIndex(p=>p.date>=fd);
     if(fi>=0)mark=`<line x1="${x(fi)}" x2="${x(fi)}" y1="${PT}" y2="${H-PB}" stroke="var(--vio)" stroke-dasharray="4 4" stroke-width="1.5"/><rect x="${x(fi)+6}" y="${PT}" width="78" height="18" rx="5" fill="color-mix(in srgb,var(--vio) 18%,transparent)"/><text x="${x(fi)+45}" y="${PT+12.5}" text-anchor="middle" style="font:600 10.5px Inter;fill:var(--vio)">First posts</text>`}
+  /* TradingView launch markers (added) */
+  const tvL=(D.tradingview&&D.tradingview.launches)||[];
+  tvL.forEach(l=>{const li=pts.findIndex(p=>p.date===l.date);if(li<0)return;
+    mark+=`<line x1="${x(li)}" x2="${x(li)}" y1="${PT}" y2="${H-PB}" stroke="var(--blue)" stroke-opacity=".55" stroke-dasharray="2 3"/><circle cx="${x(li)}" cy="${PT+4}" r="4" fill="var(--blue)"><title>${esc(l.date)}: ${l.count} TradingView script${l.count>1?"s":""} published</title></circle>`});
   const avgL=`<line x1="${PL}" x2="${W-PR}" y1="${y(avg)}" y2="${y(avg)}" stroke="var(--warn)" stroke-opacity=".55" stroke-dasharray="2 5"/><text x="${W-PR}" y="${y(avg)-6}" text-anchor="end" style="font:600 10px var(--mono);fill:var(--warn)">avg ${avg.toFixed(1)}</text>`;
   $("#vchart").innerHTML=`<svg viewBox="0 0 ${W} ${H}" id="vsvg"><defs><linearGradient id="vg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="var(--acc)" stop-opacity=".32"/><stop offset="1" stop-color="var(--acc)" stop-opacity="0"/></linearGradient></defs>
     ${grid}${mark}${avgL}<path d="${area}" fill="url(#vg)"/><path d="${d}" fill="none" stroke="var(--acc)" stroke-width="2.4" stroke-linecap="round"/>
@@ -726,6 +730,35 @@ function drawVisits(){
     const vs=pts[i].v-avg;
     showTip(e,`<div class="tt">${dd}</div><div class="tv"><i style="background:var(--acc)"></i>${pts[i].v} visits</div><div class="tt" style="margin:3px 0 0">${vs>=0?"+":""}${vs.toFixed(1)} vs avg</div>`)};
   hit.onmouseleave=()=>{hideTip();$("#vx").setAttribute("opacity",0);$("#vdot").setAttribute("opacity",0)};
+}
+/* ---------- TradingView launches (added) ---------- */
+function secTV(){
+  const T=D.tradingview;if(!T)return "";
+  const sm=T.summary||{},pc=v=>v==null?"n/a":(v>0?"+":"")+v+"%";
+  const rows=(T.compare||[]).map(c=>`<tr><td class="num">${esc(c.date)}</td><td>${esc(c.label)}</td><td>${esc((c.access||[]).join(", "))}</td>
+    <td class="num">${c.before_avg??"-"}</td><td class="num">${c.after_avg??"-"}</td>
+    <td class="num">${c.change_pct==null?`<span class="small">${esc(c.note||"n/a")}</span>`:`<span class="trend ${c.change_pct>=0?"up":"down"}">${c.change_pct>=0?"▲":"▼"} ${Math.abs(c.change_pct)}%</span>`}</td></tr>`).join("");
+  const src=(T.sources||[]).map(s=>`<div>${esc(s.name)}<b>${s.visits==null?"-":fmt(s.visits)}</b></div>`).join("");
+  return `<section id="tradingview">
+  <div class="sh"><div><h2>TradingView launches vs visits</h2><p class="cap">${esc(T.note)}</p></div><span class="small num">${sm.launch_days_up??0} / ${sm.launch_days??0} launches up</span></div>
+  <div class="panel"><div class="ph"><b>Daily Whop store visits, full history</b><span class="small"><i style="display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--blue)"></i> TradingView launch</span></div>
+    <div class="statrow"><div>Median change after a launch<b>${pc(sm.launch_median_change_pct)}</b></div><div>Median change, no-launch weeks<b>${pc(sm.baseline_median_change_pct)}</b></div><div>No-launch weeks that rose<b>${sm.baseline_share_up_pct??"n/a"}%</b></div></div>
+    <div class="chart" id="tvchart" data-tipzone></div></div>
+  <div class="panel" style="margin-top:12px"><div class="ph"><b>Visits by source</b></div><div class="statrow">${src}</div>${T.sources_note?`<p class="small" style="margin-top:8px">${esc(T.sources_note)}</p>`:""}</div>
+  <div class="panel" style="margin-top:12px"><div class="ph"><b>7 days before vs 7 days after each launch</b><span class="small">average visits per day</span></div>
+    <div style="overflow:auto;max-height:420px"><table><thead><tr><th>Date</th><th>Script</th><th>Access</th><th>Before</th><th>After</th><th>Change</th></tr></thead><tbody>${rows}</tbody></table></div></div>
+  </section>`;
+}
+function drawTV(){
+  const el=$("#tvchart");if(!el)return;const pts=D.visits_history||[];if(!pts.length){el.innerHTML=`<div class="empty">No visit data.</div>`;return}
+  const L=(D.tradingview&&D.tradingview.launches)||[];
+  const W=900,H=230,PL=36,PR=14,PT=16,PB=28,n=pts.length,mx=Math.max(...pts.map(p=>p.v))*1.1||1;
+  const x=i=>PL+(n===1?0:i*(W-PL-PR)/(n-1)),y=v=>H-PB-(v/mx)*(H-PT-PB);
+  const line=pts.map((p,i)=>`${i?"L":"M"}${x(i).toFixed(1)},${y(p.v).toFixed(1)}`).join(" ");
+  const grid=[0,1,2,3,4].map(k=>{const v=mx/1.1*k/4;return `<line class="gridl" x1="${PL}" x2="${W-PR}" y1="${y(v)}" y2="${y(v)}"/><text class="ax" x="${PL-8}" y="${y(v)+4}" text-anchor="end">${Math.round(v)}</text>`}).join("");
+  let lastM="";const labs=pts.map((p,i)=>{const m=p.date.slice(0,7);if(m===lastM)return"";lastM=m;return `<text class="ax" x="${x(i)}" y="${H-8}" text-anchor="start">${new Date(p.date+"T12:00Z").toLocaleDateString("en-GB",{month:"short",year:"2-digit",timeZone:"UTC"})}</text>`}).join("");
+  const mk=L.map(l=>{const i=pts.findIndex(p=>p.date===l.date);if(i<0)return"";return `<line x1="${x(i)}" x2="${x(i)}" y1="${PT}" y2="${H-PB}" stroke="var(--blue)" stroke-opacity=".45" stroke-dasharray="2 3"/><circle cx="${x(i)}" cy="${PT}" r="4" fill="var(--blue)" data-tip="${esc(`<div class='tt'>${esc(l.date)}</div><div class='tv'>${l.count} script${l.count>1?"s":""}: ${esc(l.names.join(", "))}</div>`)}"/>`}).join("");
+  el.innerHTML=`<svg viewBox="0 0 ${W} ${H}">${grid}${mk}<path d="${line}" fill="none" stroke="var(--acc)" stroke-width="1.6"/>${labs}</svg>`;
 }
 function drawReachPost(){
   const posts=(D.posts||[]).filter(p=>p.status==="Published");
