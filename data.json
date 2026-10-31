@@ -1,7 +1,7 @@
 {
  "title": "MMM Marketing Hub",
  "summary": "Reach is building, but no new money yet: $149.99 a month was lost or at risk on two failed cards.",
- "updated": "Sat 31 Oct 2026, 18:16 London",
+ "updated": "Sat 31 Oct 2026, 18:19 London",
  "data_as_of": "2026-10-31 ~17:30 London",
  "cards": [
   {
@@ -38,7 +38,7 @@
  ],
  "batch": {
   "goals": "Grow followers on X, YouTube and Facebook with daily teaching, move viewers to the free learning material on maxmaserati.com and then the free trial (Try it for free on about 1 in 4 posts), and lift comments with one engagement post a day. Theme: Demand vs Offer in the New York morning.",
-  "status": "Awaiting Max's approval. Nothing is in Buffer yet.",
+  "status": "Approved by Max. Posting on schedule.",
   "rows": [
    [
     "Sun 1",
@@ -56,7 +56,7 @@
     "#10 A gap is a sponge, not a wall",
     "YT, FB",
     "1,119 NQ gaps: 82.5% touched, 73.9% filled",
-    null
+    "https://assets-2-prod.whop.com/public/uploads/2026-10-31/5438e34c-3185-41e6-b983-9acb5725f68c/video.mp4"
    ],
    [
     "Sun 1",
@@ -92,7 +92,7 @@
     "#11 Same steps. Bigger stairs.",
     "YT, FB",
     "Median run: Asia 6.5 pts, London 10, New York morning 26.6",
-    null
+    "https://assets-2-prod.whop.com/public/uploads/2026-10-31/8bef5b16-84f7-4319-80e5-b1b1ff182681/video.mp4"
    ],
    [
     "Mon 2",
@@ -128,7 +128,7 @@
     "#12 Buy the first breakout after 10 AM? (Try free)",
     "YT, FB",
     "Rule tested on 763 NQ days",
-    null
+    "https://assets-2-prod.whop.com/public/uploads/2026-10-31/555024b1-7ffa-4fd3-814e-286cbfc3baf0/video.mp4"
    ],
    [
     "Tue 3",
@@ -164,7 +164,7 @@
     "#13 Most runs are two candles long",
     "YT, FB",
     "Run length in BCs",
-    null
+    "https://assets-2-prod.whop.com/public/uploads/2026-10-31/a73c9b32-2321-4df3-ba45-8f0dad4ac0bd/video.mp4"
    ],
    [
     "Wed 4",
@@ -182,7 +182,7 @@
     "#14 When a day closes strong",
     "YT, FB, X",
     "Replaces #7",
-    null
+    "https://assets-2-prod.whop.com/public/uploads/2026-10-31/2050f4a8-cb79-49a9-8e1d-1a76d1214278/video.mp4"
    ],
    [
     "Thu 5",
@@ -209,7 +209,7 @@
     "#15 Right lean, still red at 10:30? Normal.",
     "YT, FB",
     "The dip comes early",
-    null
+    "https://assets-2-prod.whop.com/public/uploads/2026-10-31/7585f791-54bc-4396-9478-3024ece1a69d/video.mp4"
    ],
    [
     "Thu 5",
@@ -245,7 +245,7 @@
     "#16 Demand vs Offer on the way down",
     "YT, FB",
     "Lands before the 13:30 jobs report",
-    null
+    "https://assets-2-prod.whop.com/public/uploads/2026-10-31/14ea3544-8009-488b-a859-02fbc511cde9/video.mp4"
    ],
    [
     "Fri 6",
@@ -263,7 +263,7 @@
     "#17 One 4-hour candle can set your morning (Try free)",
     "YT, FB, X",
     "Replaces #9",
-    null
+    "https://assets-2-prod.whop.com/public/uploads/2026-10-31/3dd12c70-1b8d-424c-b340-82570793d57f/video.mp4"
    ],
    [
     "Sat 7",
@@ -287,9 +287,9 @@
   "notes": [
    [
     "New videos #10 to #17",
-    "Rendered on the box. Watch players appear here once they are hosted on Whop.",
-    "Hosting pending",
-    "warning"
+    "Hosted on Whop. Watch each one in the players below.",
+    "Hosted",
+    "success"
    ],
    [
     "6 email drafts",
@@ -648,12 +648,12 @@
   [
    "Weekly batch, Nov 1 to 7",
    "27 rows: 8 new videos, 4 already scheduled, 6 stat cards, 7 engagement posts, email drafts.",
-   "Awaiting approval",
-   "warning"
+   "Approved",
+   "success"
   ],
   [
    "Website analytics (Whop pixel)",
-   "Merged 31 Oct 18:12. Tracking is live on maxmaserati.com.",
+   "Pixel PR merged 31 Oct 18:12. Analytics live on maxmaserati.com.",
    "Done",
    "success"
   ]
