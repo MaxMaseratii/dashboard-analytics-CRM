@@ -458,7 +458,7 @@ setInterval(()=>{$("#clock").textContent=new Date().toLocaleTimeString("en-GB",{
 let D=null;
 const S={batchView:store.get("batchView","board"),batchDay:"All",batchType:"All",batchQ:"",vidFilter:"All",postSort:{k:"when",dir:1},range:"all",chOff:new Set(),btFilter:"All",gallery:[],gi:0};
 
-const SECTIONS=[["glance","At a glance","grid"],["targets","Targets","target"],["batch","Next week","cal"],["calendar","Posts & videos","film"],["channels","Channels","chart"],["tradingview","TradingView","chart"],["crm","Pipeline","users"],["revenue","Revenue","dollar"],["backtest","Backtest check","flask"],["approval","Approvals","checkc"],["next","Next moves","list"]];
+const SECTIONS=[["glance","At a glance","grid"],["targets","Targets","target"],["batch","Next week","cal"],["calendar","Posts & videos","film"],["channels","Channels","chart"],["tradingview","TradingView","chart"],["geo","Audience","users"],["crm","Pipeline","users"],["revenue","Revenue","dollar"],["backtest","Backtest check","flask"],["approval","Approvals","checkc"],["next","Next moves","list"]];
 
 /* ================= load ================= */
 function load(){
@@ -502,7 +502,7 @@ function render(){
   </div>
 </div>
 <div class="kpis" id="glance">${kpis()}</div>
-${secTargets()}${secBatch()}${secPosts()}${secChannels()}${secTV()}${secCrm()}${secRevenue()}${secBacktest()}${secApprovals()}${secMoves()}
+${secTargets()}${secBatch()}${secPosts()}${secChannels()}${secTV()}${secGeo()}${secCrm()}${secRevenue()}${secBacktest()}${secApprovals()}${secMoves()}
 <footer><div>${esc(D.footer)}</div><div class="links">${D.links?.site?`<a href="${esc(D.links.site)}" target="_blank" rel="noopener">maxmaserati.com</a>`:""}${D.links?.whop?`<a href="${esc(D.links.whop)}" target="_blank" rel="noopener">Whop</a>`:""}${D.links?.x?`<a href="${esc(D.links.x)}" target="_blank" rel="noopener">X</a>`:""}</div></footer>`;
 
   $$(".kpi .v[data-raw]").forEach(countUp);
@@ -759,6 +759,13 @@ function drawTV(){
   let lastM="";const labs=pts.map((p,i)=>{const m=p.date.slice(0,7);if(m===lastM)return"";lastM=m;return `<text class="ax" x="${x(i)}" y="${H-8}" text-anchor="start">${new Date(p.date+"T12:00Z").toLocaleDateString("en-GB",{month:"short",year:"2-digit",timeZone:"UTC"})}</text>`}).join("");
   const mk=L.map(l=>{const i=pts.findIndex(p=>p.date===l.date);if(i<0)return"";return `<line x1="${x(i)}" x2="${x(i)}" y1="${PT}" y2="${H-PB}" stroke="var(--blue)" stroke-opacity=".45" stroke-dasharray="2 3"/><circle cx="${x(i)}" cy="${PT}" r="4" fill="var(--blue)" data-tip="${esc(`<div class='tt'>${esc(l.date)}</div><div class='tv'>${l.count} script${l.count>1?"s":""}: ${esc(l.names.join(", "))}</div>`)}"/>`}).join("");
   el.innerHTML=`<svg viewBox="0 0 ${W} ${H}">${grid}${mk}<path d="${line}" fill="none" stroke="var(--acc)" stroke-width="1.6"/>${labs}</svg>`;
+}
+function secGeo(){
+  const G=D.geo;if(!G)return "";
+  const bar=(list,max)=>list.length?list.slice(0,10).map(x=>`<div style="display:flex;align-items:center;gap:8px;margin:4px 0"><span style="flex:0 0 150px">${esc(x.name)}</span><span style="flex:1;background:var(--blue);opacity:.8;height:8px;border-radius:4px;max-width:${Math.max(4,Math.round(100*x.people/max))}%"></span><b class="num">${fmt(x.people)}</b></div>`).join(""):`<p class="small">No data yet</p>`;
+  const cards=(G.groups||[]).map(g=>{const m=Math.max(1,...g.countries.map(x=>x.people),...g.cities.map(x=>x.people));return `<div class="panel" style="margin-top:12px"><div class="ph"><b>${esc(g.label)}</b><span class="small num">${g.total==null?"-":fmt(g.total)+" people"}${g.range?" · "+esc(g.range):""}</span></div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px"><div><p class="small">Top countries</p>${bar(g.countries,m)}</div><div><p class="small">Top cities</p>${bar(g.cities,m)}</div></div>${g.note?`<p class="small" style="margin-top:8px">${esc(g.note)}</p>`:""}</div>`}).join("");
+  return `<section id="geo"><div class="sh"><div><h2>Where your audience is</h2><p class="cap">${esc(G.note)}</p></div><span class="small num">${esc(G.as_of||"")}</span></div>${cards}</section>`;
 }
 function drawReachPost(){
   const posts=(D.posts||[]).filter(p=>p.status==="Published");

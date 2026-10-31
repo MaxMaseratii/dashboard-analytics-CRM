@@ -1,7 +1,7 @@
 {
  "title": "MMM Marketing Hub",
  "summary": "Reach is building, but no new money yet: $149.99 a month was lost or at risk on two failed cards.",
- "updated": "Sat 31 Oct 2026, 19:33 London",
+ "updated": "Sat 31 Oct 2026, 19:44 London",
  "data_as_of": "2026-10-31 ~17:30 London",
  "cards": [
   {
@@ -2623,7 +2623,15 @@
   },
   "sources": [
    {
-    "name": "TradingView",
+    "name": "Code 100",
+    "visits": null
+   },
+   {
+    "name": "Code 101",
+    "visits": null
+   },
+   {
+    "name": "Code 201",
     "visits": null
    },
    {
@@ -2647,7 +2655,148 @@
     "visits": null
    }
   ],
-  "sources_note": "No visits by source yet. Whop only splits tracked visits by UTM source, and the TradingView links start counting once they are in the script descriptions and profile.",
+  "sources_note": "No visits by source yet. Whop only splits tracked visits by UTM source, and the numbered links start counting once they are in the script descriptions and profile.",
   "note": "Whop store page visits per day (London). Launch = first publish date of a TradingView script. Before = average of the 7 days before, after = average of the launch day and 6 days after. Baseline = the same comparison on days with no launch within 7 days."
+ },
+ "geo": {
+  "groups": [
+   {
+    "key": "site",
+    "label": "Site visitors (maxmaserati.com)",
+    "total": 5,
+    "range": "5 Aug to 31 Oct 2026",
+    "countries": [
+     {
+      "name": "United Kingdom",
+      "people": 2
+     },
+     {
+      "name": "United States",
+      "people": 2
+     },
+     {
+      "name": "Haiti",
+      "people": 1
+     }
+    ],
+    "cities": [],
+    "note": "Whop pixel only, 3 of these 5 on maxmaserati.com. Too few to target yet; a site analytics tool is needed."
+   },
+   {
+    "key": "store",
+    "label": "Whop store visitors",
+    "total": null,
+    "range": "5 Aug to 31 Oct 2026",
+    "countries": [],
+    "cities": [],
+    "note": "Whop does not expose store visits by country through the connector yet."
+   },
+   {
+    "key": "trials",
+    "label": "Trials",
+    "total": null,
+    "range": "5 Aug to 31 Oct 2026",
+    "countries": [],
+    "cities": [],
+    "note": "No separate trial event found; trial starts may be inside buyers."
+   },
+   {
+    "key": "buyers",
+    "label": "Buyers (completed payment)",
+    "total": 52,
+    "range": "5 Aug to 31 Oct 2026",
+    "countries": [
+     {
+      "name": "United States",
+      "people": 19
+     },
+     {
+      "name": "Haiti",
+      "people": 9
+     },
+     {
+      "name": "United Kingdom",
+      "people": 4
+     },
+     {
+      "name": "Unknown",
+      "people": 3
+     },
+     {
+      "name": "Dominican Republic",
+      "people": 3
+     },
+     {
+      "name": "India",
+      "people": 2
+     },
+     {
+      "name": "United Arab Emirates",
+      "people": 1
+     },
+     {
+      "name": "Bangladesh",
+      "people": 1
+     },
+     {
+      "name": "Brazil",
+      "people": 1
+     },
+     {
+      "name": "Chile",
+      "people": 1
+     },
+     {
+      "name": "Germany",
+      "people": 1
+     },
+     {
+      "name": "France",
+      "people": 1
+     },
+     {
+      "name": "South Korea",
+      "people": 1
+     },
+     {
+      "name": "Morocco",
+      "people": 1
+     },
+     {
+      "name": "Netherlands",
+      "people": 1
+     },
+     {
+      "name": "Turkey",
+      "people": 1
+     },
+     {
+      "name": "Taiwan",
+      "people": 1
+     },
+     {
+      "name": "South Africa",
+      "people": 1
+     }
+    ],
+    "cities": [
+     {
+      "name": "Port-au-Prince",
+      "people": 5
+     },
+     {
+      "name": "Delmas",
+      "people": 3
+     },
+     {
+      "name": "Santo Domingo",
+      "people": 3
+     }
+    ],
+    "note": "People with at least one completed Whop payment, from Whop events (IP location)."
+   }
+  ],
+  "as_of": "31 Oct 2026",
+  "note": "People counted once per range. Cities with fewer than 3 people are hidden."
  }
 }
