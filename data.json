@@ -1,23 +1,23 @@
 {
  "title": "MMM Marketing Hub",
  "summary": "Reach is building, but no new money yet: $149.99 a month was lost or at risk on two failed cards.",
- "updated": "Sat 31 Oct 2026, 19:44 London",
- "data_as_of": "2026-10-31 ~17:30 London",
+ "updated": "Mon 2 Nov 2026, 08:31 London",
+ "data_as_of": "2026-11-02 ~08:45 London",
  "cards": [
   {
    "label": "Reach",
-   "value": "412",
-   "sub": "views: YouTube 185, X 133, Facebook 94"
+   "value": "578",
+   "sub": "views: YouTube 230, X 243, Facebook 105"
   },
   {
    "label": "Best post",
    "value": "Demand vs Offer",
-   "sub": "119 YouTube views, 9 likes"
+   "sub": "123 YouTube views, 10 likes"
   },
   {
    "label": "Revenue this week",
-   "value": "$50",
-   "sub": "vs $70 last week (-29%)"
+   "value": "$75",
+   "sub": "vs $70 last week (+7%)"
   },
   {
    "label": "At risk",
@@ -317,7 +317,7 @@
    "video": null,
    "yt_views": 31,
    "fb_impr": 14,
-   "x_impr": 40,
+   "x_impr": 43,
    "likes": 3,
    "comments": 1
   },
@@ -330,9 +330,9 @@
    "facebook": "https://www.facebook.com/reel/29159893800308621/",
    "x": "https://x.com/188479184/status/2115499852901597306",
    "video": null,
-   "yt_views": 35,
-   "fb_impr": 30,
-   "x_impr": 56,
+   "yt_views": 36,
+   "fb_impr": 35,
+   "x_impr": 68,
    "likes": 3,
    "comments": 1
   },
@@ -345,10 +345,10 @@
    "facebook": "https://www.facebook.com/reel/1160869083039117/",
    "x": "https://x.com/188479184/status/2116135246798209133",
    "video": null,
-   "yt_views": 119,
-   "fb_impr": 50,
-   "x_impr": 31,
-   "likes": 9,
+   "yt_views": 123,
+   "fb_impr": 53,
+   "x_impr": 40,
+   "likes": 10,
    "comments": 0
   },
   {
@@ -360,20 +360,56 @@
    "facebook": "https://www.facebook.com/reel/1112948778379997",
    "x": "https://x.com/188479184/status/2116583682559365307",
    "video": "https://assets-2-prod.whop.com/public/uploads/2026-10-31/db1691f7-7979-47c7-99b1-db7ca82c3fe4/video.mp4",
+   "yt_views": 40,
+   "fb_impr": 3,
+   "x_impr": 41,
+   "likes": 2,
+   "comments": 0
+  },
+  {
+   "title": "P5_nq_1h_close_above_high",
+   "short": "P5_nq_1h_close_above_high",
+   "when": "Sun 1 Nov 09:00",
+   "status": "Published",
+   "youtube": null,
+   "facebook": null,
+   "x": "",
+   "video": null,
    "yt_views": 0,
    "fb_impr": 0,
-   "x_impr": 6,
+   "x_impr": 51,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "title": "P6_gap_is_a_sponge",
+   "short": "P6_gap_is_a_sponge",
+   "when": "Sun 1 Nov 13:30",
+   "status": "Published",
+   "youtube": "",
+   "facebook": "",
+   "x": null,
+   "video": null,
+   "yt_views": 0,
+   "fb_impr": 0,
+   "x_impr": 0,
    "likes": 0,
    "comments": 0
   },
   {
-   "title": "Three engines",
+   "title": "P7_three_engines",
+   "short": "P7_three_engines",
    "when": "Sun 1 Nov 22:00",
-   "status": "Scheduled",
-   "video": "https://assets-2-prod.whop.com/public/uploads/2026-10-31/3797b0ec-301e-4136-a775-904abf0e21aa/video.mp4",
-   "youtube": null,
-   "facebook": null,
-   "x": null
+   "status": "Published",
+   "youtube": "",
+   "facebook": "",
+   "x": "",
+   "video": null,
+   "yt_views": 0,
+   "fb_impr": 0,
+   "x_impr": 0,
+   "likes": 0,
+   "comments": 0
   },
   {
    "title": "BC+ vs BC-",
@@ -406,24 +442,24 @@
  "channels": [
   {
    "name": "YouTube",
-   "value": 185,
+   "value": 230,
    "meta": "views"
   },
   {
    "name": "X",
-   "value": 133,
+   "value": 243,
    "meta": "impressions"
   },
   {
    "name": "Facebook",
-   "value": 94,
+   "value": 105,
    "meta": "impressions"
   }
  ],
  "engagement": {
-  "likes": 15,
+  "likes": 19,
   "comments": 2,
-  "clicks": 1
+  "clicks": 5
  },
  "visits": [
   {
@@ -489,6 +525,14 @@
   {
    "date": "2026-10-31",
    "v": 21
+  },
+  {
+   "date": "2026-11-01",
+   "v": 17
+  },
+  {
+   "date": "2026-11-02",
+   "v": 14
   }
  ],
  "pipeline": [
@@ -535,15 +579,15 @@
  "revenue": {
   "this_week": {
    "label": "25 to 31 Oct",
-   "usd": 50.0,
-   "renewals": 2
+   "usd": 75.0,
+   "renewals": 3
   },
   "last_week": {
    "label": "18 to 24 Oct",
    "usd": 70.0,
    "renewals": 2
   },
-  "change": "-$20.00 (-29%)",
+  "change": "+$5.00 (+7%)",
   "not_collected": 149.99,
   "failed": [
    {
@@ -563,7 +607,7 @@
  "scoreboard": {
   "title": "Targets vs results",
   "window": "1 to 30 Nov 2026",
-  "day": 0,
+  "day": 2,
   "days": 30,
   "note": "These are targets we are aiming for, not forecasts. Actuals come from Whop (read-only) and are counts only. Wise payers on 100% codes count as paid.",
   "baselines": [
@@ -588,29 +632,29 @@
    {
     "label": "Whop page visits",
     "target": "1,000+",
-    "prorated": 0.0,
+    "prorated": 66.7,
     "actual": 0,
     "unit": "",
     "pct": 0,
-    "status": "Not started"
+    "status": "Behind"
    },
    {
     "label": "Free Master Class sign-ups",
     "target": "30 (target)",
-    "prorated": 0.0,
+    "prorated": 2.0,
     "actual": 0,
     "unit": "",
     "pct": 0,
-    "status": "Not started"
+    "status": "Behind"
    },
    {
     "label": "Pro trials started",
     "target": "5 to 10",
-    "prorated": 0.0,
+    "prorated": 0.3,
     "actual": 0,
     "unit": "",
     "pct": 0,
-    "status": "Not started"
+    "status": "Behind"
    },
    {
     "label": "Trial to paid",
@@ -619,25 +663,25 @@
     "actual": 0,
     "unit": "%",
     "pct": 0,
-    "status": "Not started"
+    "status": "No data yet"
    },
    {
     "label": "New paying members",
     "target": "2 to 3",
-    "prorated": 0.0,
+    "prorated": 0.1,
     "actual": 0,
     "unit": "",
     "pct": 0,
-    "status": "Not started"
+    "status": "Behind"
    },
    {
     "label": "Added recurring revenue",
     "target": "+$160 to $240 a month",
-    "prorated": 0.0,
+    "prorated": 10.7,
     "actual": 0,
     "unit": "$",
     "pct": 0,
-    "status": "Not started"
+    "status": "Behind"
    }
   ],
   "channels": [
@@ -1979,6 +2023,14 @@
   {
    "date": "2026-10-31",
    "v": 21
+  },
+  {
+   "date": "2026-11-01",
+   "v": 17
+  },
+  {
+   "date": "2026-11-02",
+   "v": 14
   }
  ],
  "tradingview": {
@@ -2617,9 +2669,9 @@
    "launch_days": 25,
    "launch_days_up": 14,
    "launch_median_change_pct": 16,
-   "baseline_days": 86,
-   "baseline_median_change_pct": 1,
-   "baseline_share_up_pct": 50
+   "baseline_days": 88,
+   "baseline_median_change_pct": -1,
+   "baseline_share_up_pct": 49
   },
   "sources": [
    {
