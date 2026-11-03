@@ -1,28 +1,28 @@
 {
  "title": "MMM Marketing Hub",
  "summary": "Reach is building, but no new money yet: $149.99 a month was lost or at risk on two failed cards.",
- "updated": "Mon 2 Nov 2026, 08:31 London",
- "data_as_of": "2026-11-02 ~08:45 London",
+ "updated": "Tue 3 Nov 2026, 07:37 London",
+ "data_as_of": "2026-11-03 ~08:00 London",
  "cards": [
   {
    "label": "Reach",
-   "value": "578",
-   "sub": "views: YouTube 230, X 243, Facebook 105"
+   "value": "1928",
+   "sub": "views: YouTube 1474, X 339, Facebook 115"
   },
   {
    "label": "Best post",
-   "value": "Demand vs Offer",
-   "sub": "123 YouTube views, 10 likes"
+   "value": "Three engines (2nd YouTube upload)",
+   "sub": "962 YouTube views, 1 likes"
   },
   {
    "label": "Revenue this week",
-   "value": "$75",
-   "sub": "vs $70 last week (+7%)"
+   "value": "$25",
+   "sub": "vs $75 last week (-67%)"
   },
   {
    "label": "At risk",
    "value": "$149.99",
-   "sub": "a month, two failed cards",
+   "sub": "a month, 2 failed cards in 2 weeks",
    "tone": "danger"
   },
   {
@@ -315,9 +315,9 @@
    "facebook": "https://www.facebook.com/reel/1840195467052746/",
    "x": "https://x.com/188479184/status/2115499113038962776",
    "video": null,
-   "yt_views": 31,
+   "yt_views": 41,
    "fb_impr": 14,
-   "x_impr": 43,
+   "x_impr": 45,
    "likes": 3,
    "comments": 1
   },
@@ -330,10 +330,10 @@
    "facebook": "https://www.facebook.com/reel/29159893800308621/",
    "x": "https://x.com/188479184/status/2115499852901597306",
    "video": null,
-   "yt_views": 36,
+   "yt_views": 44,
    "fb_impr": 35,
-   "x_impr": 68,
-   "likes": 3,
+   "x_impr": 74,
+   "likes": 4,
    "comments": 1
   },
   {
@@ -345,9 +345,9 @@
    "facebook": "https://www.facebook.com/reel/1160869083039117/",
    "x": "https://x.com/188479184/status/2116135246798209133",
    "video": null,
-   "yt_views": 123,
+   "yt_views": 127,
    "fb_impr": 53,
-   "x_impr": 40,
+   "x_impr": 42,
    "likes": 10,
    "comments": 0
   },
@@ -356,38 +356,98 @@
    "short": "Coin flip",
    "when": "Sat 31 Oct 17:30",
    "status": "Published",
-   "youtube": "https://www.youtube.com/watch?v=BAV_D0vy8I0",
-   "facebook": "https://www.facebook.com/reel/1112948778379997",
+   "youtube": "https://www.youtube.com/shorts/BAV_D0vy8I0",
+   "facebook": "https://www.facebook.com/reel/1112948778379997/",
    "x": "https://x.com/188479184/status/2116583682559365307",
    "video": "https://assets-2-prod.whop.com/public/uploads/2026-10-31/db1691f7-7979-47c7-99b1-db7ca82c3fe4/video.mp4",
-   "yt_views": 40,
-   "fb_impr": 3,
-   "x_impr": 41,
+   "yt_views": 69,
+   "fb_impr": 5,
+   "x_impr": 52,
    "likes": 2,
    "comments": 0
   },
   {
-   "title": "P5_nq_1h_close_above_high",
-   "short": "P5_nq_1h_close_above_high",
+   "title": "NQ 1h close above high",
+   "short": "1h close",
    "when": "Sun 1 Nov 09:00",
    "status": "Published",
    "youtube": null,
    "facebook": null,
-   "x": "",
+   "x": "https://x.com/188479184/status/2116817669559058462",
    "video": null,
    "yt_views": 0,
    "fb_impr": 0,
-   "x_impr": 51,
+   "x_impr": 69,
    "likes": 1,
    "comments": 0
   },
   {
-   "title": "P6_gap_is_a_sponge",
-   "short": "P6_gap_is_a_sponge",
+   "title": "Gap is a sponge",
+   "short": "Gap",
    "when": "Sun 1 Nov 13:30",
    "status": "Published",
-   "youtube": "",
-   "facebook": "",
+   "youtube": "https://www.youtube.com/shorts/MDkI48lHw0I",
+   "facebook": "https://www.facebook.com/reel/1127837103328588/",
+   "x": null,
+   "video": null,
+   "yt_views": 124,
+   "fb_impr": 4,
+   "x_impr": 0,
+   "likes": 3,
+   "comments": 1
+  },
+  {
+   "title": "Three engines",
+   "short": "Engines",
+   "when": "Sun 1 Nov 22:00",
+   "status": "Published",
+   "youtube": "https://www.youtube.com/shorts/Bm_vlk9T-9o",
+   "facebook": "https://www.facebook.com/reel/2235498363675133/",
+   "x": "https://x.com/188479184/status/2117014087888482402",
+   "video": null,
+   "yt_views": 101,
+   "fb_impr": 4,
+   "x_impr": 38,
+   "likes": 3,
+   "comments": 1
+  },
+  {
+   "title": "Three engines (2nd YouTube upload)",
+   "short": "Engines 2",
+   "when": "Sun 1 Nov 22:00",
+   "status": "Published",
+   "youtube": "https://www.youtube.com/shorts/Htvc-DPpSms",
+   "facebook": null,
+   "x": null,
+   "video": null,
+   "yt_views": 962,
+   "fb_impr": 0,
+   "x_impr": 0,
+   "likes": 1,
+   "comments": 1
+  },
+  {
+   "title": "Same read, mirrored",
+   "short": "Mirrored",
+   "when": "Mon 2 Nov 09:00",
+   "status": "Published",
+   "youtube": null,
+   "facebook": null,
+   "x": "https://x.com/188479184/status/2117180127557685556",
+   "video": null,
+   "yt_views": 0,
+   "fb_impr": 0,
+   "x_impr": 19,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "title": "Same steps. Bigger stairs.",
+   "short": "Stairs",
+   "when": "Mon 2 Nov 13:30",
+   "status": "Published",
+   "youtube": "https://www.youtube.com/shorts/5lHz8wco3xA",
+   "facebook": "https://www.facebook.com/reel/1617417653732198/",
    "x": null,
    "video": null,
    "yt_views": 0,
@@ -397,13 +457,13 @@
    "comments": 0
   },
   {
-   "title": "P7_three_engines",
-   "short": "P7_three_engines",
-   "when": "Sun 1 Nov 22:00",
+   "title": "Spot the Candle #1",
+   "short": "Spot #1",
+   "when": "Mon 2 Nov 18:00",
    "status": "Published",
-   "youtube": "",
-   "facebook": "",
-   "x": "",
+   "youtube": null,
+   "facebook": null,
+   "x": "https://x.com/188479184/status/2117316718720602273",
    "video": null,
    "yt_views": 0,
    "fb_impr": 0,
@@ -413,12 +473,33 @@
   },
   {
    "title": "BC+ vs BC-",
+   "short": "BC+/BC-",
    "when": "Mon 2 Nov 21:30",
-   "status": "Scheduled",
+   "status": "Published",
+   "youtube": "https://www.youtube.com/shorts/kvLYx_3ehLg",
+   "facebook": "https://www.facebook.com/reel/2196931510885940/",
+   "x": "https://x.com/188479184/status/2117368870193221802",
    "video": "https://assets-2-prod.whop.com/public/uploads/2026-10-31/703f87e3-f2be-43fa-8055-9cca1a4b5ec8/video.mp4",
+   "yt_views": 6,
+   "fb_impr": 0,
+   "x_impr": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "title": "What is Demand and what is Offer?",
+   "short": "D vs O",
+   "when": "Mon 2 Nov 22:04",
+   "status": "Published",
    "youtube": null,
-   "facebook": null,
-   "x": null
+   "facebook": "https://www.facebook.com/122230347332509369/posts/122231120204509369",
+   "x": "https://x.com/188479184/status/2117377238353989829",
+   "video": null,
+   "yt_views": 0,
+   "fb_impr": 0,
+   "x_impr": 0,
+   "likes": 0,
+   "comments": 0
   },
   {
    "title": "By 10 AM",
@@ -442,23 +523,23 @@
  "channels": [
   {
    "name": "YouTube",
-   "value": 230,
+   "value": 1474,
    "meta": "views"
   },
   {
    "name": "X",
-   "value": 243,
+   "value": 339,
    "meta": "impressions"
   },
   {
    "name": "Facebook",
-   "value": 105,
+   "value": 115,
    "meta": "impressions"
   }
  ],
  "engagement": {
-  "likes": 19,
-  "comments": 2,
+  "likes": 27,
+  "comments": 5,
   "clicks": 5
  },
  "visits": [
@@ -532,14 +613,14 @@
   },
   {
    "date": "2026-11-02",
-   "v": 14
+   "v": 25
   }
  ],
  "pipeline": [
   [
-   "Free sign-ups (October)",
-   "7",
-   "Free Mastery claims 1 to 21 Oct, none upgraded yet"
+   "Free sign-ups (since 1 Nov)",
+   "1",
+   "One Free Mastery claim on 1 Nov; Free Master Class sign-ups 0"
   ],
   [
    "Open paid trial",
@@ -547,9 +628,14 @@
    "Trialist on Perfect Entry, ends Tue 3 Nov 19:53, then $70 a month"
   ],
   [
+   "New Pro trial (since 1 Nov)",
+   "1",
+   "Yearly Pro on a 100% promo (paid via Wise), trial ends Sun 8 Nov"
+  ],
+  [
    "Paid active",
    "20",
-   "Flat from 17 to 31 Oct"
+   "Flat from 17 Oct to 3 Nov"
   ],
   [
    "Canceled (October trials)",
@@ -558,14 +644,14 @@
   ],
   [
    "Failed payments (2 weeks)",
-   "3",
-   "Perfect Entry $70 on 18 and 27 Oct, Pro $79.99 on 26 Oct"
+   "2",
+   "Pro $79.99 on 26 Oct, Perfect Entry $70 on 27 Oct"
   ]
  ],
  "watchlist": [
   [
    "Trialist, Perfect Entry",
-   "The $70 charge on 27 Oct failed for insufficient funds. Trial ends Tue 3 Nov 19:53. Card-update DM sent 31 Oct.",
+   "The $70 charge on 27 Oct failed for insufficient funds. Trial ends Tue 3 Nov 19:53 and the next $70 charge is due then. Card-update DM sent 31 Oct.",
    "At risk",
    "danger"
   ],
@@ -578,16 +664,16 @@
  ],
  "revenue": {
   "this_week": {
+   "label": "1 to 7 Nov (so far)",
+   "usd": 25.0,
+   "renewals": 1
+  },
+  "last_week": {
    "label": "25 to 31 Oct",
    "usd": 75.0,
    "renewals": 3
   },
-  "last_week": {
-   "label": "18 to 24 Oct",
-   "usd": 70.0,
-   "renewals": 2
-  },
-  "change": "+$5.00 (+7%)",
+  "change": "-$50.00 (-67%)",
   "not_collected": 149.99,
   "failed": [
    {
@@ -607,7 +693,7 @@
  "scoreboard": {
   "title": "Targets vs results",
   "window": "1 to 30 Nov 2026",
-  "day": 2,
+  "day": 3,
   "days": 30,
   "note": "These are targets we are aiming for, not forecasts. Actuals come from Whop (read-only) and are counts only. Wise payers on 100% codes count as paid.",
   "baselines": [
@@ -632,16 +718,16 @@
    {
     "label": "Whop page visits",
     "target": "1,000+",
-    "prorated": 66.7,
-    "actual": 0,
+    "prorated": 100.0,
+    "actual": 42,
     "unit": "",
-    "pct": 0,
+    "pct": 4,
     "status": "Behind"
    },
    {
     "label": "Free Master Class sign-ups",
     "target": "30 (target)",
-    "prorated": 2.0,
+    "prorated": 3.0,
     "actual": 0,
     "unit": "",
     "pct": 0,
@@ -650,11 +736,11 @@
    {
     "label": "Pro trials started",
     "target": "5 to 10",
-    "prorated": 0.3,
-    "actual": 0,
+    "prorated": 0.5,
+    "actual": 1,
     "unit": "",
-    "pct": 0,
-    "status": "Behind"
+    "pct": 20,
+    "status": "Ahead"
    },
    {
     "label": "Trial to paid",
@@ -668,7 +754,7 @@
    {
     "label": "New paying members",
     "target": "2 to 3",
-    "prorated": 0.1,
+    "prorated": 0.2,
     "actual": 0,
     "unit": "",
     "pct": 0,
@@ -677,7 +763,7 @@
    {
     "label": "Added recurring revenue",
     "target": "+$160 to $240 a month",
-    "prorated": 10.7,
+    "prorated": 16.0,
     "actual": 0,
     "unit": "$",
     "pct": 0,
@@ -2030,7 +2116,7 @@
   },
   {
    "date": "2026-11-02",
-   "v": 14
+   "v": 25
   }
  ],
  "tradingview": {
@@ -2715,30 +2801,91 @@
    {
     "key": "site",
     "label": "Site visitors (maxmaserati.com)",
-    "total": 5,
-    "range": "5 Aug to 31 Oct 2026",
+    "total": 44,
+    "range": "6 Aug to 3 Nov 2026",
     "countries": [
      {
-      "name": "United Kingdom",
-      "people": 2
-     },
-     {
       "name": "United States",
-      "people": 2
+      "people": 16
      },
      {
       "name": "Haiti",
+      "people": 9
+     },
+     {
+      "name": "United Kingdom",
+      "people": 3
+     },
+     {
+      "name": "Canada",
+      "people": 2
+     },
+     {
+      "name": "Dominican Republic",
+      "people": 2
+     },
+     {
+      "name": "Mexico",
+      "people": 2
+     },
+     {
+      "name": "Ukraine",
+      "people": 2
+     },
+     {
+      "name": "Brazil",
+      "people": 1
+     },
+     {
+      "name": "Spain",
+      "people": 1
+     },
+     {
+      "name": "France",
+      "people": 1
+     },
+     {
+      "name": "Hong Kong",
+      "people": 1
+     },
+     {
+      "name": "Cambodia",
+      "people": 1
+     },
+     {
+      "name": "Madagascar",
+      "people": 1
+     },
+     {
+      "name": "Pakistan",
+      "people": 1
+     },
+     {
+      "name": "Taiwan",
       "people": 1
      }
     ],
-    "cities": [],
-    "note": "Whop pixel only, 3 of these 5 on maxmaserati.com. Too few to target yet; a site analytics tool is needed."
+    "cities": [
+     {
+      "name": "Port-au-Prince",
+      "people": 5
+     },
+     {
+      "name": "Atlanta",
+      "people": 3
+     },
+     {
+      "name": "London",
+      "people": 3
+     }
+    ],
+    "note": "Whop pixel page views (pixel live since 31 Oct), people counted once, IP location."
    },
    {
     "key": "store",
     "label": "Whop store visitors",
     "total": null,
-    "range": "5 Aug to 31 Oct 2026",
+    "range": "6 Aug to 3 Nov 2026",
     "countries": [],
     "cities": [],
     "note": "Whop does not expose store visits by country through the connector yet."
@@ -2747,7 +2894,7 @@
     "key": "trials",
     "label": "Trials",
     "total": null,
-    "range": "5 Aug to 31 Oct 2026",
+    "range": "6 Aug to 3 Nov 2026",
     "countries": [],
     "cities": [],
     "note": "No separate trial event found; trial starts may be inside buyers."
@@ -2755,8 +2902,8 @@
    {
     "key": "buyers",
     "label": "Buyers (completed payment)",
-    "total": 52,
-    "range": "5 Aug to 31 Oct 2026",
+    "total": 54,
+    "range": "6 Aug to 3 Nov 2026",
     "countries": [
      {
       "name": "United States",
@@ -2767,12 +2914,12 @@
       "people": 9
      },
      {
-      "name": "United Kingdom",
+      "name": "Unknown",
       "people": 4
      },
      {
-      "name": "Unknown",
-      "people": 3
+      "name": "United Kingdom",
+      "people": 4
      },
      {
       "name": "Dominican Republic",
@@ -2780,6 +2927,10 @@
      },
      {
       "name": "India",
+      "people": 2
+     },
+     {
+      "name": "Taiwan",
       "people": 2
      },
      {
@@ -2823,10 +2974,6 @@
       "people": 1
      },
      {
-      "name": "Taiwan",
-      "people": 1
-     },
-     {
       "name": "South Africa",
       "people": 1
      }
@@ -2848,7 +2995,7 @@
     "note": "People with at least one completed Whop payment, from Whop events (IP location)."
    }
   ],
-  "as_of": "31 Oct 2026",
+  "as_of": "3 Nov 2026",
   "note": "People counted once per range. Cities with fewer than 3 people are hidden."
  }
 }
