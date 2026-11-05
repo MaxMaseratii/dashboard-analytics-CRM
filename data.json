@@ -1,7 +1,7 @@
 {
  "title": "MMM Marketing Hub",
  "summary": "Reach is up to 2,614 views, led by a 1,013-view YouTube Short. Whop numbers are from 4 Nov (connector needs reconnect). Perfect Entry $70 retry of 5 Nov ~02:13 London is unverified.",
- "updated": "Thu 5 Nov 2026, 07:43 London",
+ "updated": "Thu 5 Nov 2026, 16:08 London",
  "data_as_of": "2026-11-05 ~07:45 London",
  "cards": [
   {
@@ -1132,6 +1132,141 @@
   "x": "https://x.com/Emaxmaserati"
  },
  "footer": "Education only. Not financial advice. Hypothetical results based on past data. Past results don't guarantee future results.",
+ "daily_reports": [
+  {
+   "date": "2026-11-04",
+   "label": "Wed 4 Nov 2026 (London)",
+   "source": "Buffer per-post metrics read 5 Nov (updated about 09:00 to 11:17 London). 7-day average = posts published 29 Oct to 3 Nov, per post.",
+   "verdict": "Below expectation",
+   "tone": "bad",
+   "verdict_why": "Reach is growing (total views 2,325 to 2,614 in a day) but yesterday's 4 new posts landed under the 7-day average on every channel, and the money targets are behind pace: 49 Whop visits vs about 133 needed by now for 1,000+ in November, and 0 new paying members vs a 2 to 3 target.",
+   "channels": [
+    {
+     "name": "X",
+     "metric": "impressions",
+     "avg": {
+      "views": 38.3,
+      "likes": 0.1,
+      "comments": 0.0,
+      "clicks": 0.0
+     },
+     "posts": [
+      [
+       "09:00",
+       "5m NQ candle breaks the high but closes weak",
+       39,
+       1,
+       0,
+       0
+      ],
+      [
+       "18:00",
+       "Spot the Candle #2 (quiz)",
+       22,
+       0,
+       0,
+       0
+      ],
+      [
+       "21:30",
+       "Daily NQ candle closes above yesterday's high",
+       20,
+       0,
+       0,
+       0
+      ]
+     ]
+    },
+    {
+     "name": "YouTube",
+     "metric": "views",
+     "avg": {
+      "views": 194.3,
+      "likes": 2.7,
+      "comments": 0.9,
+      "clicks": null
+     },
+     "avg_note": "92 views without the one Three engines Short that passed 1,000",
+     "posts": [
+      [
+       "13:30",
+       "Most runs are two candles long",
+       27,
+       1,
+       0,
+       null
+      ],
+      [
+       "21:30",
+       "1,238 NQ daily BuBC+ candles",
+       54,
+       1,
+       0,
+       null
+      ]
+     ]
+    },
+    {
+     "name": "Facebook",
+     "metric": "impressions",
+     "avg": {
+      "views": 11.5,
+      "likes": 0.9,
+      "comments": 0.0,
+      "clicks": 0.0
+     },
+     "posts": [
+      [
+       "09:00",
+       "Breaking the high isn't enough",
+       2,
+       0,
+       0,
+       0
+      ],
+      [
+       "13:30",
+       "Most runs are two candles long",
+       7,
+       1,
+       0,
+       1
+      ],
+      [
+       "18:00",
+       "Spot the Candle #2 (quiz)",
+       5,
+       1,
+       0,
+       0
+      ],
+      [
+       "21:30",
+       "When a day closes strong, what happens tomorrow",
+       7,
+       0,
+       0,
+       0
+      ]
+     ]
+    }
+   ],
+   "best": "YouTube 21:30 \"1,238 NQ daily BuBC+ candles\": 54 views, 1 like. A big concrete number in the first line. On X the 09:00 5m post was best (39 impressions, the only like) and was the one post at or above its channel average.",
+   "worst": "Facebook 09:00 \"Breaking the high isn't enough\": 2 impressions. The 09:00 Facebook slot keeps getting almost no reach. Spot the Candle #2 (quiz) also got 22 on X and 5 on Facebook with no answers.",
+   "followers": "X followers 550, flat vs 4 Nov. YouTube subscribers: no fresh read in the daily data (last stored 608).",
+   "whop": "Whop not connected, last known Nov 4: 49 store visits since 1 Nov (1 to 3 Nov), 1 trial, 0 new paid, 20 paid members.",
+   "learned": [
+    "The time-of-day number hook (\"By 10 AM, half the morning is done\") is still the best post of the week on every channel.",
+    "Quiz and poll posts get little reach and no answers.",
+    "Facebook at 09:00 gets about 0 reach (2 impressions yesterday)."
+   ],
+   "suggestions": [
+    "Lead more posts with a time-of-day number hook. Already applied to Friday's 4H BuBC+ post (\"One 4-hour candle can set your morning\").",
+    "Make every quiz a one-tap answer. Already applied to Spot the Candle #3 (\"Reply BC+ or BC-\").",
+    "Move Facebook off 09:00 to the 13:30 or 21:30 slots, and steer more posts to the free trial so reach turns into trials."
+   ]
+  }
+ ],
  "visits_history": [
   {
    "date": "2025-12-21",

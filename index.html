@@ -1,941 +1,106 @@
 <!doctype html>
-<html lang="en" data-theme="dark">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>MMM Marketing Hub</title>
 <meta name="robots" content="noindex">
-<meta name="theme-color" content="#07090c">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 <style>
-:root{
-  --bg:#07090c;--bg2:#0b0e13;--panel:#0f1318;--panel2:#141920;--panel3:#1a2029;--line:#1f2630;--line2:#2a3340;
-  --text:#e9edf2;--text2:#c3cad4;--mute:#7d8796;--acc:#27ffc3;--acc2:#00b88a;--vio:#a970ff;--blue:#4da3ff;
-  --warn:#ffb547;--bad:#ff5c72;--ok:#2ee59d;--glow:rgba(39,255,195,.12);
-  --shadow:0 1px 0 rgba(255,255,255,.03) inset,0 10px 30px -12px rgba(0,0,0,.6);
-  --r:16px;--side:248px;
-  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
-}
-[data-theme="light"]{
-  --bg:#f4f6f9;--bg2:#eef1f5;--panel:#ffffff;--panel2:#f8fafc;--panel3:#eef2f6;--line:#e3e8ef;--line2:#d4dbe5;
-  --text:#0f1720;--text2:#334155;--mute:#64748b;--acc:#00a37a;--acc2:#00a37a;--vio:#7c3aed;--blue:#2563eb;
-  --warn:#c77700;--bad:#e11d48;--ok:#059669;--glow:rgba(0,163,122,.08);
-  --shadow:0 1px 2px rgba(15,23,32,.04),0 8px 24px -14px rgba(15,23,32,.18);
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:84px}
-body{margin:0;background:var(--bg);color:var(--text);font:14.5px/1.55 Inter,ui-sans-serif,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
-body:before{content:"";position:fixed;inset:-20% -10% auto auto;width:720px;height:720px;background:radial-gradient(closest-side,var(--glow),transparent);pointer-events:none;z-index:0}
+:root{--bg:#0b0d10;--panel:#13161b;--panel2:#181c22;--line:#252a33;--text:#e8eaed;--mute:#8b93a1;--acc:#27ffc3;--acc2:#00a884;--vio:#b46cff;--warn:#ffb547;--bad:#ff5c72;--ok:#2ee59d}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--text);font:15px/1.55 ui-sans-serif,-apple-system,"Segoe UI",Inter,Roboto,sans-serif}
 a{color:var(--acc);text-decoration:none}a:hover{text-decoration:underline}
-button{font:inherit;color:inherit;cursor:pointer}
-.num{font-family:var(--mono);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
-.mute{color:var(--mute)}.small{font-size:12.5px;color:var(--mute)}
-
-/* ---------- layout ---------- */
-.shell{display:grid;grid-template-columns:var(--side) minmax(0,1fr);min-height:100vh;position:relative;z-index:1}
-aside{position:sticky;top:0;height:100vh;border-right:1px solid var(--line);background:color-mix(in srgb,var(--bg2) 86%,transparent);backdrop-filter:blur(12px);display:flex;flex-direction:column;padding:22px 14px}
-.brand{display:flex;align-items:center;gap:10px;padding:4px 10px 22px}
-.logo{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;font-weight:800;font-size:10px;letter-spacing:-.02em;color:#021;background:linear-gradient(135deg,var(--acc),var(--vio));box-shadow:0 6px 20px -6px var(--acc)}
-.brand b{display:block;font-size:14px;letter-spacing:-.01em}.brand small{color:var(--mute);font-size:11.5px}
-.navlbl{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);padding:10px 12px 6px}
-.nav{display:flex;flex-direction:column;gap:2px}
-.nav a{display:flex;align-items:center;gap:10px;padding:8px 12px;border-radius:10px;color:var(--text2);font-weight:500;font-size:13.5px;position:relative;transition:background .15s,color .15s}
-.nav a svg{width:16px;height:16px;flex:none;opacity:.75}
-.nav a:hover{background:var(--panel2);text-decoration:none;color:var(--text)}
-.nav a.on{background:var(--panel3);color:var(--text)}
-.nav a.on:before{content:"";position:absolute;left:-14px;top:8px;bottom:8px;width:3px;border-radius:0 3px 3px 0;background:var(--acc)}
-.nav a.on svg{opacity:1;color:var(--acc)}
-.nav .cnt{margin-left:auto;font-size:11px;font-family:var(--mono);color:var(--mute);background:var(--panel2);border:1px solid var(--line);padding:0 7px;border-radius:999px}
-.side-foot{margin-top:auto;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--panel);font-size:12px;color:var(--mute)}
-.side-foot b{color:var(--text);font-weight:600}
-main{min-width:0}
-.topbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:12px;padding:12px 32px;border-bottom:1px solid var(--line);background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(14px)}
-.crumb{font-weight:600;font-size:13.5px}.crumb span{color:var(--mute);font-weight:500}
-.live{display:inline-flex;align-items:center;gap:8px;padding:5px 11px;border:1px solid var(--line);border-radius:999px;font-size:12px;color:var(--text2);background:var(--panel)}
-.dot{width:7px;height:7px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 0 var(--ok);animation:pulse 2s infinite}
-.dot.stale{background:var(--warn);animation:none}
-@keyframes pulse{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--ok) 60%,transparent)}70%{box-shadow:0 0 0 7px transparent}100%{box-shadow:0 0 0 0 transparent}}
-.tb-right{margin-left:auto;display:flex;gap:8px;align-items:center}
-.iconbtn{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:10px;border:1px solid var(--line);background:var(--panel);transition:border-color .15s,transform .15s}
-.iconbtn:hover{border-color:var(--acc2)}.iconbtn:active{transform:scale(.95)}
-.iconbtn svg{width:16px;height:16px}
-.iconbtn.spin svg{animation:spin .8s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
-.clock{font-family:var(--mono);font-size:12px;color:var(--mute);padding:0 4px}
-.content{padding:30px 32px 80px;max-width:1520px}
-
-/* ---------- hero ---------- */
-.hero{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:end;margin-bottom:22px}
-.eyebrow{color:var(--acc);font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;font-weight:700}
-h1{font-size:clamp(28px,3.4vw,42px);line-height:1.08;margin:8px 0 10px;letter-spacing:-.03em;font-weight:800}
-h1 em{font-style:normal;background:linear-gradient(90deg,var(--acc),var(--vio));-webkit-background-clip:text;background-clip:text;color:transparent}
-.summary{font-size:16px;color:var(--text2);max-width:820px;margin:0}
-.callout{display:flex;gap:12px;align-items:flex-start;margin-top:16px;padding:12px 14px;border-radius:12px;border:1px solid color-mix(in srgb,var(--bad) 35%,var(--line));background:color-mix(in srgb,var(--bad) 7%,var(--panel));max-width:820px}
-.callout svg{color:var(--bad);flex:none;width:18px;height:18px;margin-top:2px}
-.callout b{color:var(--text)}
-.hero-meta{display:grid;gap:8px;justify-items:end;text-align:right}
-.hero-meta .small b{color:var(--text2);font-weight:600}
-
-/* ---------- KPI ---------- */
-.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
-.kpi{position:relative;background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:var(--r);padding:16px 18px 15px;box-shadow:var(--shadow);overflow:hidden;transition:transform .2s,border-color .2s;opacity:0;transform:translateY(8px);animation:rise .5s forwards}
-.kpi:hover{transform:translateY(-2px);border-color:var(--line2)}
-@keyframes rise{to{opacity:1;transform:none}}
-.kpi .top{display:flex;align-items:center;justify-content:space-between;gap:8px}
-.kpi .l{color:var(--mute);font-size:11.5px;text-transform:uppercase;letter-spacing:.1em;font-weight:600}
-.kpi .ic{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;background:color-mix(in srgb,var(--acc) 12%,transparent);color:var(--acc)}
-.kpi .ic svg{width:15px;height:15px}
-.kpi .v{font-size:28px;font-weight:700;margin:10px 0 3px;letter-spacing:-.03em;line-height:1.1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.kpi .v.txt{font-family:Inter,sans-serif;font-size:21px;letter-spacing:-.02em;padding:4px 0 2px}
-.kpi .s{color:var(--text2);font-size:12.5px}
-.kpi.danger{border-color:color-mix(in srgb,var(--bad) 40%,var(--line))}
-.kpi.danger .ic{background:color-mix(in srgb,var(--bad) 14%,transparent);color:var(--bad)}
-.kpi.danger .v{color:var(--bad)}
-.kpi.danger:after{content:"";position:absolute;inset:auto 0 0 0;height:2px;background:var(--bad)}
-.kpi .trend{display:inline-flex;align-items:center;gap:3px;font-family:var(--mono);font-size:11.5px;padding:1px 7px;border-radius:999px;margin-left:6px;vertical-align:2px}
-.trend.up{color:var(--ok);background:color-mix(in srgb,var(--ok) 12%,transparent)}
-.trend.down{color:var(--bad);background:color-mix(in srgb,var(--bad) 12%,transparent)}
-
-/* ---------- sections ---------- */
-section{margin-top:40px;scroll-margin-top:84px}
-.sh{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:14px}
-h2{font-size:20px;margin:0;letter-spacing:-.02em;font-weight:700}
-.cap{color:var(--mute);font-size:13px;margin:3px 0 0}
-.panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:18px 20px;box-shadow:var(--shadow)}
-.ph{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px;flex-wrap:wrap}
-.ph b{font-size:14px}
-.g2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
-.g32{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:12px}
-.g3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
-
-/* ---------- controls ---------- */
-.seg{display:inline-flex;padding:3px;border:1px solid var(--line);border-radius:10px;background:var(--panel)}
-.seg button{border:0;background:transparent;padding:5px 11px;border-radius:7px;font-size:12.5px;color:var(--mute);font-weight:500}
-.seg button.on{background:var(--panel3);color:var(--text);box-shadow:0 1px 2px rgba(0,0,0,.2)}
-.chips{display:flex;flex-wrap:wrap;gap:6px}
-.chip{border:1px solid var(--line);background:var(--panel);color:var(--text2);padding:4px 11px;border-radius:999px;font-size:12.5px;font-weight:500;transition:all .15s;display:inline-flex;align-items:center;gap:6px}
-.chip:hover{border-color:var(--line2);color:var(--text)}
-.chip.on{background:color-mix(in srgb,var(--acc) 14%,var(--panel));border-color:color-mix(in srgb,var(--acc) 50%,var(--line));color:var(--text)}
-.chip i{font-style:normal;font-family:var(--mono);font-size:11px;color:var(--mute)}
-.search{display:flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:0 10px;height:34px;min-width:220px}
-.search svg{width:15px;height:15px;color:var(--mute)}
-.search input{border:0;background:transparent;color:var(--text);outline:0;font:inherit;font-size:13px;width:100%}
-.search kbd{font-family:var(--mono);font-size:10.5px;color:var(--mute);border:1px solid var(--line);border-radius:5px;padding:0 5px}
-.toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:12px}
-
-/* ---------- pills ---------- */
-.pill{display:inline-flex;align-items:center;gap:5px;padding:2px 9px;border-radius:999px;font-size:11.5px;font-weight:600;white-space:nowrap;color:var(--tc,var(--mute));background:color-mix(in srgb,var(--tc,var(--mute)) 13%,transparent);border:1px solid color-mix(in srgb,var(--tc,var(--mute)) 28%,transparent)}
-.pill:before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
-.tc-ok{--tc:var(--ok)}.tc-warn{--tc:var(--warn)}.tc-bad{--tc:var(--bad)}.tc-acc{--tc:var(--acc)}.tc-vio{--tc:var(--vio)}.tc-blue{--tc:var(--blue)}.tc-mute{--tc:var(--mute)}
-
-/* ---------- tables ---------- */
-.tw{overflow:auto;border:1px solid var(--line);border-radius:var(--r);background:var(--panel);box-shadow:var(--shadow)}
-table{width:100%;border-collapse:collapse;font-size:13.5px}
-th{position:sticky;top:0;text-align:left;color:var(--mute);font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.08em;padding:11px 14px;border-bottom:1px solid var(--line);white-space:nowrap;background:var(--panel2);z-index:1}
-th.sort{cursor:pointer;user-select:none}th.sort:hover{color:var(--text)}
-th .ar{opacity:.4;margin-left:4px}th.asc .ar,th.desc .ar{opacity:1;color:var(--acc)}
-td{padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:middle}
-tr:last-child td{border-bottom:0}
-tbody tr{transition:background .12s}tbody tr:hover td{background:var(--panel2)}
-td.r,th.r{text-align:right}
-.empty{padding:28px;text-align:center;color:var(--mute)}
-.mini{display:flex;height:6px;border-radius:4px;overflow:hidden;background:var(--panel3);min-width:90px}
-.mini span{display:block;height:100%}
-
-/* ---------- week board ---------- */
-.board{display:grid;grid-template-columns:repeat(var(--days,7),minmax(150px,1fr));gap:10px;overflow-x:auto;padding-bottom:4px}
-.col{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:10px;min-width:150px;box-shadow:var(--shadow)}
-.col h4{margin:2px 4px 10px;font-size:12.5px;display:flex;justify-content:space-between;color:var(--text2);font-weight:600}
-.col h4 i{font-style:normal;color:var(--mute);font-family:var(--mono);font-size:11px}
-.slot{border:1px solid var(--line);border-left:3px solid var(--tc,var(--mute));background:var(--panel2);border-radius:10px;padding:9px 10px;margin-bottom:8px;cursor:pointer;transition:transform .15s,border-color .15s}
-.slot:hover{transform:translateY(-1px);border-color:var(--line2);border-left-color:var(--tc)}
-.slot .t{font-family:var(--mono);font-size:11px;color:var(--mute);display:flex;justify-content:space-between;align-items:center}
-.slot b{display:block;font-size:12.8px;line-height:1.35;margin:4px 0 3px;font-weight:600}
-.slot small{color:var(--mute);font-size:11.5px;display:block;line-height:1.35}
-.slot .play{display:inline-flex;align-items:center;gap:4px;color:var(--acc);font-size:11px;font-weight:600}
-.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--text2)}
-.legend span{display:inline-flex;align-items:center;gap:6px}
-.legend i{width:9px;height:9px;border-radius:3px;background:var(--tc)}
-.goal{display:flex;gap:12px;align-items:flex-start}
-.goal svg{width:18px;height:18px;color:var(--acc);flex:none;margin-top:2px}
-
-/* ---------- list rows ---------- */
-.rows{display:grid;gap:8px}
-.row{display:flex;gap:14px;align-items:center;justify-content:space-between;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px;box-shadow:var(--shadow)}
-.row b{display:block;margin-bottom:1px;font-size:13.5px}.row .d{color:var(--text2);font-size:13px}
-.row .ri{width:32px;height:32px;border-radius:9px;display:grid;place-items:center;flex:none;background:color-mix(in srgb,var(--tc,var(--mute)) 13%,transparent);color:var(--tc,var(--mute))}
-.row .ri svg{width:15px;height:15px}
-.row .mid{flex:1;min-width:0}
-
-/* ---------- videos ---------- */
-.vids{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px}
-.vid{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;cursor:pointer;transition:transform .2s,border-color .2s;box-shadow:var(--shadow)}
-.vid:hover{transform:translateY(-3px);border-color:var(--line2)}
-.thumb{position:relative;aspect-ratio:9/16;background:linear-gradient(160deg,var(--panel3),var(--bg2));overflow:hidden}
-.thumb video,.thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
-.thumb .pb{position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(180deg,transparent 55%,rgba(0,0,0,.65));transition:background .2s}
-.thumb .pb span{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.14);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.25);color:#fff;transition:transform .2s}
-.vid:hover .pb span{transform:scale(1.1)}
-.thumb .tag{position:absolute;top:8px;left:8px}
-.thumb .stat{position:absolute;bottom:8px;left:10px;right:10px;display:flex;gap:10px;color:#fff;font-size:11.5px;font-family:var(--mono)}
-.vid .c{padding:10px 12px 12px}.vid .c b{display:block;font-size:13px;line-height:1.35;font-weight:600}.vid .c small{color:var(--mute);font-size:11.5px}
-
-/* ---------- charts ---------- */
-.chart{position:relative;width:100%}
-.chart svg{display:block;width:100%;height:auto;overflow:visible}
-.ax{fill:var(--mute);font-size:11px;font-family:var(--mono)}
-.gridl{stroke:var(--line);stroke-dasharray:3 4}
-.statrow{display:flex;gap:22px;flex-wrap:wrap;margin:2px 0 6px}
-.statrow div{font-size:11.5px;color:var(--mute);text-transform:uppercase;letter-spacing:.08em}
-.statrow b{display:block;font-size:19px;color:var(--text);letter-spacing:-.02em;text-transform:none;font-family:var(--mono);font-weight:700}
-.hbar{display:grid;grid-template-columns:96px 1fr auto;gap:12px;align-items:center;margin:12px 0;cursor:default}
-.hbar .tr{height:10px;background:var(--panel3);border-radius:6px;overflow:hidden}
-.hbar .fi{height:100%;border-radius:6px;width:0;transition:width 1s cubic-bezier(.2,.8,.2,1)}
-.hbar .n{font-family:var(--mono);font-size:13px;text-align:right}
-.hbar .n small{color:var(--mute);font-family:Inter;font-size:11px;margin-left:4px}
-.donutwrap{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
-.donut{width:150px;height:150px;flex:none}
-.donut circle{transition:stroke-width .2s,opacity .2s}
-.lg{display:grid;gap:8px;flex:1;min-width:170px}
-.lg button{display:flex;align-items:center;gap:10px;background:transparent;border:1px solid transparent;border-radius:9px;padding:6px 8px;text-align:left;transition:all .15s}
-.lg button:hover{background:var(--panel2);border-color:var(--line)}
-.lg button.off{opacity:.38}
-.lg i{width:10px;height:10px;border-radius:3px;flex:none}
-.lg .nm{flex:1;font-size:13px}.lg .vv{font-family:var(--mono);font-size:13px}.lg .pp{font-family:var(--mono);font-size:11.5px;color:var(--mute);width:42px;text-align:right}
-#tip{position:fixed;z-index:100;pointer-events:none;background:var(--panel3);border:1px solid var(--line2);border-radius:10px;padding:8px 11px;font-size:12px;box-shadow:0 10px 30px -10px rgba(0,0,0,.6);opacity:0;transform:translateY(4px);transition:opacity .12s,transform .12s;max-width:260px}
-#tip.on{opacity:1;transform:none}
-#tip .tt{color:var(--mute);font-size:11px;margin-bottom:3px}
-#tip .tv{display:flex;align-items:center;gap:7px;font-family:var(--mono)}
-#tip .tv i{width:8px;height:8px;border-radius:2px}
-
-/* ---------- funnel ---------- */
-.fun{display:grid;gap:10px}
-.fstep{display:grid;grid-template-columns:minmax(150px,220px) 1fr 52px;gap:14px;align-items:center}
-.fstep .lb{font-size:13px;font-weight:600}.fstep .lb small{display:block;font-weight:400;color:var(--mute);font-size:11.5px;line-height:1.35}
-.fstep .tr{height:28px;background:var(--panel3);border-radius:8px;overflow:hidden}
-.fstep .fi{height:100%;border-radius:8px;width:0;transition:width 1s cubic-bezier(.2,.8,.2,1);background:var(--tc)}
-.fstep .n{font-family:var(--mono);font-size:18px;font-weight:700;text-align:right}
-
-/* ---------- countdown ---------- */
-.cd{display:flex;gap:8px;margin:10px 0 4px}
-.cd div{flex:1;text-align:center;background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:8px 4px}
-.cd b{display:block;font-family:var(--mono);font-size:22px;letter-spacing:-.02em}
-.cd small{font-size:10.5px;color:var(--mute);text-transform:uppercase;letter-spacing:.1em}
-
-/* ---------- revenue ---------- */
-.rev{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-.rv{background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
-.rv small{color:var(--mute);font-size:11.5px;text-transform:uppercase;letter-spacing:.08em}
-.rv b{display:block;font-family:var(--mono);font-size:24px;letter-spacing:-.03em;margin-top:3px}
-.fail{display:flex;gap:12px;align-items:center;padding:10px 0;border-top:1px dashed var(--line)}
-.fail:first-child{border-top:0}
-.fail .amt{font-family:var(--mono);color:var(--bad);font-weight:700;margin-left:auto;white-space:nowrap}
-
-/* ---------- backtest ---------- */
-.cmp{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:12.5px}
-.delta{font-family:var(--mono);font-size:11.5px;padding:1px 7px;border-radius:999px;background:var(--panel3);color:var(--mute);white-space:nowrap}
-.delta.up{color:var(--ok);background:color-mix(in srgb,var(--ok) 12%,transparent)}
-.delta.dn{color:var(--bad);background:color-mix(in srgb,var(--bad) 12%,transparent)}
-.note{margin-top:12px;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:var(--panel2);font-size:13px;color:var(--text2);display:flex;gap:10px}
-.note svg{width:16px;height:16px;color:var(--blue);flex:none;margin-top:2px}
-
-/* ---------- targets ---------- */
-.month{display:flex;align-items:center;gap:12px;margin-bottom:12px}
-.month .bar{flex:1;height:8px;border-radius:5px;background:var(--panel3);overflow:hidden}
-.month .bar span{display:block;height:100%;background:linear-gradient(90deg,var(--vio),var(--acc));width:0;transition:width 1s}
-.tgs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
-@media (max-width:1180px){.tgs{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (max-width:640px){.tgs{grid-template-columns:minmax(0,1fr)}}
-@media (min-width:2000px){.tgs{grid-template-columns:repeat(6,minmax(0,1fr))}}
-.tg{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:10px}
-.tg .hd{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
-.tg .hd b{font-size:13.5px;line-height:1.35}
-.tg .big{display:flex;align-items:baseline;gap:8px}
-.tg .big b{font-family:var(--mono);font-size:26px;letter-spacing:-.03em}
-.tg .big span{color:var(--mute);font-size:12.5px}
-.tg .trk{position:relative;height:9px;border-radius:5px;background:var(--panel3)}
-.tg .trk .fi{position:absolute;inset:0 auto 0 0;border-radius:5px;background:var(--tc,var(--acc));width:0;transition:width 1s cubic-bezier(.2,.8,.2,1)}
-.tg .trk i{position:absolute;top:-4px;width:2px;height:17px;background:var(--text2);border-radius:1px}
-.tg .ft{display:flex;justify-content:space-between;font-size:11.5px;color:var(--mute)}
-.tg .ft b{color:var(--text2);font-family:var(--mono);font-weight:600}
-.kv2{display:grid;grid-template-columns:1fr auto;gap:9px 16px;font-size:13px;margin:0}
-.kv2 dt{color:var(--mute)}.kv2 dd{margin:0;font-weight:600;text-align:right}
-
-/* ---------- moves ---------- */
-.prog{height:6px;border-radius:4px;background:var(--panel3);overflow:hidden;margin:8px 0 14px}
-.prog span{display:block;height:100%;background:linear-gradient(90deg,var(--acc2),var(--acc));width:0;transition:width .4s}
-.moves{display:grid;gap:8px;list-style:none;margin:0;padding:0}
-.moves li{display:flex;gap:12px;align-items:flex-start;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px;cursor:pointer;transition:all .15s;box-shadow:var(--shadow)}
-.moves li:hover{border-color:var(--line2)}
-.moves .cb{width:20px;height:20px;border-radius:6px;border:1.5px solid var(--line2);flex:none;display:grid;place-items:center;margin-top:1px;transition:all .15s}
-.moves .cb svg{width:12px;height:12px;opacity:0;color:#021}
-.moves li.done .cb{background:var(--acc);border-color:var(--acc)}
-.moves li.done .cb svg{opacity:1}
-.moves li.done .tx{color:var(--mute);text-decoration:line-through}
-.moves .no{font-family:var(--mono);font-size:11px;color:var(--mute);margin-left:auto;padding-left:8px}
-
-/* ---------- timeline ---------- */
-.tl{position:relative;display:grid;gap:10px;padding-left:22px}
-.tl:before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:var(--line)}
-.tl .row{position:relative}
-.tl .row:before{content:"";position:absolute;left:-20px;top:50%;width:10px;height:10px;margin-top:-5px;border-radius:50%;background:var(--tc,var(--mute));box-shadow:0 0 0 3px var(--bg)}
-
-/* ---------- modal ---------- */
-.modal{position:fixed;inset:0;z-index:200;background:rgba(3,5,8,.78);backdrop-filter:blur(8px);display:none;align-items:center;justify-content:center;padding:24px}
-.modal.on{display:flex;animation:fade .2s}
-@keyframes fade{from{opacity:0}}
-.mbox{display:grid;grid-template-columns:auto 320px;max-height:92vh;background:var(--panel);border:1px solid var(--line2);border-radius:18px;overflow:hidden;box-shadow:0 30px 80px -20px rgba(0,0,0,.8)}
-.mbox .player{background:#000;display:grid;place-items:center}
-.mbox video,.mbox iframe{display:block;height:min(84vh,780px);aspect-ratio:9/16;border:0;background:#000;max-width:60vw}
-.mbox .side{padding:20px;display:flex;flex-direction:column;gap:12px;overflow:auto}
-.mbox h3{margin:0;font-size:17px;letter-spacing:-.01em;line-height:1.3}
-.mbox .kv{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:13px}
-.mbox .kv dt{color:var(--mute)}.mbox .kv dd{margin:0;font-weight:600}
-.mbox .links{display:flex;gap:8px;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;gap:7px;padding:7px 12px;border-radius:10px;border:1px solid var(--line2);background:var(--panel2);color:var(--text);font-size:12.5px;font-weight:600}
-.btn:hover{text-decoration:none;border-color:var(--acc2)}
-.btn.pri{background:var(--acc);color:#021;border-color:var(--acc)}
-.mnav{display:flex;gap:8px;margin-top:auto}
-.close{position:absolute;top:16px;right:16px}
-
-footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:var(--mute);font-size:12px}
-footer .links{display:flex;gap:14px}
-.err{color:var(--bad);padding:40px}
-.skel{height:110px;border-radius:var(--r);background:linear-gradient(90deg,var(--panel) 0,var(--panel2) 50%,var(--panel) 100%);background-size:200% 100%;animation:sk 1.2s infinite;border:1px solid var(--line)}
-@keyframes sk{to{background-position:-200% 0}}
-
-/* ---------- responsive ---------- */
-@media (min-width:2000px){.content{max-width:1900px}.kpis{grid-template-columns:repeat(6,1fr)}}
-@media (max-width:1180px){.g32,.g3{grid-template-columns:minmax(0,1fr)}}
-@media (max-width:1020px){
-  .shell{grid-template-columns:minmax(0,1fr)}
-  aside{position:sticky;top:0;height:auto;z-index:30;min-width:0;flex-direction:row;align-items:center;padding:8px 12px;border-right:0;border-bottom:1px solid var(--line);gap:10px}
-  .brand{padding:0}.brand div,.navlbl,.side-foot{display:none}
-  .nav{flex-direction:row;overflow-x:auto;min-width:0;flex:1;scrollbar-width:none}.nav::-webkit-scrollbar{display:none}
-  .nav a{white-space:nowrap;padding:7px 10px}.nav a.on:before{display:none}.nav .cnt{display:none}
-  .topbar{top:51px;padding:10px 16px}.content{padding:22px 16px 60px}
-  .hero{grid-template-columns:1fr}.hero-meta{justify-items:start;text-align:left}
-  html{scroll-padding-top:120px}section{scroll-margin-top:120px}
-  .crumb{display:none}
-}
-@media (max-width:760px){
-  .g2,.rev{grid-template-columns:minmax(0,1fr)}
-  .kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.kpi{padding:14px}.kpi .v{font-size:23px}.kpi .v.txt{font-size:17px;white-space:normal}.clock{display:none}
-  .fstep{grid-template-columns:1fr 46px}.fstep .tr{grid-column:1/-1;grid-row:2}
-  .mbox{grid-template-columns:1fr;max-height:94vh;overflow:auto}.mbox video,.mbox iframe{height:62vh;max-width:none;margin:auto}
-  .search{min-width:0;flex:1}
-}
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}.kpi{opacity:1;transform:none}}
-@media print{aside,.topbar,.toolbar,.modal{display:none!important}.shell{display:block}body:before{display:none}}
-</style>
-</head>
-<body>
-<div class="shell">
-  <aside>
-    <div class="brand"><div class="logo">MMM</div><div><b>Marketing Hub</b><small>Max Maserati Trading</small></div></div>
-    <div class="navlbl">Dashboard</div>
-    <nav class="nav" id="nav"></nav>
-    <div class="side-foot" id="sidefoot">Loading…</div>
-  </aside>
-  <main>
-    <div class="topbar">
-      <div class="crumb">MMM Hub <span>/ <span id="crumbsec">At a glance</span></span></div>
-      <span class="live" id="live"><span class="dot"></span><span id="livetx">Loading</span></span>
-      <div class="tb-right">
-        <span class="clock" id="clock"></span>
-        <button class="iconbtn" id="refresh" title="Reload data (R)" aria-label="Reload data"></button>
-        <button class="iconbtn" id="theme" title="Switch theme (T)" aria-label="Switch theme"></button>
-      </div>
-    </div>
-    <div class="content" id="app">
-      <div class="kpis"><div class="skel"></div><div class="skel"></div><div class="skel"></div><div class="skel"></div></div>
-    </div>
-  </main>
-</div>
-<div id="tip"></div>
-<div class="modal" id="modal" role="dialog" aria-modal="true"><div class="mbox" id="mbox"></div></div>
-
+.wrap{max-width:1180px;margin:0 auto;padding:48px 24px 80px}
+header .eyebrow{color:var(--acc);font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
+h1{font-size:clamp(34px,5vw,56px);line-height:1.05;margin:10px 0 12px;letter-spacing:-.02em;background:linear-gradient(90deg,#fff,#9ff5dc 60%,#c9a2ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.summary{font-size:18px;color:#c9ced6;max-width:780px}
+.meta{color:var(--mute);font-size:13px;margin-top:10px}
+nav{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 8px}nav a{padding:6px 12px;border:1px solid var(--line);border-radius:999px;color:var(--mute);font-size:13px}nav a:hover{color:var(--text);border-color:var(--acc2);text-decoration:none}
+section{margin-top:44px}h2{font-size:22px;margin:0 0 4px;letter-spacing:-.01em}.cap{color:var(--mute);font-size:13px;margin:0 0 16px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:30px}
+.card{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:16px;padding:18px 20px;position:relative;overflow:hidden}
+.card:before{content:"";position:absolute;inset:0 0 auto 0;height:2px;background:linear-gradient(90deg,var(--acc2),var(--vio))}
+.card.danger:before{background:var(--bad)}
+.card .l{color:var(--mute);font-size:12px;text-transform:uppercase;letter-spacing:.1em}.card .v{font-size:30px;font-weight:700;margin:6px 0 2px;letter-spacing:-.02em}.card .s{color:#aeb5c0;font-size:13px}
+.card.danger .v{color:var(--bad)}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px 20px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}@media(max-width:820px){.grid2{grid-template-columns:1fr}}
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel)}
+table{width:100%;border-collapse:collapse;font-size:14px}th{text-align:left;color:var(--mute);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.06em;padding:12px 14px;border-bottom:1px solid var(--line);white-space:nowrap;background:var(--panel2)}
+td{padding:11px 14px;border-bottom:1px solid #1d2128;vertical-align:top}tr:last-child td{border-bottom:0}tr:hover td{background:#161a20}
+.pill{display:inline-block;padding:2px 9px;border-radius:999px;font-size:12px;font-weight:600;white-space:nowrap;border:1px solid currentColor}
+.t-success,.t-Confirmed,.t-Published,.t-Sent,.t-Done{color:var(--ok)}.t-warning,.t-Lower,.t-Engagement{color:var(--warn)}.t-danger,.t-Unverifiable{color:var(--bad)}.t-Video,.t-Scheduled{color:var(--acc)}.t-neutral,.t-Close,.t-Stat,.t-Email{color:#a9b1bd}
+.rows{display:grid;gap:10px;margin-top:14px}.row{display:flex;gap:14px;align-items:flex-start;justify-content:space-between;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px}.row b{display:block;margin-bottom:2px}.row span.d{color:#aeb5c0;font-size:14px}
+.vids{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.vid{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden}.vid video,.vid iframe{width:100%;aspect-ratio:9/16;display:block;background:#000;border:0}
+.vid .c{padding:10px 12px}.vid .c b{display:block;font-size:14px}.vid .c small{color:var(--mute)}.vid .lk{display:flex;gap:10px;margin-top:6px;font-size:13px}
+.bar{display:grid;grid-template-columns:90px 1fr 60px;gap:10px;align-items:center;margin:10px 0}.bar .tr{height:12px;background:#1d2128;border-radius:6px;overflow:hidden}.bar .fi{height:100%;border-radius:6px;background:linear-gradient(90deg,var(--acc2),var(--acc))}
+.bar .n{text-align:right;font-variant-numeric:tabular-nums}.small{color:var(--mute);font-size:13px}
+.props{display:grid;grid-template-columns:auto 1fr;gap:8px 18px;font-size:14px}.props dt{color:var(--mute)}.props dd{margin:0;font-weight:600}
+ol.moves{counter-reset:m;list-style:none;padding:0;margin:0;display:grid;gap:10px}ol.moves li{counter-increment:m;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 16px 12px 52px;position:relative}
+ol.moves li:before{content:counter(m);position:absolute;left:14px;top:11px;width:26px;height:26px;border-radius:50%;background:linear-gradient(135deg,var(--acc2),var(--vio));color:#000;font-weight:700;font-size:13px;display:grid;place-items:center}
+svg text{fill:var(--mute);font-size:11px}
+footer{margin-top:60px;color:var(--mute);font-size:12px;border-top:1px solid var(--line);padding-top:18px}
+.err{color:var(--bad)}
+.sb{display:grid;gap:12px}.sbr{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1.6fr auto;gap:14px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 18px}
+.sbr .k{color:var(--mute);font-size:11px;text-transform:uppercase;letter-spacing:.08em}.sbr .n{font-weight:700;font-variant-numeric:tabular-nums}
+.sbr .tr{height:10px;background:#1d2128;border-radius:6px;overflow:hidden}.sbr .fi{height:100%;background:linear-gradient(90deg,var(--acc2),var(--vio))}
+@media(max-width:820px){.sbr{grid-template-columns:1fr 1fr}}
+.t-On,.t-Ahead{color:var(--ok)}.t-Behind{color:var(--bad)}.t-Not,.t-No{color:#a9b1bd}
+</style></head><body><div class="wrap" id="app"><p class="small">Loading dashboard...</p></div>
 <script>
-"use strict";
-/* ================= helpers ================= */
-const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
-const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const num=v=>{const n=parseFloat(String(v??"").replace(/[^0-9.\-]/g,""));return isNaN(n)?0:n};
-const fmt=n=>Number(n).toLocaleString("en-GB");
-const store={get(k,d){try{const v=localStorage.getItem("mmmhub:"+k);return v==null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem("mmmhub:"+k,JSON.stringify(v))}catch(e){}}};
-const MON={Jan:0,Feb:1,Mar:2,Apr:3,May:4,Jun:5,Jul:6,Aug:7,Sep:8,Oct:9,Nov:10,Dec:11};
-
-/* icons (stroke, 24 grid) */
-const P={
- grid:'<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>',
- cal:'<rect x="3" y="4" width="18" height="17" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/>',
- film:'<rect x="2" y="3" width="20" height="18" rx="2"/><path d="M7 3v18M17 3v18M2 8h5M2 16h5M17 8h5M17 16h5"/>',
- chart:'<path d="M3 3v18h18"/><path d="m7 15 4-5 4 3 5-7"/>',
- users:'<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/>',
- dollar:'<path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>',
- flask:'<path d="M9 3h6M10 3v6L4.5 19A2 2 0 0 0 6.2 22h11.6a2 2 0 0 0 1.7-3L14 9V3"/><path d="M7 15h10"/>',
- check:'<path d="M20 6 9 17l-5-5"/>',
- checkc:'<circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/>',
- list:'<path d="M9 6h12M9 12h12M9 18h12"/><path d="m3 6 1.5 1.5L7 5M3 12l1.5 1.5L7 11M3 18l1.5 1.5L7 17"/>',
- eye:'<path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/>',
- trophy:'<path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4Z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/>',
- alert:'<path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/><path d="M12 9v4M12 17h.01"/>',
- userplus:'<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/>',
- sun:'<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>',
- moon:'<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/>',
- refresh:'<path d="M21 12a9 9 0 1 1-2.6-6.4L21 8"/><path d="M21 3v5h-5"/>',
- search:'<circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/>',
- play:'<path d="M7 4v16l13-8Z" fill="currentColor" stroke="none"/>',
- x:'<path d="M18 6 6 18M6 6l12 12"/>',
- ext:'<path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>',
- target:'<circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/>',
- info:'<circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/>',
- clock:'<circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>',
- mail:'<rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/>',
- hand:'<path d="M18 11V6a2 2 0 0 0-4 0v5M14 10V4a2 2 0 0 0-4 0v6M10 10.5V6a2 2 0 0 0-4 0v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.9-6-2.4l-3.6-3.6a2 2 0 0 1 2.8-2.8L7 15"/>',
- chevl:'<path d="m15 18-6-6 6-6"/>',chevr:'<path d="m9 18 6-6-6-6"/>',
- rocket:'<path d="M4.5 16.5c-1.5 1.3-2 5-2 5s3.7-.5 5-2c.7-.8.7-2.1-.1-2.9a2.2 2.2 0 0 0-2.9-.1Z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.9A12.9 12.9 0 0 1 22 2c0 2.7-.8 7.5-6 11a22.4 22.4 0 0 1-4 2Z"/>'
-};
-const ic=(n,extra="")=>`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ${extra}>${P[n]||P.info}</svg>`;
-
-/* status & tone mapping (works with any status word the bot writes) */
-function tone(word){
-  const w=String(word||"").toLowerCase();
-  if(/success|confirmed|published|sent|done|approved|hosted|paid|live|on track|ahead/.test(w))return "ok";
-  if(/danger|unverifiable|risk|fail|bad|lost|cancel|behind/.test(w))return "bad";
-  if(/warning|lower|win back|engagement|pending|wait/.test(w))return "warn";
-  if(/video|scheduled/.test(w))return "acc";
-  if(/stat/.test(w))return "blue";
-  if(/email/.test(w))return "vio";
-  return "mute";
-}
-const pill=(t,tn)=>`<span class="pill tc-${tone(tn||t)}">${esc(t)}</span>`;
-const TYPE_COL={Video:"var(--acc)","Stat card":"var(--blue)",Engagement:"var(--warn)",Email:"var(--vio)"};
-const typeCol=t=>TYPE_COL[t]||"var(--mute)";
-const CH=[{k:"yt_views",n:"YouTube",c:"#ff4d6d"},{k:"fb_impr",n:"Facebook",c:"#4da3ff"},{k:"x_impr",n:"X",c:"#a970ff"}];
-const chColor=n=>(CH.find(c=>c.n.toLowerCase()===String(n).toLowerCase())||{c:"var(--acc)"}).c;
-function ytId(u){const m=u&&String(u).match(/(?:shorts\/|v=|youtu\.be\/)([\w-]{6,})/);return m?m[1]:null}
-
-/* London time helpers */
-function londonOffsetMin(utcMs){
-  const p=Object.fromEntries(new Intl.DateTimeFormat("en-GB",{timeZone:"Europe/London",hourCycle:"h23",year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit"}).formatToParts(new Date(utcMs)).map(x=>[x.type,x.value]));
-  return (Date.UTC(+p.year,+p.month-1,+p.day,+p.hour,+p.minute)-utcMs)/60000;
-}
-function londonDate(y,m,d,hh=0,mm=0){const g=Date.UTC(y,m,d,hh,mm);return new Date(g-londonOffsetMin(g)*60000)}
-function parseLondon(str,year){ // "Tue 3 Nov 19:53" or "Sat 31 Oct 2026, 18:19 London"
-  const m=String(str||"").match(/(\d{1,2})\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s*(\d{4})?,?\s*(\d{1,2}):(\d{2})/);
-  if(!m)return null;return londonDate(+(m[3]||year),MON[m[2]],+m[1],+m[4],+m[5]);
-}
-function ago(d){const s=(Date.now()-d)/1000;if(s<60)return "just now";if(s<3600)return Math.round(s/60)+" min ago";if(s<86400)return Math.round(s/3600)+" h ago";return Math.round(s/86400)+" d ago"}
-
-/* tooltip */
-const tip=$("#tip");
-function showTip(e,html){tip.innerHTML=html;tip.classList.add("on");moveTip(e)}
-function moveTip(e){const w=tip.offsetWidth,h=tip.offsetHeight;let x=e.clientX+14,y=e.clientY-h-12;if(x+w>innerWidth-8)x=e.clientX-w-14;if(y<8)y=e.clientY+16;tip.style.left=x+"px";tip.style.top=y+"px"}
-function hideTip(){tip.classList.remove("on")}
-document.addEventListener("mousemove",e=>{const t=e.target.closest("[data-tip]");if(t)showTip(e,t.dataset.tip);else if(tip.classList.contains("on")&&!e.target.closest("[data-tipzone]"))hideTip()});
-
-/* count-up */
-function countUp(el){
-  const raw=el.dataset.raw;const parts=raw.split(/([\d][\d,]*\.?\d*)/);
-  if(parts.length<2){el.textContent=raw;return}
-  const nums=parts.map((p,i)=>i%2?{v:num(p),dec:(p.split(".")[1]||"").length,comma:p.includes(",")}:p);
-  const t0=performance.now(),dur=900;
-  const step=t=>{const k=Math.min(1,(t-t0)/dur),e=1-Math.pow(1-k,3);
-    el.textContent=nums.map((p,i)=>i%2?(p.comma||p.v>=1000?(p.v*e).toLocaleString("en-US",{minimumFractionDigits:p.dec,maximumFractionDigits:p.dec}):(p.v*e).toFixed(p.dec)):p).join("");
-    if(k<1)requestAnimationFrame(step);else el.textContent=raw};
-  requestAnimationFrame(step);
-}
-
-/* ================= theme ================= */
-function setTheme(t){document.documentElement.dataset.theme=t;store.set("theme",t);$("#theme").innerHTML=ic(t==="dark"?"sun":"moon");$('meta[name="theme-color"]').content=t==="dark"?"#07090c":"#f4f6f9"}
-setTheme(store.get("theme","dark"));
-$("#theme").onclick=()=>setTheme(document.documentElement.dataset.theme==="dark"?"light":"dark");
-$("#refresh").innerHTML=ic("refresh");
-setInterval(()=>{$("#clock").textContent=new Date().toLocaleTimeString("en-GB",{timeZone:"Europe/London",hour:"2-digit",minute:"2-digit"})+" London"},1000);
-
-/* ================= state ================= */
-let D=null;
-const S={batchView:store.get("batchView","board"),batchDay:"All",batchType:"All",batchQ:"",vidFilter:"All",postSort:{k:"when",dir:1},range:"all",chOff:new Set(),btFilter:"All",gallery:[],gi:0};
-
-const SECTIONS=[["glance","At a glance","grid"],["targets","Targets","target"],["batch","Next week","cal"],["calendar","Posts & videos","film"],["channels","Channels","chart"],["tradingview","TradingView","chart"],["geo","Audience","users"],["crm","Pipeline","users"],["revenue","Revenue","dollar"],["backtest","Backtest check","flask"],["approval","Approvals","checkc"],["next","Next moves","list"]];
-
-/* ================= load ================= */
-function load(){
-  const b=$("#refresh");b.classList.add("spin");
-  return fetch("data.json?"+Date.now()).then(r=>{if(!r.ok)throw new Error("HTTP "+r.status);return r.json()}).then(d=>{D=d;render()})
-   .catch(e=>{if(!D)$("#app").innerHTML=`<p class="err">Could not load data.json: ${esc(e.message||e)}</p>`})
-   .finally(()=>b.classList.remove("spin"));
-}
-$("#refresh").onclick=load;
-
-/* ================= render ================= */
-function render(){
-  const year=+(String(D.data_as_of||"").match(/\d{4}/)||[new Date().getFullYear()])[0];
-  D._year=year;
-  const upd=parseLondon(D.updated,year);
-  const fresh=upd&&(Date.now()-upd)<36*3600e3;
-  $("#live").querySelector(".dot").classList.toggle("stale",!fresh);
-  $("#livetx").textContent=upd?`Updated ${ago(upd)}`:"Updated "+(D.updated||"");
-  $("#live").title=D.updated||"";
-
-  const rows=(D.batch&&D.batch.rows)||[];
-  const posts=D.posts||[];
-  const counts={batch:rows.length,calendar:posts.length,backtest:(D.backtest?.rows||[]).length,approval:(D.approvals||[]).length,next:(D.next_moves||[]).length};
-  $("#nav").innerHTML=SECTIONS.map(([id,t,i])=>`<a href="#${id}" data-sec="${id}">${ic(i)}<span>${t}</span>${counts[id]!=null?`<span class="cnt">${counts[id]}</span>`:""}</a>`).join("");
-  $("#sidefoot").innerHTML=`<b>Data as of</b><br>${esc(D.data_as_of||"n/a")}<br><span style="display:block;margin-top:6px">Press <span class="num">/</span> to search, <span class="num">T</span> theme</span>`;
-
-  const titleHtml=esc(D.title||"MMM Marketing Hub").replace(/(Hub|Dashboard)$/,"<em>$1</em>");
-  const risk=(D.cards||[]).find(c=>c.tone==="danger");
-
-  $("#app").innerHTML=`
-<div class="hero">
-  <div>
-    <div class="eyebrow">MMM Trading · Marketing, CRM & performance</div>
-    <h1>${titleHtml}</h1>
-    <p class="summary">${esc(D.summary)}</p>
-    ${risk?`<div class="callout">${ic("alert")}<div><b>${esc(risk.label)}: ${esc(risk.value)}</b> <span class="mute">${esc(risk.sub)}</span> · <a href="#crm">See pipeline</a></div></div>`:""}
-  </div>
-  <div class="hero-meta">
-    <span class="small">Last updated <b>${esc(D.updated)}</b></span>
-    <span class="small">Data as of <b>${esc(D.data_as_of)}</b></span>
-  </div>
-</div>
-<div class="kpis" id="glance">${kpis()}</div>
-${secTargets()}${secBatch()}${secPosts()}${secChannels()}${secTV()}${secGeo()}${secCrm()}${secRevenue()}${secBacktest()}${secApprovals()}${secMoves()}
-<footer><div>${esc(D.footer)}</div><div class="links">${D.links?.site?`<a href="${esc(D.links.site)}" target="_blank" rel="noopener">maxmaserati.com</a>`:""}${D.links?.whop?`<a href="${esc(D.links.whop)}" target="_blank" rel="noopener">Whop</a>`:""}${D.links?.x?`<a href="${esc(D.links.x)}" target="_blank" rel="noopener">X</a>`:""}</div></footer>`;
-
-  $$(".kpi .v[data-raw]").forEach(countUp);
-  drawBatch();drawPosts();drawVisits();drawTV();drawReachPost();drawBacktest();
-  wire();
-  requestAnimationFrame(()=>$$("[data-w]").forEach(el=>el.style.width=el.dataset.w));
-  $$("#nav a").forEach(a=>{if(!document.getElementById(a.dataset.sec))a.remove()});
-  tickCountdown();spy();
-  if(location.hash){const t=document.getElementById(location.hash.slice(1));if(t)t.scrollIntoView()}
-}
-
-/* ---------- KPI ---------- */
-function kpiIcon(l){l=l.toLowerCase();if(/reach|view/.test(l))return"eye";if(/best|top/.test(l))return"trophy";if(/revenue|money/.test(l))return"dollar";if(/risk|fail/.test(l))return"alert";if(/new|paid/.test(l))return"userplus";if(/follow|sub/.test(l))return"users";return"target"}
-function kpis(){
-  return (D.cards||[]).map((c,i)=>{
-    const v=String(c.value??"");const isNum=/\d/.test(v)&&v.replace(/[\d\s,.$£€%\/+\-k]/gi,"").length<3;
-    const pm=String(c.sub||"").match(/\(([+\-−]\d+(?:\.\d+)?%)\)/);
-    const trend=pm?`<span class="trend ${pm[1].startsWith("+")?"up":"down"}">${pm[1].startsWith("+")?"▲":"▼"} ${esc(pm[1].replace(/^[+\-−]/,""))}</span>`:"";
-    return `<div class="kpi ${c.tone==="danger"?"danger":""}" style="animation-delay:${i*60}ms">
-      <div class="top"><span class="l">${esc(c.label)}</span><span class="ic">${ic(kpiIcon(c.label||""))}</span></div>
-      <div class="v ${isNum?"num":"txt"}" ${isNum?`data-raw="${esc(v)}"`:""} title="${esc(v)}">${esc(v)}</div>
-      <div class="s">${esc(c.sub)}${trend}</div></div>`}).join("");
-}
-
-/* ---------- Targets ---------- */
-function secTargets(){
-  const T=D.scoreboard;if(!T||!(T.rows||[]).length)return "";
-  const unit=(v,u)=>u==="$"?"$"+fmt(v):u==="%"?v+"%":fmt(v);
-  const day=+T.day||0,days=+T.days||30,mp=Math.min(100,100*day/days);
-  const hit=T.rows.filter(r=>tone(r.status)==="ok").length;
-  return `<section id="targets">
-  <div class="sh"><div><h2>${esc(T.title||"Targets vs results")}</h2><p class="cap">${esc(T.window)} · ${esc(T.note)}</p></div><span class="small num">${hit} / ${T.rows.length} on track</span></div>
-  <div class="panel month"><b style="font-size:13px;white-space:nowrap">${day===0?"Starts soon":"Day "+day+" of "+days}</b><div class="bar"><span data-w="${mp}%"></span></div><span class="small num">${mp.toFixed(0)}% of month</span></div>
-  <div class="tgs">${T.rows.map(r=>{const pct=Math.max(0,+r.pct||0),tn=tone(r.status),col=tn==="mute"?"var(--acc)":`var(--${tn})`;
-    const pace=(+r.prorated&&r.unit!=="%")?Math.min(100,100*day/days):null;
-    return `<div class="tg" style="--tc:${col}" data-tip="${esc(`<div class='tt'>${esc(r.label)}</div><div class='tv'>Actual ${esc(unit(r.actual,r.unit))} · target by today ${esc(unit(r.prorated,r.unit))}</div><div class='tt' style='margin-top:3px'>Full target: ${esc(r.target)}</div>`)}">
-      <div class="hd"><b>${esc(r.label)}</b>${pill(r.status)}</div>
-      <div class="big"><b>${esc(unit(r.actual,r.unit))}</b><span>of ${esc(r.target)}</span></div>
-      <div class="trk"><div class="fi" data-w="${Math.min(100,pct)}%"></div>${pace!=null?`<i style="left:${pace}%" title="Where you should be today"></i>`:""}</div>
-      <div class="ft"><span>Target by today <b>${esc(unit(r.prorated,r.unit))}</b></span><span><b>${pct}%</b> of target</span></div></div>`}).join("")}</div>
-  <div class="g2" style="margin-top:12px">
-    <div class="panel"><div class="ph"><b>By channel (UTM links)</b></div>
-      ${T.channel_note?`<p class="small" style="margin:0 0 10px">${esc(T.channel_note)}</p>`:""}
-      <div class="tw" style="box-shadow:none"><table><thead><tr><th>Channel</th><th class="r">Trials</th><th class="r">Sales</th></tr></thead><tbody>${(T.channels||[]).map(c=>`<tr><td><span style="display:inline-block;width:8px;height:8px;border-radius:2px;background:${chColor(c.name)};margin-right:8px"></span><b>${esc(c.name)}</b></td><td class="r num">${c.trials??'<span class="small">no data yet</span>'}</td><td class="r num">${c.sales??'<span class="small">no data yet</span>'}</td></tr>`).join("")}</tbody></table></div></div>
-    <div class="panel"><div class="ph"><b>Starting point</b><span class="small">real data</span></div><dl class="kv2">${(T.baselines||[]).map(b=>`<dt>${esc(b[0])}</dt><dd>${esc(b[1])}</dd>`).join("")}</dl></div>
-  </div></section>`;
-}
-
-/* ---------- Batch ---------- */
-function secBatch(){
-  const B=D.batch||{rows:[]};
-  return `<section id="batch">
-  <div class="sh"><div><h2>Next week's batch</h2><p class="cap">${esc(B.status)} London time.</p></div>
-    <div class="seg" id="bview"><button data-v="board">Week board</button><button data-v="list">List</button></div></div>
-  <div class="panel goal" style="margin-bottom:12px">${ic("target")}<div><b style="display:block;margin-bottom:2px">Goal for the week</b><span style="color:var(--text2)">${esc(B.goals)}</span></div></div>
-  <div class="toolbar">
-    <label class="search">${ic("search")}<input id="bq" placeholder="Search posts, topics, stats…" value="${esc(S.batchQ)}"><kbd>/</kbd></label>
-    <div class="chips" id="bday"></div>
-  </div>
-  <div class="toolbar"><div class="chips" id="btype"></div><div class="legend" style="margin-left:auto">${Object.entries(TYPE_COL).map(([k,c])=>`<span style="--tc:${c}"><i></i>${k}</span>`).join("")}</div></div>
-  <div id="bout"></div>
-  ${(B.notes||[]).length?`<div class="g3" style="margin-top:12px">${B.notes.map(n=>noteRow(n)).join("")}</div>`:""}
-  </section>`;
-}
-function noteRow([t,d,s,tn]){const icn=/email/i.test(t)?"mail":/hand/i.test(t)?"hand":"film";
-  return `<div class="row" style="--tc:var(--${tone(tn||s)==="mute"?"mute":tone(tn||s)})"><span class="ri">${ic(icn)}</span><div class="mid"><b>${esc(t)}</b><span class="d">${esc(d)}</span></div>${pill(s,tn)}</div>`}
-function batchFiltered(){
-  const q=S.batchQ.toLowerCase();
-  return (D.batch?.rows||[]).map((r,i)=>({r,i})).filter(({r})=>(S.batchDay==="All"||r[0]===S.batchDay)&&(S.batchType==="All"||r[2]===S.batchType)&&(!q||r.join(" ").toLowerCase().includes(q)));
-}
-function drawBatch(){
-  const rows=D.batch?.rows||[];
-  const days=[...new Set(rows.map(r=>r[0]))],types=[...new Set(rows.map(r=>r[2]))];
-  $("#bday").innerHTML=["All",...days].map(d=>`<button class="chip ${S.batchDay===d?"on":""}" data-d="${esc(d)}">${esc(d)}${d!=="All"?` <i>${rows.filter(r=>r[0]===d).length}</i>`:""}</button>`).join("");
-  $("#btype").innerHTML=["All",...types].map(t=>`<button class="chip ${S.batchType===t?"on":""}" data-t="${esc(t)}">${t!=="All"?`<span style="width:8px;height:8px;border-radius:2px;background:${typeCol(t)}"></span>`:""}${esc(t==="All"?"All types":t)} <i>${t==="All"?rows.length:rows.filter(r=>r[2]===t).length}</i></button>`).join("");
-  $$("#bview button").forEach(b=>b.classList.toggle("on",b.dataset.v===S.batchView));
-  const list=batchFiltered();
-  if(!list.length){$("#bout").innerHTML=`<div class="panel empty">Nothing matches. <a href="#" id="bclear">Clear filters</a></div>`;$("#bclear").onclick=e=>{e.preventDefault();S.batchDay="All";S.batchType="All";S.batchQ="";$("#bq").value="";drawBatch()};return}
-  if(S.batchView==="board"){
-    const ds=[...new Set(list.map(x=>x.r[0]))];
-    $("#bout").innerHTML=`<div class="board" style="--days:${ds.length}">${ds.map(d=>{const its=list.filter(x=>x.r[0]===d);
-      return `<div class="col"><h4>${esc(d)}<i>${its.length} posts</i></h4>${its.map(({r,i})=>`<div class="slot" style="--tc:${typeCol(r[2])}" data-bi="${i}">
-        <div class="t"><span>${esc(r[1])}</span>${r[6]?`<span class="play">${ic("play",'style="width:10px;height:10px"')} Watch</span>`:`<span>${esc(r[2])}</span>`}</div>
-        <b>${esc(r[3])}</b><small>${esc(r[4])}</small></div>`).join("")}</div>`}).join("")}</div>`;
-  }else{
-    $("#bout").innerHTML=`<div class="tw"><table><thead><tr><th>Day</th><th>London</th><th>Type</th><th>Title</th><th>Channels</th><th>Preview</th><th></th></tr></thead><tbody>${list.map(({r,i})=>`<tr>
-      <td><b>${esc(r[0])}</b></td><td class="num">${esc(r[1])}</td><td><span class="pill" style="--tc:${typeCol(r[2])}">${esc(r[2])}</span></td>
-      <td><b>${esc(r[3])}</b></td><td class="small">${esc(r[4])}</td><td class="small">${esc(r[5])}</td>
-      <td class="r">${r[6]?`<button class="btn" data-bi="${i}">${ic("play",'style="width:11px;height:11px"')} Watch</button>`:""}</td></tr>`).join("")}</tbody></table></div>`;
-  }
-}
-
-/* ---------- Posts & videos ---------- */
-function secPosts(){
-  return `<section id="calendar">
-  <div class="sh"><div><h2>Posts & videos</h2><p class="cap">London time. Click a header to sort. Click any video to watch it here.</p></div></div>
-  <div id="ptable"></div>
-  <div class="toolbar" style="margin-top:16px"><b style="font-size:14px">Video library</b><div class="chips" id="vfil" style="margin-left:auto"></div></div>
-  <div class="vids" id="vgal"></div></section>`;
-}
-function postReach(p){return CH.reduce((s,c)=>s+(+p[c.k]||0),0)}
-function postDate(p){const d=parseLondon(p.when,D._year);return d?+d:0}
-function drawPosts(){
-  const posts=(D.posts||[]).slice();
-  const k=S.postSort.k,dir=S.postSort.dir;
-  const val=p=>k==="when"?postDate(p):k==="reach"?postReach(p):k==="title"?String(p.title).toLowerCase():k==="status"?p.status:(+p[k]||0);
-  posts.sort((a,b)=>{const x=val(a),y=val(b);return (x>y?1:x<y?-1:0)*dir});
-  const mx=Math.max(1,...posts.map(postReach));
-  const th=(key,lab,cls="")=>`<th class="sort ${cls} ${S.postSort.k===key?(dir>0?"asc":"desc"):""}" data-k="${key}">${lab}<span class="ar">${S.postSort.k===key?(dir>0?"▲":"▼"):"↕"}</span></th>`;
-  const link=(u,t)=>u?`<a href="${esc(u)}" target="_blank" rel="noopener">${t}</a>`:`<span class="mute">—</span>`;
-  $("#ptable").innerHTML=`<div class="tw"><table><thead><tr>${th("title","Post")}${th("when","When")}${th("status","Status")}${th("reach","Reach","r")}<th>Mix</th>${th("likes","Likes","r")}${th("comments","Comm.","r")}<th>Links</th></tr></thead><tbody>
-  ${posts.map(p=>{const r=postReach(p),has=p.status==="Published";
-    return `<tr><td><b>${esc(p.title)}</b></td><td class="num small" style="color:var(--text2)">${esc(p.when)}</td><td>${pill(p.status)}</td>
-    <td class="r num"><b>${has?fmt(r):"—"}</b></td>
-    <td>${has?`<div class="mini" style="width:${Math.max(18,100*r/mx)}%" data-tip="${esc(CH.map(c=>`<div class='tv'><i style='background:${c.c}'></i>${c.n}: ${+p[c.k]||0}</div>`).join(""))}">${CH.map(c=>`<span style="width:${r?100*(+p[c.k]||0)/r:0}%;background:${c.c}"></span>`).join("")}</div>`:`<span class="small">Not live yet</span>`}</td>
-    <td class="r num">${has?(p.likes??0):"—"}</td><td class="r num">${has?(p.comments??0):"—"}</td>
-    <td class="small" style="white-space:nowrap">${link(p.youtube,"YT")} · ${link(p.facebook,"FB")} · ${link(p.x,"X")}</td></tr>`}).join("")}</tbody></table></div>`;
-  drawGallery();
-}
-function galleryItems(){
-  const items=[];
-  (D.posts||[]).forEach(p=>{const id=ytId(p.youtube);if(p.video||id)items.push({kind:p.status==="Published"?"Published":"Scheduled",title:p.title,when:p.when,status:p.status,video:p.video,yt:id,links:{YouTube:p.youtube,Facebook:p.facebook,X:p.x},stats:p.status==="Published"?{Reach:postReach(p),Likes:p.likes??0,Comments:p.comments??0}:null})});
-  (D.batch?.rows||[]).forEach(r=>{if(r[6])items.push({kind:"New batch",title:r[3],when:`${r[0]} ${r[1]}`,status:"Batch",video:r[6],yt:null,links:{},stats:null,channels:r[4],note:r[5]})});
-  return items;
-}
-function drawGallery(){
-  const all=galleryItems();const kinds=["All",...new Set(all.map(i=>i.kind))];
-  $("#vfil").innerHTML=kinds.map(k=>`<button class="chip ${S.vidFilter===k?"on":""}" data-vf="${esc(k)}">${esc(k)} <i>${k==="All"?all.length:all.filter(i=>i.kind===k).length}</i></button>`).join("");
-  S.gallery=all.filter(i=>S.vidFilter==="All"||i.kind===S.vidFilter);
-  $("#vgal").innerHTML=S.gallery.map((v,i)=>`<div class="vid" data-gi="${i}" tabindex="0">
-    <div class="thumb">${v.video?`<video muted playsinline preload="none" data-src="${esc(v.video)}#t=0.5"></video>`:v.yt?`<img loading="lazy" alt="" src="https://i.ytimg.com/vi/${esc(v.yt)}/hqdefault.jpg">`:""}
-      <div class="pb"><span>${ic("play",'style="width:18px;height:18px;margin-left:3px"')}</span></div>
-      <span class="tag">${pill(v.kind==="New batch"?"New":v.status,v.kind==="New batch"?"video":v.status)}</span>
-      ${v.stats?`<div class="stat"><span>${ic("eye",'style="width:12px;height:12px;vertical-align:-2px"')} ${v.stats.Reach}</span><span>♥ ${v.stats.Likes}</span></div>`:""}
-    </div><div class="c"><b>${esc(v.title)}</b><small>${esc(v.when)} London</small></div></div>`).join("")||`<div class="panel empty">No videos.</div>`;
-  lazyVideos();
-}
-let io;
-function lazyVideos(){
-  io&&io.disconnect();
-  io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const v=e.target;v.src=v.dataset.src;v.preload="metadata";io.unobserve(v)}}),{rootMargin:"200px"});
-  $$("#vgal video[data-src]").forEach(v=>io.observe(v));
-}
-function openVideo(i){
-  S.gi=i;const v=S.gallery[i];if(!v)return;
-  const player=v.video?`<video src="${esc(v.video)}" controls autoplay playsinline></video>`:`<iframe src="https://www.youtube.com/embed/${esc(v.yt)}?autoplay=1&rel=0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>`;
-  const links=Object.entries(v.links||{}).filter(([,u])=>u).map(([n,u])=>`<a class="btn" href="${esc(u)}" target="_blank" rel="noopener">${esc(n)} ${ic("ext",'style="width:12px;height:12px"')}</a>`).join("");
-  $("#mbox").innerHTML=`<div class="player">${player}</div><div class="side">
-    <div style="display:flex;justify-content:space-between;gap:10px;align-items:flex-start">${pill(v.kind==="New batch"?"New batch":v.status,v.kind==="New batch"?"video":v.status)}<button class="iconbtn" id="mclose" aria-label="Close">${ic("x")}</button></div>
-    <h3>${esc(v.title)}</h3>
-    <dl class="kv"><dt>When</dt><dd>${esc(v.when)} London</dd>${v.channels?`<dt>Channels</dt><dd>${esc(v.channels)}</dd>`:""}${v.stats?Object.entries(v.stats).map(([k,x])=>`<dt>${k}</dt><dd class="num">${fmt(x)}</dd>`).join(""):""}</dl>
-    ${v.note?`<div class="note">${ic("info")}<span>${esc(v.note)}</span></div>`:""}
-    ${links?`<div class="links">${links}</div>`:""}
-    ${v.video?`<a class="btn" href="${esc(v.video)}" target="_blank" rel="noopener">Open MP4 ${ic("ext",'style="width:12px;height:12px"')}</a>`:""}
-    <div class="mnav"><button class="btn" id="mprev">${ic("chevl",'style="width:14px;height:14px"')} Prev</button><button class="btn" id="mnext">Next ${ic("chevr",'style="width:14px;height:14px"')}</button><span class="small" style="margin-left:auto;align-self:center">${i+1} / ${S.gallery.length}</span></div>
-  </div>`;
-  $("#modal").classList.add("on");document.body.style.overflow="hidden";
-  $("#mclose").onclick=closeVideo;$("#mprev").onclick=()=>openVideo((S.gi-1+S.gallery.length)%S.gallery.length);$("#mnext").onclick=()=>openVideo((S.gi+1)%S.gallery.length);
-}
-function closeVideo(){$("#modal").classList.remove("on");$("#mbox").innerHTML="";document.body.style.overflow=""}
-$("#modal").addEventListener("click",e=>{if(e.target.id==="modal")closeVideo()});
-
-/* ---------- Channels ---------- */
-function secChannels(){
-  const ch=D.channels||[],tot=ch.reduce((s,c)=>s+(+c.value||0),0),E=D.engagement||{};
-  return `<section id="channels">
-  <div class="sh"><div><h2>Channel performance</h2><p class="cap">YouTube counts views. Facebook and X count impressions.</p></div></div>
-  <div class="g32">
-    <div class="panel"><div class="ph"><b>Daily visits to the Whop store</b><div class="seg" id="vrange"><button data-r="7">7D</button><button data-r="14">14D</button><button data-r="all">All</button></div></div>
-      <div class="statrow" id="vstats"></div><div class="chart" id="vchart" data-tipzone></div></div>
-    <div class="panel"><div class="ph"><b>Total reach by channel</b><span class="small">click to hide</span></div>
-      <div class="donutwrap"><svg class="donut" viewBox="0 0 42 42" id="donut"></svg><div class="lg" id="dlg"></div></div>
-      <div class="statrow" style="margin-top:14px;padding-top:12px;border-top:1px solid var(--line)">
-        <div>Total<b>${fmt(tot)}</b></div><div>Likes<b>${fmt(E.likes??0)}</b></div><div>Comments<b>${fmt(E.comments??0)}</b></div><div>Clicks<b>${fmt(E.clicks??0)}</b></div>
-        ${tot?`<div>Like rate<b>${((E.likes||0)/tot*100).toFixed(1)}%</b></div>`:""}</div></div>
-  </div>
-  <div class="panel" style="margin-top:12px"><div class="ph"><b>Reach by post</b><div class="legend" id="rplg"></div></div><div class="chart" id="rpchart" data-tipzone></div></div>
-  </section>`;
-}
-function drawDonut(){
-  const ch=(D.channels||[]).filter(c=>!S.chOff.has(c.name)),tot=ch.reduce((s,c)=>s+(+c.value||0),0)||1,all=(D.channels||[]).reduce((s,c)=>s+(+c.value||0),0)||1;
-  let off=25,s=`<circle cx="21" cy="21" r="15.915" fill="none" stroke="var(--panel3)" stroke-width="5"/>`;
-  ch.forEach(c=>{const p=100*(+c.value||0)/tot;s+=`<circle cx="21" cy="21" r="15.915" fill="none" stroke="${chColor(c.name)}" stroke-width="5" stroke-dasharray="${Math.max(0,p-.6)} ${100-Math.max(0,p-.6)}" stroke-dashoffset="${off}" data-tip="<div class='tt'>${esc(c.name)}</div><div class='tv'><i style='background:${chColor(c.name)}'></i>${fmt(c.value)} ${esc(c.meta||"")} · ${p.toFixed(0)}%</div>"/>`;off-=p});
-  s+=`<text x="21" y="20.5" text-anchor="middle" style="font:700 6.5px var(--mono);fill:var(--text)">${fmt(ch.reduce((a,c)=>a+(+c.value||0),0))}</text><text x="21" y="26" text-anchor="middle" style="font:500 2.8px Inter;fill:var(--mute);letter-spacing:.1px">REACH</text>`;
-  $("#donut").innerHTML=s;
-  $("#dlg").innerHTML=(D.channels||[]).map(c=>`<button class="${S.chOff.has(c.name)?"off":""}" data-ch="${esc(c.name)}"><i style="background:${chColor(c.name)}"></i><span class="nm">${esc(c.name)} <span class="small">${esc(c.meta||"")}</span></span><span class="vv">${fmt(c.value)}</span><span class="pp">${(100*(+c.value||0)/all).toFixed(0)}%</span></button>`).join("");
-}
-function drawVisits(){
-  drawDonut();
-  const all=D.visits||[];if(!all.length){$("#vchart").innerHTML=`<div class="empty">No visit data.</div>`;return}
-  $$("#vrange button").forEach(b=>b.classList.toggle("on",b.dataset.r===String(S.range)));
-  const pts=S.range==="all"?all:all.slice(-+S.range);
-  const sum=pts.reduce((s,p)=>s+p.v,0),avg=sum/pts.length,peak=pts.reduce((a,p)=>p.v>a.v?p:a,pts[0]);
-  const prev=S.range==="all"?null:all.slice(-2*+S.range,-+S.range);const ps=prev&&prev.length?prev.reduce((s,p)=>s+p.v,0):null;
-  const ch=ps?((sum-ps)/ps*100):null;
-  const dl=d=>new Date(d+"T12:00Z").toLocaleDateString("en-GB",{day:"numeric",month:"short",timeZone:"UTC"});
-  $("#vstats").innerHTML=`<div>Visits<b>${fmt(sum)}${ch!=null?` <span class="trend ${ch>=0?"up":"down"}" style="font-size:11px">${ch>=0?"▲":"▼"} ${Math.abs(ch).toFixed(0)}%</span>`:""}</b></div><div>Daily avg<b>${avg.toFixed(1)}</b></div><div>Peak<b>${peak.v} <span class="small" style="font-family:Inter">${dl(peak.date)}</span></b></div>`;
-  // first published post marker
-  const first=(D.posts||[]).filter(p=>p.status==="Published").map(postDate).filter(Boolean).sort()[0];
-  const W=900,H=250,PL=36,PR=14,PT=14,PB=30,n=pts.length,mx=Math.max(...pts.map(p=>p.v))*1.15||1;
-  const x=i=>PL+(n===1?0:i*(W-PL-PR)/(n-1)),y=v=>H-PB-(v/mx)*(H-PT-PB);
-  const curve=pts.map((p,i)=>[x(i),y(p.v)]);
-  let d=`M${curve[0][0]},${curve[0][1]}`;for(let i=1;i<curve.length;i++){const [x0,y0]=curve[i-1],[x1,y1]=curve[i],cx=(x0+x1)/2;d+=` C${cx},${y0} ${cx},${y1} ${x1},${y1}`}
-  const area=d+` L${x(n-1)},${H-PB} L${x(0)},${H-PB} Z`;
-  const ticks=4,grid=[...Array(ticks+1)].map((_,k)=>{const v=mx/1.15*k/ticks;return `<line class="gridl" x1="${PL}" x2="${W-PR}" y1="${y(v)}" y2="${y(v)}"/><text class="ax" x="${PL-8}" y="${y(v)+4}" text-anchor="end">${Math.round(v)}</text>`}).join("");
-  const every=Math.ceil(n/8);
-  const labs=pts.map((p,i)=>i%every===0||i===n-1?`<text class="ax" x="${x(i)}" y="${H-8}" text-anchor="middle">${dl(p.date)}</text>`:"").join("");
-  let mark="";
-  if(first){const fd=new Date(first).toISOString().slice(0,10);const fi=pts.findIndex(p=>p.date>=fd);
-    if(fi>=0)mark=`<line x1="${x(fi)}" x2="${x(fi)}" y1="${PT}" y2="${H-PB}" stroke="var(--vio)" stroke-dasharray="4 4" stroke-width="1.5"/><rect x="${x(fi)+6}" y="${PT}" width="78" height="18" rx="5" fill="color-mix(in srgb,var(--vio) 18%,transparent)"/><text x="${x(fi)+45}" y="${PT+12.5}" text-anchor="middle" style="font:600 10.5px Inter;fill:var(--vio)">First posts</text>`}
-  /* TradingView launch markers (added) */
-  const tvL=(D.tradingview&&D.tradingview.launches)||[];
-  tvL.forEach(l=>{const li=pts.findIndex(p=>p.date===l.date);if(li<0)return;
-    mark+=`<line x1="${x(li)}" x2="${x(li)}" y1="${PT}" y2="${H-PB}" stroke="var(--blue)" stroke-opacity=".55" stroke-dasharray="2 3"/><circle cx="${x(li)}" cy="${PT+4}" r="4" fill="var(--blue)"><title>${esc(l.date)}: ${l.count} TradingView script${l.count>1?"s":""} published</title></circle>`});
-  const avgL=`<line x1="${PL}" x2="${W-PR}" y1="${y(avg)}" y2="${y(avg)}" stroke="var(--warn)" stroke-opacity=".55" stroke-dasharray="2 5"/><text x="${W-PR}" y="${y(avg)-6}" text-anchor="end" style="font:600 10px var(--mono);fill:var(--warn)">avg ${avg.toFixed(1)}</text>`;
-  $("#vchart").innerHTML=`<svg viewBox="0 0 ${W} ${H}" id="vsvg"><defs><linearGradient id="vg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="var(--acc)" stop-opacity=".32"/><stop offset="1" stop-color="var(--acc)" stop-opacity="0"/></linearGradient></defs>
-    ${grid}${mark}${avgL}<path d="${area}" fill="url(#vg)"/><path d="${d}" fill="none" stroke="var(--acc)" stroke-width="2.4" stroke-linecap="round"/>
-    <line id="vx" y1="${PT}" y2="${H-PB}" stroke="var(--line2)" opacity="0"/><circle id="vdot" r="5" fill="var(--acc)" stroke="var(--panel)" stroke-width="2.5" opacity="0"/>${labs}
-    <rect x="${PL}" y="0" width="${W-PL-PR}" height="${H}" fill="transparent" id="vhit"/></svg>`;
-  const svg=$("#vsvg"),hit=$("#vhit");
-  hit.onmousemove=e=>{const r=svg.getBoundingClientRect(),sx=(e.clientX-r.left)*W/r.width;const i=Math.max(0,Math.min(n-1,Math.round((sx-PL)/((W-PL-PR)/(n-1||1)))));
-    $("#vx").setAttribute("x1",x(i));$("#vx").setAttribute("x2",x(i));$("#vx").setAttribute("opacity",1);
-    $("#vdot").setAttribute("cx",x(i));$("#vdot").setAttribute("cy",y(pts[i].v));$("#vdot").setAttribute("opacity",1);
-    const dd=new Date(pts[i].date+"T12:00Z").toLocaleDateString("en-GB",{weekday:"short",day:"numeric",month:"short",timeZone:"UTC"});
-    const vs=pts[i].v-avg;
-    showTip(e,`<div class="tt">${dd}</div><div class="tv"><i style="background:var(--acc)"></i>${pts[i].v} visits</div><div class="tt" style="margin:3px 0 0">${vs>=0?"+":""}${vs.toFixed(1)} vs avg</div>`)};
-  hit.onmouseleave=()=>{hideTip();$("#vx").setAttribute("opacity",0);$("#vdot").setAttribute("opacity",0)};
-}
-/* ---------- TradingView launches (added) ---------- */
-function secTV(){
-  const T=D.tradingview;if(!T)return "";
-  const sm=T.summary||{},pc=v=>v==null?"n/a":(v>0?"+":"")+v+"%";
-  const rows=(T.compare||[]).map(c=>`<tr><td class="num">${esc(c.date)}</td><td>${esc(c.label)}</td><td>${esc((c.access||[]).join(", "))}</td>
-    <td class="num">${c.before_avg??"-"}</td><td class="num">${c.after_avg??"-"}</td>
-    <td class="num">${c.change_pct==null?`<span class="small">${esc(c.note||"n/a")}</span>`:`<span class="trend ${c.change_pct>=0?"up":"down"}">${c.change_pct>=0?"▲":"▼"} ${Math.abs(c.change_pct)}%</span>`}</td></tr>`).join("");
-  const src=(T.sources||[]).map(s=>`<div>${esc(s.name)}<b>${s.visits==null?"-":fmt(s.visits)}</b></div>`).join("");
-  return `<section id="tradingview">
-  <div class="sh"><div><h2>TradingView launches vs visits</h2><p class="cap">${esc(T.note)}</p></div><span class="small num">${sm.launch_days_up??0} / ${sm.launch_days??0} launches up</span></div>
-  <div class="panel"><div class="ph"><b>Daily Whop store visits, full history</b><span class="small"><i style="display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--blue)"></i> TradingView launch</span></div>
-    <div class="statrow"><div>Median change after a launch<b>${pc(sm.launch_median_change_pct)}</b></div><div>Median change, no-launch weeks<b>${pc(sm.baseline_median_change_pct)}</b></div><div>No-launch weeks that rose<b>${sm.baseline_share_up_pct??"n/a"}%</b></div></div>
-    <div class="chart" id="tvchart" data-tipzone></div></div>
-  <div class="panel" style="margin-top:12px"><div class="ph"><b>Visits by source</b></div><div class="statrow">${src}</div>${T.sources_note?`<p class="small" style="margin-top:8px">${esc(T.sources_note)}</p>`:""}</div>
-  <div class="panel" style="margin-top:12px"><div class="ph"><b>7 days before vs 7 days after each launch</b><span class="small">average visits per day</span></div>
-    <div style="overflow:auto;max-height:420px"><table><thead><tr><th>Date</th><th>Script</th><th>Access</th><th>Before</th><th>After</th><th>Change</th></tr></thead><tbody>${rows}</tbody></table></div></div>
-  </section>`;
-}
-function drawTV(){
-  const el=$("#tvchart");if(!el)return;const pts=D.visits_history||[];if(!pts.length){el.innerHTML=`<div class="empty">No visit data.</div>`;return}
-  const L=(D.tradingview&&D.tradingview.launches)||[];
-  const W=900,H=230,PL=36,PR=14,PT=16,PB=28,n=pts.length,mx=Math.max(...pts.map(p=>p.v))*1.1||1;
-  const x=i=>PL+(n===1?0:i*(W-PL-PR)/(n-1)),y=v=>H-PB-(v/mx)*(H-PT-PB);
-  const line=pts.map((p,i)=>`${i?"L":"M"}${x(i).toFixed(1)},${y(p.v).toFixed(1)}`).join(" ");
-  const grid=[0,1,2,3,4].map(k=>{const v=mx/1.1*k/4;return `<line class="gridl" x1="${PL}" x2="${W-PR}" y1="${y(v)}" y2="${y(v)}"/><text class="ax" x="${PL-8}" y="${y(v)+4}" text-anchor="end">${Math.round(v)}</text>`}).join("");
-  let lastM="";const labs=pts.map((p,i)=>{const m=p.date.slice(0,7);if(m===lastM)return"";lastM=m;return `<text class="ax" x="${x(i)}" y="${H-8}" text-anchor="start">${new Date(p.date+"T12:00Z").toLocaleDateString("en-GB",{month:"short",year:"2-digit",timeZone:"UTC"})}</text>`}).join("");
-  const mk=L.map(l=>{const i=pts.findIndex(p=>p.date===l.date);if(i<0)return"";return `<line x1="${x(i)}" x2="${x(i)}" y1="${PT}" y2="${H-PB}" stroke="var(--blue)" stroke-opacity=".45" stroke-dasharray="2 3"/><circle cx="${x(i)}" cy="${PT}" r="4" fill="var(--blue)" data-tip="${esc(`<div class='tt'>${esc(l.date)}</div><div class='tv'>${l.count} script${l.count>1?"s":""}: ${esc(l.names.join(", "))}</div>`)}"/>`}).join("");
-  el.innerHTML=`<svg viewBox="0 0 ${W} ${H}">${grid}${mk}<path d="${line}" fill="none" stroke="var(--acc)" stroke-width="1.6"/>${labs}</svg>`;
-}
-function secGeo(){
-  const G=D.geo;if(!G)return "";
-  const bar=(list,max)=>list.length?list.slice(0,10).map(x=>`<div style="display:flex;align-items:center;gap:8px;margin:4px 0"><span style="flex:0 0 150px">${esc(x.name)}</span><span style="flex:1;background:var(--blue);opacity:.8;height:8px;border-radius:4px;max-width:${Math.max(4,Math.round(100*x.people/max))}%"></span><b class="num">${fmt(x.people)}</b></div>`).join(""):`<p class="small">No data yet</p>`;
-  const cards=(G.groups||[]).map(g=>{const m=Math.max(1,...g.countries.map(x=>x.people),...g.cities.map(x=>x.people));return `<div class="panel" style="margin-top:12px"><div class="ph"><b>${esc(g.label)}</b><span class="small num">${g.total==null?"-":fmt(g.total)+" people"}${g.range?" · "+esc(g.range):""}</span></div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px"><div><p class="small">Top countries</p>${bar(g.countries,m)}</div><div><p class="small">Top cities</p>${bar(g.cities,m)}</div></div>${g.note?`<p class="small" style="margin-top:8px">${esc(g.note)}</p>`:""}</div>`}).join("");
-  return `<section id="geo"><div class="sh"><div><h2>Where your audience is</h2><p class="cap">${esc(G.note)}</p></div><span class="small num">${esc(G.as_of||"")}</span></div>${cards}</section>`;
-}
-function drawReachPost(){
-  const posts=(D.posts||[]).filter(p=>p.status==="Published");
-  $("#rplg").innerHTML=CH.map(c=>`<button class="chip ${S.chOff.has(c.n)?"":"on"}" data-rp="${c.n}"><span style="width:8px;height:8px;border-radius:2px;background:${c.c}"></span>${c.n}</button>`).join("");
-  if(!posts.length){$("#rpchart").innerHTML=`<div class="empty">No published posts yet.</div>`;return}
-  const act=CH.filter(c=>!S.chOff.has(c.n));
-  const W=900,H=240,PL=36,PB=34,PT=12,gw=(W-PL-10)/posts.length;
-  const tot=p=>act.reduce((s,c)=>s+(+p[c.k]||0),0);
-  const mx=Math.max(1,...posts.map(tot))*1.12;const y=v=>(v/mx)*(H-PT-PB);
-  const bw=Math.min(54,gw*.46);
-  let s=[0,.25,.5,.75,1].map(k=>`<line class="gridl" x1="${PL}" x2="${W-10}" y1="${H-PB-y(mx/1.12*k)}" y2="${H-PB-y(mx/1.12*k)}"/><text class="ax" x="${PL-8}" y="${H-PB-y(mx/1.12*k)+4}" text-anchor="end">${Math.round(mx/1.12*k)}</text>`).join("");
-  posts.forEach((p,i)=>{let base=H-PB;const cx=PL+i*gw+gw/2;
-    const tipH=`<div class='tt'>${esc(p.title)} · ${esc(p.when)}</div>`+act.map(c=>`<div class='tv'><i style='background:${c.c}'></i>${c.n}: ${+p[c.k]||0}</div>`).join("")+`<div class='tt' style='margin-top:4px'>Total ${tot(p)} · ♥ ${p.likes??0} · 💬 ${p.comments??0}</div>`;
-    act.forEach((c,j)=>{const h=y(+p[c.k]||0);base-=h;s+=`<rect x="${cx-bw/2}" y="${base}" width="${bw}" height="${Math.max(0,h)}" fill="${c.c}" ${j===act.length-1?'rx="4"':""} style="transition:all .3s"/>`});
-    s+=`<text x="${cx}" y="${base-6}" text-anchor="middle" style="font:700 11.5px var(--mono);fill:var(--text)">${tot(p)}</text>`;
-    s+=`<text class="ax" x="${cx}" y="${H-12}" text-anchor="middle" style="font-family:Inter;font-size:11.5px">${esc(p.short||p.title)}</text>`;
-    s+=`<rect x="${PL+i*gw}" y="0" width="${gw}" height="${H}" fill="transparent" data-tip="${esc(tipH)}" class="hov"/>`});
-  $("#rpchart").innerHTML=`<svg viewBox="0 0 ${W} ${H}">${s}</svg>`;
-}
-
-/* ---------- CRM ---------- */
-function stageTone(l){l=l.toLowerCase();if(/fail|cancel|lost|churn/.test(l))return"var(--bad)";if(/trial/.test(l))return"var(--warn)";if(/paid|active/.test(l))return"var(--ok)";if(/free|sign/.test(l))return"var(--blue)";return"var(--acc)"}
-function secCrm(){
-  const pl=D.pipeline||[],mx=Math.max(1,...pl.map(r=>num(r[1])));
-  const trial=pl.find(r=>/trial/i.test(r[0])&&/ends/i.test(r[2]));
-  return `<section id="crm">
-  <div class="sh"><div><h2>Customer pipeline</h2><p class="cap">Counts from Whop. Members are anonymised because this site is public.</p></div></div>
-  <div class="g32">
-    <div class="panel"><div class="ph"><b>Pipeline stages</b><span class="small">hover for details</span></div><div class="fun">${pl.map(r=>`<div class="fstep" data-tip="${esc(`<div class='tt'>${esc(r[0])}</div>${esc(r[2])}`)}"><div class="lb">${esc(r[0])}<small>${esc(r[2])}</small></div><div class="tr"><div class="fi" style="--tc:${stageTone(r[0])}" data-w="${Math.max(3,100*num(r[1])/mx)}%"></div></div><div class="n">${esc(r[1])}</div></div>`).join("")}</div></div>
-    <div style="display:grid;gap:12px;align-content:start">
-      ${trial?`<div class="panel"><div class="ph"><b>${ic("clock",'style="width:15px;height:15px;vertical-align:-2px;color:var(--warn)"')} Trial ends in</b>${pill("Watch","warning")}</div><div class="cd" id="cd" data-end="${esc(trial[2])}"><div><b>–</b><small>days</small></div><div><b>–</b><small>hrs</small></div><div><b>–</b><small>min</small></div><div><b>–</b><small>sec</small></div></div><div class="small">${esc(trial[2])}</div></div>`:""}
-      <div class="panel"><div class="ph"><b>Watchlist</b><span class="small">${(D.watchlist||[]).length} members</span></div><div class="rows">${(D.watchlist||[]).map(([t,d,s,tn])=>`<div class="row" style="--tc:var(--${tone(tn||s)});box-shadow:none;background:var(--panel2)"><span class="ri">${ic(tone(tn||s)==="bad"?"alert":"users")}</span><div class="mid"><b>${esc(t)}</b><span class="d">${esc(d)}</span></div>${pill(s,tn)}</div>`).join("")}</div></div>
-    </div>
-  </div></section>`;
-}
-let cdTimer;
-function tickCountdown(){
-  clearInterval(cdTimer);const el=$("#cd");if(!el)return;const end=parseLondon(el.dataset.end,D._year);if(!end){el.style.display="none";return}
-  const f=()=>{let s=Math.max(0,Math.floor((end-Date.now())/1000));const v=[Math.floor(s/86400),Math.floor(s%86400/3600),Math.floor(s%3600/60),s%60];
-    $$("b",el).forEach((b,i)=>b.textContent=String(v[i]).padStart(2,"0"));if(s===0){clearInterval(cdTimer);el.insertAdjacentHTML("afterend",'<div class="small" style="color:var(--bad)">Trial has ended.</div>')}};
-  f();cdTimer=setInterval(f,1000);
-}
-
-/* ---------- Revenue ---------- */
-function secRevenue(){
-  const R=D.revenue;if(!R)return "";
-  const tw=+R.this_week?.usd||0,lw=+R.last_week?.usd||0,mx=Math.max(tw,lw,+R.not_collected||0,1);
-  const ch=lw?((tw-lw)/lw*100):0;
-  return `<section id="revenue">
-  <div class="sh"><div><h2>Revenue this week vs last</h2><p class="cap">Succeeded Whop payments in USD, London weeks.</p></div></div>
-  <div class="g2">
-    <div class="panel">
-      <div class="rev"><div class="rv"><small>${esc(R.this_week?.label)}</small><b>$${tw.toFixed(2)}</b><span class="trend ${ch>=0?"up":"down"}" style="margin:4px 0 0">${ch>=0?"▲":"▼"} ${Math.abs(ch).toFixed(0)}%</span></div>
-      <div class="rv"><small>${esc(R.last_week?.label)}</small><b style="color:var(--text2)">$${lw.toFixed(2)}</b><span class="small">${R.last_week?.renewals??0} renewals</span></div></div>
-      <div style="margin-top:12px">
-        <div class="hbar" data-tip="${esc(`<div class='tt'>This week</div><div class='tv'>$${tw.toFixed(2)} · ${R.this_week?.renewals??0} renewals</div>`)}"><span class="small">This week</span><div class="tr"><div class="fi" style="background:linear-gradient(90deg,var(--acc2),var(--acc))" data-w="${100*tw/mx}%"></div></div><span class="n">$${tw.toFixed(0)}</span></div>
-        <div class="hbar" data-tip="${esc(`<div class='tt'>Last week</div><div class='tv'>$${lw.toFixed(2)} · ${R.last_week?.renewals??0} renewals</div>`)}"><span class="small">Last week</span><div class="tr"><div class="fi" style="background:var(--line2)" data-w="${100*lw/mx}%"></div></div><span class="n">$${lw.toFixed(0)}</span></div>
-        <div class="hbar" data-tip="${esc(`<div class='tt'>Not collected</div><div class='tv'>$${(+R.not_collected||0).toFixed(2)} from failed cards</div>`)}"><span class="small">Not collected</span><div class="tr"><div class="fi" style="background:var(--bad)" data-w="${100*(+R.not_collected||0)/mx}%"></div></div><span class="n" style="color:var(--bad)">$${(+R.not_collected||0).toFixed(0)}</span></div>
-      </div>
-      <div class="statrow" style="margin-top:8px"><div>Change<b>${esc(R.change)}</b></div><div>Renewals<b>${R.this_week?.renewals??0} vs ${R.last_week?.renewals??0}</b></div></div>
-    </div>
-    <div class="panel"><div class="ph"><b>Failed payments</b><span class="pill tc-bad">$${(+R.not_collected||0).toFixed(2)} not collected</span></div>
-      ${(R.failed||[]).map(f=>`<div class="fail"><span class="ri" style="width:32px;height:32px;border-radius:9px;display:grid;place-items:center;background:color-mix(in srgb,var(--bad) 13%,transparent);color:var(--bad)">${ic("alert",'style="width:15px;height:15px"')}</span><div><b style="font-size:13.5px">${esc(f.product)}</b><div class="small">${esc(new Date(f.date+"T12:00Z").toLocaleDateString("en-GB",{weekday:"short",day:"numeric",month:"short",timeZone:"UTC"}))} · ${esc(f.reason)}</div></div><span class="amt">$${(+f.usd).toFixed(2)}</span></div>`).join("")||`<div class="empty">No failed payments.</div>`}
-    </div>
-  </div></section>`;
-}
-
-/* ---------- Backtest ---------- */
-function secBacktest(){
-  const B=D.backtest;if(!B)return "";
-  return `<section id="backtest">
-  <div class="sh"><div><h2>Backtest check</h2><p class="cap">${esc(B.caption)}</p></div><div class="chips" id="btf"></div></div>
-  <div id="btout"></div>
-  ${B.note?`<div class="note">${ic("info")}<span>${esc(B.note)}</span></div>`:""}</section>`;
-}
-function drawBacktest(){
-  const rows=D.backtest?.rows||[];if(!$("#btf"))return;
-  const vs=["All",...new Set(rows.map(r=>r[3]))];
-  $("#btf").innerHTML=vs.map(v=>`<button class="chip ${S.btFilter===v?"on":""}" data-bt="${esc(v)}">${v!=="All"?`<span class="pill tc-${tone(v)}" style="padding:0;border:0;background:none"></span>`:""}${esc(v)} <i>${v==="All"?rows.length:rows.filter(r=>r[3]===v).length}</i></button>`).join("");
-  const list=rows.filter(r=>S.btFilter==="All"||r[3]===S.btFilter);
-  const pct=s=>{const m=String(s).match(/^\s*(\d+(?:\.\d+)?)%\s*$/);return m?+m[1]:null};
-  $("#btout").innerHTML=`<div class="tw"><table><thead><tr><th>Stat</th><th class="r">Claimed</th><th class="r">Recomputed</th><th>Gap</th><th>Verdict</th></tr></thead><tbody>${list.map(r=>{
-    const a=pct(r[1]),b=pct(r[2]);let g=`<span class="small">—</span>`;
-    if(a!=null&&b!=null){const dlt=b-a;g=`<div class="cmp"><span class="delta ${Math.abs(dlt)<1?"":dlt>0?"up":"dn"}">${dlt>=0?"+":""}${dlt.toFixed(1)} pts</span><div class="mini" style="width:120px;position:relative;overflow:visible"><span style="width:${a}%;background:var(--line2)"></span><i style="position:absolute;left:${b}%;top:-3px;width:2px;height:12px;background:var(--acc);border-radius:1px"></i></div></div>`}
-    return `<tr><td><b>${esc(r[0])}</b></td><td class="r num">${esc(r[1])}</td><td class="r num" style="color:var(--text2)">${esc(r[2])}</td><td>${g}</td><td>${pill(r[3])}</td></tr>`}).join("")}</tbody></table></div>
-    <div class="small" style="margin-top:8px">Gap bar: grey = claimed, green tick = recomputed.</div>`;
-}
-
-/* ---------- Approvals ---------- */
-function secApprovals(){
-  const A=D.approvals||[];const done=A.filter(a=>tone(a[3]||a[2])==="ok").length;
-  return `<section id="approval">
-  <div class="sh"><div><h2>Approvals and status</h2><p class="cap">${done} of ${A.length} done.</p></div></div>
-  <div class="tl">${A.map(([t,d,s,tn])=>`<div class="row" style="--tc:var(--${tone(tn||s)})"><span class="ri">${ic(/dm/i.test(t)?"mail":/batch/i.test(t)?"cal":/analytic|pixel/i.test(t)?"chart":"checkc")}</span><div class="mid"><b>${esc(t)}</b><span class="d">${esc(d)}</span></div>${pill(s,tn)}</div>`).join("")}</div></section>`;
-}
-
-/* ---------- Next moves ---------- */
-const hash=s=>{let h=0;for(const c of String(s))h=(h*31+c.charCodeAt(0))|0;return "m"+(h>>>0).toString(36)};
-function secMoves(){
-  const M=D.next_moves||[];
-  return `<section id="next">
-  <div class="sh"><div><h2>Next moves</h2><p class="cap">Tick them off as you go. Saved in this browser.</p></div><span class="small num" id="mcount"></span></div>
-  <div class="prog"><span id="mprog"></span></div>
-  <ol class="moves" id="moves">${M.map((m,i)=>`<li data-h="${hash(m)}"><span class="cb">${ic("check",'stroke-width="3.5"')}</span><span class="tx">${esc(m)}</span><span class="no">#${i+1}</span></li>`).join("")}</ol></section>`;
-}
-function syncMoves(){
-  const done=new Set(store.get("moves",[]));const li=$$("#moves li");let n=0;
-  li.forEach(l=>{const on=done.has(l.dataset.h);l.classList.toggle("done",on);n+=on});
-  if($("#mcount"))$("#mcount").textContent=`${n} / ${li.length} done`;
-  if($("#mprog"))$("#mprog").style.width=(li.length?100*n/li.length:0)+"%";
-}
-
-/* ================= events ================= */
-function wire(){
-  syncMoves();
-  const app=$("#app");
-  app.onclick=e=>{
-    const t=e.target;let el;
-    if(el=t.closest("#bview button")){S.batchView=el.dataset.v;store.set("batchView",S.batchView);drawBatch()}
-    else if(el=t.closest("#bday .chip")){S.batchDay=el.dataset.d;drawBatch()}
-    else if(el=t.closest("#btype .chip")){S.batchType=el.dataset.t;drawBatch()}
-    else if(el=t.closest("[data-bi]")){const r=D.batch.rows[+el.dataset.bi];if(r&&r[6]){S.vidFilter="All";drawGallery();const gi=S.gallery.findIndex(g=>g.video===r[6]);if(gi>=0)openVideo(gi)}else if(r){showSlot(r)}}
-    else if(el=t.closest("th.sort")){const k=el.dataset.k;S.postSort={k,dir:S.postSort.k===k?-S.postSort.dir:(k==="title"||k==="when"?1:-1)};drawPosts()}
-    else if(el=t.closest("[data-vf]")){S.vidFilter=el.dataset.vf;drawGallery()}
-    else if(el=t.closest(".vid[data-gi]")){openVideo(+el.dataset.gi)}
-    else if(el=t.closest("#vrange button")){S.range=el.dataset.r;drawVisits()}
-    else if(el=t.closest("[data-ch]")){toggleCh(el.dataset.ch)}
-    else if(el=t.closest("[data-rp]")){toggleCh(el.dataset.rp)}
-    else if(el=t.closest("[data-bt]")){S.btFilter=el.dataset.bt;drawBacktest()}
-    else if(el=t.closest("#moves li")){const s=new Set(store.get("moves",[]));s.has(el.dataset.h)?s.delete(el.dataset.h):s.add(el.dataset.h);store.set("moves",[...s]);syncMoves()}
-  };
-  app.onkeydown=e=>{if(e.key==="Enter"){const v=e.target.closest(".vid[data-gi]");if(v)openVideo(+v.dataset.gi)}};
-  const bq=$("#bq");if(bq)bq.oninput=e=>{S.batchQ=e.target.value;drawBatch()};
-  // hover-preview videos on desktop
-  $("#vgal").addEventListener("mouseover",e=>{const v=e.target.closest(".vid")?.querySelector("video");if(v&&v.src&&matchMedia("(hover:hover)").matches){v.currentTime=0.5;v.play().catch(()=>{})}});
-  $("#vgal").addEventListener("mouseout",e=>{const c=e.target.closest(".vid");if(c&&!c.contains(e.relatedTarget)){const v=c.querySelector("video");if(v)v.pause()}});
-}
-function toggleCh(name){S.chOff.has(name)?S.chOff.delete(name):S.chOff.add(name);drawDonut();drawReachPost()}
-function showSlot(r){
-  $("#mbox").innerHTML=`<div class="side" style="min-width:min(440px,86vw)"><div style="display:flex;justify-content:space-between;align-items:center"><span class="pill" style="--tc:${typeCol(r[2])}">${esc(r[2])}</span><button class="iconbtn" id="mclose">${ic("x")}</button></div>
-  <h3>${esc(r[3])}</h3><dl class="kv"><dt>When</dt><dd>${esc(r[0])} · ${esc(r[1])} London</dd><dt>Channels</dt><dd>${esc(r[4])}</dd></dl><div class="note">${ic("info")}<span>${esc(r[5])}</span></div></div>`;
-  $("#mbox").style.gridTemplateColumns="1fr";$("#modal").classList.add("on");$("#mclose").onclick=()=>{closeVideo();$("#mbox").style.gridTemplateColumns=""};
-}
-
-/* scroll spy */
-let spyObs;
-function spy(){
-  spyObs&&spyObs.disconnect();
-  const names=Object.fromEntries(SECTIONS.map(s=>[s[0],s[1]]));
-  spyObs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){const id=e.target.id;$$("#nav a").forEach(a=>a.classList.toggle("on",a.dataset.sec===id));$("#crumbsec").textContent=names[id]||"";
-    const on=$(`#nav a[data-sec="${id}"]`);if(on&&innerWidth<=1020)on.scrollIntoView({block:"nearest",inline:"center",behavior:"smooth"})}})},{rootMargin:"-30% 0px -60% 0px"});
-  SECTIONS.forEach(([id])=>{const el=document.getElementById(id);if(el)spyObs.observe(el)});
-}
-
-/* keyboard */
-document.addEventListener("keydown",e=>{
-  const typing=/input|textarea/i.test(document.activeElement?.tagName||"");
-  if($("#modal").classList.contains("on")){
-    if(e.key==="Escape"){closeVideo();$("#mbox").style.gridTemplateColumns=""}
-    else if(e.key==="ArrowRight"&&S.gallery.length&&$("#mnext"))$("#mnext").click();
-    else if(e.key==="ArrowLeft"&&S.gallery.length&&$("#mprev"))$("#mprev").click();
-    return}
-  if(typing){if(e.key==="Escape")document.activeElement.blur();return}
-  if(e.key==="/"){e.preventDefault();const q=$("#bq");if(q){q.focus();q.scrollIntoView({block:"center"})}}
-  else if(e.key.toLowerCase()==="t")$("#theme").click();
-  else if(e.key.toLowerCase()==="r")load();
-});
-
-load();
-setInterval(()=>{if(D){const u=parseLondon(D.updated,D._year);if(u)$("#livetx").textContent="Updated "+ago(u)}},60000);
-</script>
-</body>
-</html>
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const pill=(t,tone)=>`<span class="pill t-${esc((tone||t).split(" ")[0])}">${esc(t)}</span>`;
+const link=(u,t)=>u?`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a>`:'<span class="small">n/a</span>';
+const table=(cols,rows)=>`<div class="tw"><table><thead><tr>${cols.map(c=>`<th>${esc(c)}</th>`).join("")}</tr></thead><tbody>${rows.map(r=>`<tr>${r.map(c=>`<td>${c}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
+const rowsHtml=a=>`<div class="rows">${a.map(([t,d,s,tone])=>`<div class="row"><div><b>${esc(t)}</b><span class="d">${esc(d)}</span></div>${pill(s,tone)}</div>`).join("")}</div>`;
+function ytEmbed(u){const m=u&&u.match(/(?:shorts\/|v=)([\w-]{6,})/);return m?`https://www.youtube.com/embed/${m[1]}`:null}
+function bars(items){const mx=Math.max(...items.map(i=>i.value),1);return items.map(i=>`<div class="bar"><span>${esc(i.name)}</span><div class="tr"><div class="fi" style="width:${100*i.value/mx}%"></div></div><span class="n">${esc(i.display??i.value)}</span></div>`).join("")}
+function line(pts){const W=1000,H=260,P=34,mx=Math.max(...pts.map(p=>p.v))*1.15,n=pts.length;
+ const x=i=>P+i*(W-2*P)/(n-1),y=v=>H-P-(v/mx)*(H-2*P);
+ const d=pts.map((p,i)=>`${i?"L":"M"}${x(i).toFixed(1)},${y(p.v).toFixed(1)}`).join(" ");
+ const area=d+` L${x(n-1)},${H-P} L${x(0)},${H-P} Z`;
+ const lab=pts.map((p,i)=>i%3===0||i===n-1?`<text x="${x(i)}" y="${H-10}" text-anchor="middle">${new Date(p.date+"T12:00Z").toLocaleDateString("en-GB",{day:"numeric",month:"short"})}</text>`:"").join("");
+ const dots=pts.map((p,i)=>`<circle cx="${x(i)}" cy="${y(p.v)}" r="4" fill="#27ffc3"><title>${p.date}: ${p.v}</title></circle>`).join("");
+ return `<svg viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="Daily store visits"><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#27ffc3" stop-opacity=".35"/><stop offset="1" stop-color="#27ffc3" stop-opacity="0"/></linearGradient></defs>
+ <line x1="${P}" x2="${W-P}" y1="${H-P}" y2="${H-P}" stroke="#252a33"/><path d="${area}" fill="url(#g)"/><path d="${d}" fill="none" stroke="#27ffc3" stroke-width="2.5"/>${dots}${lab}</svg>`}
+function columns(posts){const ch=[["YouTube","yt_views","#27ffc3"],["Facebook","fb_impr","#b46cff"],["X","x_impr","#e8eaed"]];
+ const W=600,H=240,P=30,mx=Math.max(...posts.flatMap(p=>ch.map(c=>p[c[1]])),1)*1.1,gw=(W-2*P)/posts.length,bw=gw/4.5;
+ let s="";posts.forEach((p,i)=>{ch.forEach((c,j)=>{const v=p[c[1]],h=(v/mx)*(H-2*P);s+=`<rect x="${P+i*gw+gw*.12+j*bw*1.1}" y="${H-P-h}" width="${bw}" height="${h}" rx="3" fill="${c[2]}"><title>${c[0]}: ${v}</title></rect>`});s+=`<text x="${P+i*gw+gw/2}" y="${H-10}" text-anchor="middle">${esc(p.short||p.title)}</text>`});
+ return `<svg viewBox="0 0 ${W} ${H}" width="100%">${s}</svg><div class="small">${ch.map(c=>`<span style="color:${c[2]}">&#9632;</span> ${c[0]}`).join(" &nbsp; ")}</div>`}
+fetch("data.json?"+Date.now()).then(r=>r.json()).then(D=>{
+ const pub=D.posts.filter(p=>p.status==="Published");
+ const vidCards=D.posts.map(p=>{const yt=ytEmbed(p.youtube);const media=p.video?`<video controls preload="metadata" playsinline src="${esc(p.video)}"></video>`:yt?`<iframe src="${yt}" loading="lazy" allowfullscreen></iframe>`:"";
+   return media?`<div class="vid">${media}<div class="c"><b>${esc(p.title)}</b><small>${esc(p.when)} London &middot; ${pill(p.status)}</small><div class="lk">${p.youtube?link(p.youtube,"YouTube"):""}${p.facebook?link(p.facebook,"Facebook"):""}${p.x?link(p.x,"X"):""}</div></div></div>`:""}).join("");
+ const batchVids=D.batch.rows.filter(r=>r[6]).map(r=>`<div class="vid"><video controls preload="metadata" playsinline src="${esc(r[6])}"></video><div class="c"><b>${esc(r[3])}</b><small>${esc(r[0])} ${esc(r[1])} London</small></div></div>`).join("");
+ const rv=D.revenue;
+ $("#app").innerHTML=`
+<header><div class="eyebrow">MMM Trading &middot; Marketing, CRM and performance</div><h1>${esc(D.title)}</h1><p class="summary">${esc(D.summary)}</p>
+<div class="meta">Last updated ${esc(D.updated)} &middot; Data as of ${esc(D.data_as_of)}</div>
+<nav>${[["glance","At a glance"],["targets","Targets vs results"],["batch","Next week"],["calendar","Post calendar"],["channels","Channels"],["crm","Pipeline"],["revenue","Revenue"],["backtest","Backtest check"],["approval","Approvals"],["yesterday","How we did yesterday"],["next","Next moves"]].map(([i,t])=>`<a href="#${i}">${t}</a>`).join("")}</nav></header>
+<div class="cards" id="glance">${D.cards.map(c=>`<div class="card ${c.tone||""}"><div class="l">${esc(c.label)}</div><div class="v">${esc(c.value)}</div><div class="s">${esc(c.sub)}</div></div>`).join("")}</div>
+${(()=>{const S=D.scoreboard;if(!S)return"";const f=(v,u)=>u==="$"?"$"+v:u==="%"?v+"%":v;
+return `<section id="targets"><h2>${esc(S.title)}</h2><p class="cap">${esc(S.window)} &middot; day ${S.day} of ${S.days}. ${esc(S.note)}</p>
+<div class="sb">${S.rows.map(r=>`<div class="sbr"><div><b>${esc(r.label)}</b></div><div><div class="k">Target</div><div class="n">${esc(r.target)}</div></div><div><div class="k">Target by today</div><div class="n">${esc(f(r.prorated,r.unit))}</div></div><div><div class="k">Actual</div><div class="n">${esc(f(r.actual,r.unit))}</div></div><div><div class="tr"><div class="fi" style="width:${r.pct}%"></div></div><div class="small">${r.pct}% of target</div></div>${pill(r.status)}</div>`).join("")}</div>
+<div class="grid2" style="margin-top:14px"><div class="panel"><b>By channel (UTM links)</b>${S.channel_note?`<p class="small">${esc(S.channel_note)}</p>`:""}${table(["Channel","Trials","Sales"],S.channels.map(c=>[esc(c.name),c.trials??'<span class="small">no data yet</span>',c.sales??'<span class="small">no data yet</span>']))}</div>
+<div class="panel"><b>Starting point (real data)</b><dl class="props" style="margin-top:8px">${S.baselines.map(b=>`<dt>${esc(b[0])}</dt><dd>${esc(b[1])}</dd>`).join("")}</dl></div></div></section>`})()}
+<section id="batch"><h2>Next week's batch</h2><p class="cap">${esc(D.batch.status)} London time.</p><div class="panel" style="margin-bottom:14px">${esc(D.batch.goals)}</div>
+${table(["Day","London","Type","Title","Channels","Preview"],D.batch.rows.map(r=>[esc(r[0]),esc(r[1]),pill(r[2]),esc(r[3])+(r[6]?` &middot; ${link(r[6],"watch")}`:""),esc(r[4]),`<span class="small">${esc(r[5])}</span>`]))}
+${batchVids?`<div class="vids" style="margin-top:14px">${batchVids}</div>`:""}${rowsHtml(D.batch.notes)}</section>
+<section id="calendar"><h2>Post calendar</h2><p class="cap">London time. Watch each video right here.</p>
+${table(["Post","When","Status","YouTube","Facebook","X"],D.posts.map(p=>[`<b>${esc(p.title)}</b>`,esc(p.when),pill(p.status),link(p.youtube,"Watch"),link(p.facebook,"Watch"),link(p.x,"Open")]))}
+<div class="vids" style="margin-top:14px">${vidCards}</div></section>
+<section id="channels"><h2>Channel performance</h2><p class="cap">YouTube counts views; Facebook and X count impressions. ${D.engagement.likes} likes, ${D.engagement.comments} comments, ${D.engagement.clicks} click so far.</p>
+<div class="grid2"><div class="panel"><b>Total reach by channel</b>${bars(D.channels)}</div><div class="panel"><b>Reach by post</b>${columns(pub)}</div></div>
+<div class="panel" style="margin-top:14px"><b>Daily visits to whop.com/mmmtrading</b><p class="small" style="margin:2px 0 6px">London days. First posts went out 28 Oct.</p>${line(D.visits)}</div></section>
+<section id="crm"><h2>Customer pipeline</h2><p class="cap">Counts from Whop. Members are anonymised because this site is public.</p>
+${table(["Stage","Count","Detail"],D.pipeline.map(r=>[esc(r[0]),`<b>${esc(r[1])}</b>`,`<span class="small">${esc(r[2])}</span>`]))}${rowsHtml(D.watchlist)}</section>
+<section id="revenue"><h2>Revenue this week vs last</h2><p class="cap">Succeeded Whop payments in USD, London weeks.</p>
+<div class="grid2"><div class="panel">${bars([{name:rv.last_week.label,value:rv.last_week.usd,display:"$"+rv.last_week.usd.toFixed(2)},{name:rv.this_week.label,value:rv.this_week.usd,display:"$"+rv.this_week.usd.toFixed(2)}])}</div>
+<div class="panel"><dl class="props"><dt>Change</dt><dd>${esc(rv.change)}</dd><dt>Renewals</dt><dd>${rv.this_week.renewals} vs ${rv.last_week.renewals}</dd><dt>Not collected this week</dt><dd style="color:var(--bad)">$${rv.not_collected}</dd>${rv.failed.map(f=>`<dt>Failed ${esc(f.date)}</dt><dd>${esc(f.product)} $${f.usd} (${esc(f.reason)})</dd>`).join("")}</dl></div></div></section>
+<section id="backtest"><h2>Backtest check</h2><p class="cap">${esc(D.backtest.caption)}</p>
+${table(["Stat","Claimed","Recomputed","Verdict"],D.backtest.rows.map(r=>[esc(r[0]),esc(r[1]),esc(r[2]),pill(r[3])]))}<p class="small">${esc(D.backtest.note)}</p></section>
+<section id="approval"><h2>Approvals and status</h2>${rowsHtml(D.approvals)}</section>
+<section id="yesterday"><h2>How we did yesterday</h2><p class="cap">Daily report, newest day on top, last 7 days. Counts only.</p>${(D.daily_reports||[]).map((d,i)=>`<details class="panel" ${i==0?"open":""} style="margin-bottom:12px"><summary><b>${esc(d.label)}</b> &middot; <span style="color:var(--${d.tone=="bad"?"bad":"good"})">${esc(d.verdict)}</span></summary><p>${esc(d.verdict_why)}</p>${d.channels.map(c=>`<h3>${esc(c.name)} <span class="small">(${esc(c.metric)}; 7-day average ${c.avg.views} ${esc(c.metric)}, ${c.avg.likes} likes, ${c.avg.comments} comments${c.avg.clicks==null?"":", "+c.avg.clicks+" clicks"}${c.avg_note?"; "+esc(c.avg_note):""})</span></h3>`+table(["Time","Post",c.metric,"Likes","Comments","Clicks"],c.posts.map(p=>[esc(p[0]),esc(p[1]),`<b>${p[2]}</b>`,p[3],p[4],p[5]==null?"n/a":p[5]]))).join("")}<dl class="props"><dt>Best</dt><dd>${esc(d.best)}</dd><dt>Worst</dt><dd>${esc(d.worst)}</dd><dt>Followers</dt><dd>${esc(d.followers)}</dd><dt>Whop</dt><dd>${esc(d.whop)}</dd></dl><p><b>What we learned</b></p><ul>${d.learned.map(x=>`<li>${esc(x)}</li>`).join("")}</ul><p><b>Improvements</b></p><ol class="moves">${d.suggestions.map(x=>`<li>${esc(x)}</li>`).join("")}</ol><p class="small">${esc(d.source)}</p></details>`).join("")||'<p class="small">No report yet.</p>'}</section>
+<section id="next"><h2>Next moves</h2><ol class="moves">${D.next_moves.map(m=>`<li>${esc(m)}</li>`).join("")}</ol></section>
+<footer>${esc(D.footer)}<br>${link(D.links.site,"maxmaserati.com")} &middot; ${link(D.links.whop,"Whop")} &middot; ${link(D.links.x,"@Emaxmaserati")}</footer>`;
+}).catch(e=>{$("#app").innerHTML=`<p class="err">Could not load data.json: ${esc(e)}</p>`});
+</script></body></html>
