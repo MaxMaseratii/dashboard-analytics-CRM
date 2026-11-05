@@ -1,18 +1,18 @@
 {
  "title": "MMM Marketing Hub",
- "summary": "Reach is building, but no new money yet: $149.99 a month was lost or at risk on two failed cards.",
- "updated": "Wed 4 Nov 2026, 07:41 London",
- "data_as_of": "2026-11-04 ~07:45 London",
+ "summary": "Reach is up to 2,614 views, led by a 1,013-view YouTube Short. Whop numbers are from 4 Nov (connector needs reconnect). Perfect Entry $70 retry of 5 Nov ~02:13 London is unverified.",
+ "updated": "Thu 5 Nov 2026, 07:43 London",
+ "data_as_of": "2026-11-05 ~07:45 London",
  "cards": [
   {
    "label": "Reach",
-   "value": "2325",
-   "sub": "views: YouTube 1722, X 461, Facebook 142"
+   "value": "2614",
+   "sub": "views: YouTube 1838, X 599, Facebook 177"
   },
   {
    "label": "Best post",
    "value": "Three engines (2nd YouTube upload)",
-   "sub": "1008 YouTube views, 2 likes"
+   "sub": "1013 YouTube views, 2 likes"
   },
   {
    "label": "Revenue this week",
@@ -315,8 +315,8 @@
    "facebook": "https://www.facebook.com/reel/1840195467052746/",
    "x": "https://x.com/188479184/status/2115499113038962776",
    "video": null,
-   "yt_views": 41,
-   "fb_impr": 14,
+   "yt_views": 44,
+   "fb_impr": 15,
    "x_impr": 46,
    "likes": 3,
    "comments": 1
@@ -330,9 +330,9 @@
    "facebook": "https://www.facebook.com/reel/29159893800308621/",
    "x": "https://x.com/188479184/status/2115499852901597306",
    "video": null,
-   "yt_views": 44,
+   "yt_views": 45,
    "fb_impr": 35,
-   "x_impr": 80,
+   "x_impr": 83,
    "likes": 4,
    "comments": 1
   },
@@ -345,8 +345,8 @@
    "facebook": "https://www.facebook.com/reel/1160869083039117/",
    "x": "https://x.com/188479184/status/2116135246798209133",
    "video": null,
-   "yt_views": 128,
-   "fb_impr": 53,
+   "yt_views": 130,
+   "fb_impr": 56,
    "x_impr": 43,
    "likes": 10,
    "comments": 0
@@ -360,9 +360,9 @@
    "facebook": "https://www.facebook.com/reel/1112948778379997/",
    "x": "https://x.com/188479184/status/2116583682559365307",
    "video": null,
-   "yt_views": 70,
+   "yt_views": 71,
    "fb_impr": 5,
-   "x_impr": 60,
+   "x_impr": 67,
    "likes": 2,
    "comments": 0
   },
@@ -390,7 +390,7 @@
    "facebook": "https://www.facebook.com/reel/1127837103328588/",
    "x": null,
    "video": null,
-   "yt_views": 132,
+   "yt_views": 136,
    "fb_impr": 8,
    "x_impr": 0,
    "likes": 3,
@@ -405,9 +405,9 @@
    "facebook": "https://www.facebook.com/reel/2235498363675133/",
    "x": "https://x.com/188479184/status/2117014087888482402",
    "video": null,
-   "yt_views": 104,
-   "fb_impr": 12,
-   "x_impr": 50,
+   "yt_views": 122,
+   "fb_impr": 14,
+   "x_impr": 60,
    "likes": 5,
    "comments": 2
   },
@@ -420,7 +420,7 @@
    "facebook": null,
    "x": null,
    "video": null,
-   "yt_views": 1008,
+   "yt_views": 1013,
    "fb_impr": 0,
    "x_impr": 0,
    "likes": 2,
@@ -437,7 +437,7 @@
    "video": null,
    "yt_views": 0,
    "fb_impr": 0,
-   "x_impr": 26,
+   "x_impr": 27,
    "likes": 0,
    "comments": 0
   },
@@ -450,10 +450,10 @@
    "facebook": "https://www.facebook.com/reel/1617417653732198/",
    "x": null,
    "video": null,
-   "yt_views": 162,
-   "fb_impr": 4,
+   "yt_views": 167,
+   "fb_impr": 5,
    "x_impr": 0,
-   "likes": 4,
+   "likes": 5,
    "comments": 1
   },
   {
@@ -467,7 +467,7 @@
    "video": null,
    "yt_views": 0,
    "fb_impr": 0,
-   "x_impr": 23,
+   "x_impr": 25,
    "likes": 0,
    "comments": 0
   },
@@ -480,10 +480,10 @@
    "facebook": "https://www.facebook.com/reel/2196931510885940/",
    "x": "https://x.com/188479184/status/2117368870193221802",
    "video": null,
-   "yt_views": 33,
-   "fb_impr": 5,
-   "x_impr": 30,
-   "likes": 2,
+   "yt_views": 52,
+   "fb_impr": 9,
+   "x_impr": 45,
+   "likes": 3,
    "comments": 1
   },
   {
@@ -496,9 +496,9 @@
    "x": "https://x.com/188479184/status/2117377238353989829",
    "video": null,
    "yt_views": 0,
-   "fb_impr": 6,
-   "x_impr": 23,
-   "likes": 0,
+   "fb_impr": 8,
+   "x_impr": 29,
+   "likes": 1,
    "comments": 0
   },
   {
@@ -511,8 +511,8 @@
    "x": "https://x.com/188479184/status/2117542591331758307",
    "video": null,
    "yt_views": 0,
-   "fb_impr": 0,
-   "x_impr": 10,
+   "fb_impr": 1,
+   "x_impr": 21,
    "likes": 0,
    "comments": 0
   },
@@ -525,11 +525,11 @@
    "facebook": "https://www.facebook.com/reel/1451653920475477/",
    "x": null,
    "video": null,
-   "yt_views": 0,
-   "fb_impr": 0,
+   "yt_views": 17,
+   "fb_impr": 10,
    "x_impr": 0,
-   "likes": 0,
-   "comments": 0
+   "likes": 1,
+   "comments": 1
   },
   {
    "title": "Gap rule check",
@@ -541,8 +541,8 @@
    "x": "https://x.com/188479184/status/2117678818416545904",
    "video": null,
    "yt_views": 0,
-   "fb_impr": 0,
-   "x_impr": 0,
+   "fb_impr": 7,
+   "x_impr": 21,
    "likes": 0,
    "comments": 0
   },
@@ -557,7 +557,7 @@
    "video": null,
    "yt_views": 0,
    "fb_impr": 0,
-   "x_impr": 0,
+   "x_impr": 18,
    "likes": 0,
    "comments": 0
   },
@@ -570,6 +570,36 @@
    "facebook": "https://www.facebook.com/reel/1112004424882999/",
    "x": "https://x.com/188479184/status/2117731326736441713",
    "video": null,
+   "yt_views": 41,
+   "fb_impr": 4,
+   "x_impr": 34,
+   "likes": 2,
+   "comments": 1
+  },
+  {
+   "title": "5m BuBC- back to 50% first 70%",
+   "short": "5m BuBC-",
+   "when": "Wed 4 Nov 09:00",
+   "status": "Published",
+   "youtube": null,
+   "facebook": "https://www.facebook.com/122230347332509369/posts/122231384246509369",
+   "x": "https://x.com/188479184/status/2117905147900665965",
+   "video": null,
+   "yt_views": 0,
+   "fb_impr": 0,
+   "x_impr": 10,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "title": "#13 Most runs are two candles long",
+   "short": "Two BCs",
+   "when": "Wed 4 Nov 13:30",
+   "status": "Published",
+   "youtube": "https://www.youtube.com/shorts/7r2uGuGYxIM",
+   "facebook": "https://www.facebook.com/reel/2234552330437473/",
+   "x": null,
+   "video": null,
    "yt_views": 0,
    "fb_impr": 0,
    "x_impr": 0,
@@ -577,10 +607,130 @@
    "comments": 0
   },
   {
-   "title": "News rule (NFP)",
+   "title": "Spot the Candle #2",
+   "short": "Spot #2",
+   "when": "Wed 4 Nov 18:00",
+   "status": "Published",
+   "youtube": null,
+   "facebook": "https://www.facebook.com/122230347332509369/posts/122231427398509369",
+   "x": "https://x.com/188479184/status/2118041316613316789",
+   "video": null,
+   "yt_views": 0,
+   "fb_impr": 0,
+   "x_impr": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "title": "#14 When a day closes strong",
+   "short": "Strong day",
+   "when": "Wed 4 Nov 21:30",
+   "status": "Published",
+   "youtube": "https://www.youtube.com/shorts/j6WHnnuX7ac",
+   "facebook": "https://www.facebook.com/reel/1554869393142011/",
+   "x": "https://x.com/188479184/status/2118093709010993604",
+   "video": null,
+   "yt_views": 0,
+   "fb_impr": 0,
+   "x_impr": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "title": "09:30 BC+ next TGT 85%",
+   "when": "Thu 5 Nov 09:00",
+   "status": "Scheduled",
+   "video": null,
+   "youtube": null,
+   "facebook": null,
+   "x": null
+  },
+  {
+   "title": "#15 Right lean, still red at 10:30?",
+   "when": "Thu 5 Nov 13:30",
+   "status": "Scheduled",
+   "video": "https://assets-2-prod.whop.com/public/uploads/2026-10-31/7585f791-54bc-4396-9478-3024ece1a69d/video.mp4",
+   "youtube": null,
+   "facebook": null,
+   "x": null
+  },
+  {
+   "title": "Down 30 at 10:15 poll",
+   "when": "Thu 5 Nov 18:00",
+   "status": "Scheduled",
+   "video": null,
+   "youtube": null,
+   "facebook": null,
+   "x": null
+  },
+  {
+   "title": "Spot the Candle #2 answer",
+   "when": "Thu 5 Nov 18:05",
+   "status": "Scheduled",
+   "video": null,
+   "youtube": null,
+   "facebook": null,
+   "x": null
+  },
+  {
+   "title": "#8 News rule (NFP)",
    "when": "Thu 5 Nov 21:30",
    "status": "Scheduled",
    "video": "https://assets-2-prod.whop.com/public/uploads/2026-10-31/71ab3f21-3392-4031-8684-3f94de8cccf9/video.mp4",
+   "youtube": null,
+   "facebook": null,
+   "x": null
+  },
+  {
+   "title": "15m BuC2+ took the high 80%",
+   "when": "Fri 6 Nov 09:00",
+   "status": "Scheduled",
+   "video": null,
+   "youtube": null,
+   "facebook": null,
+   "x": null
+  },
+  {
+   "title": "#16 Demand vs Offer on the way down",
+   "when": "Fri 6 Nov 12:00",
+   "status": "Scheduled",
+   "video": "https://assets-2-prod.whop.com/public/uploads/2026-10-31/14ea3544-8009-488b-a859-02fbc511cde9/video.mp4",
+   "youtube": null,
+   "facebook": null,
+   "x": null
+  },
+  {
+   "title": "Spot the Candle #3",
+   "when": "Fri 6 Nov 18:00",
+   "status": "Scheduled",
+   "video": null,
+   "youtube": null,
+   "facebook": null,
+   "x": null
+  },
+  {
+   "title": "#17 One 4-hour candle can set your morning",
+   "when": "Fri 6 Nov 21:30",
+   "status": "Scheduled",
+   "video": "https://assets-2-prod.whop.com/public/uploads/2026-10-31/3dd12c70-1b8d-424c-b340-82570793d57f/video.mp4",
+   "youtube": null,
+   "facebook": null,
+   "x": null
+  },
+  {
+   "title": "Weekly prompt",
+   "when": "Sat 7 Nov 18:00",
+   "status": "Scheduled",
+   "video": null,
+   "youtube": null,
+   "facebook": null,
+   "x": null
+  },
+  {
+   "title": "Spot the Candle #3 answer",
+   "when": "Sat 7 Nov 18:05",
+   "status": "Scheduled",
+   "video": null,
    "youtube": null,
    "facebook": null,
    "x": null
@@ -589,23 +739,23 @@
  "channels": [
   {
    "name": "YouTube",
-   "value": 1722,
+   "value": 1838,
    "meta": "views"
   },
   {
    "name": "X",
-   "value": 461,
+   "value": 599,
    "meta": "impressions"
   },
   {
    "name": "Facebook",
-   "value": 142,
+   "value": 177,
    "meta": "impressions"
   }
  ],
  "engagement": {
-  "likes": 36,
-  "comments": 8,
+  "likes": 43,
+  "comments": 10,
   "clicks": 5
  },
  "visits": [
@@ -774,7 +924,7 @@
  "scoreboard": {
   "title": "Targets vs results",
   "window": "1 to 30 Nov 2026",
-  "day": 4,
+  "day": 5,
   "days": 30,
   "note": "These are targets we are aiming for, not forecasts. Actuals come from Whop (read-only) and are counts only. Wise payers on 100% codes count as paid.",
   "baselines": [
@@ -799,7 +949,7 @@
    {
     "label": "Whop page visits",
     "target": "1,000+",
-    "prorated": 133.3,
+    "prorated": 166.7,
     "actual": 49,
     "unit": "",
     "pct": 5,
@@ -808,7 +958,7 @@
    {
     "label": "Free Master Class sign-ups",
     "target": "30 (target)",
-    "prorated": 4.0,
+    "prorated": 5.0,
     "actual": 0,
     "unit": "",
     "pct": 0,
@@ -817,7 +967,7 @@
    {
     "label": "Pro trials started",
     "target": "5 to 10",
-    "prorated": 0.7,
+    "prorated": 0.8,
     "actual": 1,
     "unit": "",
     "pct": 20,
@@ -844,7 +994,7 @@
    {
     "label": "Added recurring revenue",
     "target": "+$160 to $240 a month",
-    "prorated": 21.3,
+    "prorated": 26.7,
     "actual": 0,
     "unit": "$",
     "pct": 0,
