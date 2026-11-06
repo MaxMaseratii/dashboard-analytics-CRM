@@ -1,8 +1,8 @@
 {
  "title": "MMM Marketing Hub",
  "summary": "Reach is up to 2,614 views, led by a 1,013-view YouTube Short. Whop numbers are from 4 Nov (connector needs reconnect). Perfect Entry $70 retry of 5 Nov ~02:13 London is unverified.",
- "updated": "Thu 5 Nov 2026, 16:09 London",
- "data_as_of": "2026-11-05 ~07:45 London",
+ "updated": "Fri 6 Nov 2026, 07:34 London",
+ "data_as_of": "2026-11-06 ~07:40 London",
  "cards": [
   {
    "label": "Reach",
@@ -924,7 +924,7 @@
  "scoreboard": {
   "title": "Targets vs results",
   "window": "1 to 30 Nov 2026",
-  "day": 5,
+  "day": 6,
   "days": 30,
   "note": "These are targets we are aiming for, not forecasts. Actuals come from Whop (read-only) and are counts only. Wise payers on 100% codes count as paid.",
   "baselines": [
@@ -949,7 +949,7 @@
    {
     "label": "Whop page visits",
     "target": "1,000+",
-    "prorated": 166.7,
+    "prorated": 200.0,
     "actual": 49,
     "unit": "",
     "pct": 5,
@@ -958,7 +958,7 @@
    {
     "label": "Free Master Class sign-ups",
     "target": "30 (target)",
-    "prorated": 5.0,
+    "prorated": 6.0,
     "actual": 0,
     "unit": "",
     "pct": 0,
@@ -967,11 +967,11 @@
    {
     "label": "Pro trials started",
     "target": "5 to 10",
-    "prorated": 0.8,
+    "prorated": 1.0,
     "actual": 1,
     "unit": "",
     "pct": 20,
-    "status": "Ahead"
+    "status": "On track"
    },
    {
     "label": "Trial to paid",
@@ -985,7 +985,7 @@
    {
     "label": "New paying members",
     "target": "2 to 3",
-    "prorated": 0.3,
+    "prorated": 0.4,
     "actual": 0,
     "unit": "",
     "pct": 0,
@@ -994,7 +994,7 @@
    {
     "label": "Added recurring revenue",
     "target": "+$160 to $240 a month",
-    "prorated": 26.7,
+    "prorated": 32.0,
     "actual": 0,
     "unit": "$",
     "pct": 0,
@@ -1133,6 +1133,129 @@
  },
  "footer": "Education only. Not financial advice. Hypothetical results based on past data. Past results don't guarantee future results.",
  "daily_reports": [
+  {
+   "date": "2026-11-05",
+   "label": "Thu 5 Nov 2026 (London)",
+   "source": "Buffer read 6 Nov ~07:35 London. Buffer had not yet refreshed numbers for any of the 8 posts sent 5 Nov (all show 0, last refreshed minutes after each post went out), so per-post results are not available yet.",
+   "verdict": "Not enough data yet",
+   "tone": "warn",
+   "verdict_why": "No real per-post numbers for 5 Nov yet, and Whop is not connected, so there is no fair verdict against the Targets vs results pace. Last known pace is still behind: 49 Whop visits since 1 Nov and 0 new paying members (Whop data from 4 Nov).",
+   "channels": [
+    {
+     "name": "X",
+     "metric": "impressions",
+     "posts": [
+      [
+       "09:00",
+       "When the 09:30 5m candle was a BC+",
+       "not yet",
+       "not yet",
+       "not yet",
+       "not yet"
+      ],
+      [
+       "18:05",
+       "Spot the Candle #2 answer",
+       "not yet",
+       "not yet",
+       "not yet",
+       "not yet"
+      ],
+      [
+       "21:30",
+       "Tomorrow I'm not trading (NFP)",
+       "not yet",
+       "not yet",
+       "not yet",
+       "not yet"
+      ]
+     ],
+     "avg": {
+      "views": 38.3,
+      "likes": 0.1,
+      "comments": 0.0,
+      "clicks": 0.0
+     },
+     "avg_note": "average carried from the 4 Nov report"
+    },
+    {
+     "name": "YouTube",
+     "metric": "views",
+     "posts": [
+      [
+       "13:30",
+       "Right lean, still red at 10:30?",
+       "not yet",
+       "not yet",
+       "not yet",
+       "not yet"
+      ]
+     ],
+     "avg": {
+      "views": 194.3,
+      "likes": 2.7,
+      "comments": 0.9,
+      "clicks": null
+     },
+     "avg_note": "average carried from the 4 Nov report"
+    },
+    {
+     "name": "Facebook",
+     "metric": "impressions",
+     "posts": [
+      [
+       "09:00",
+       "The first 5 minutes of New York",
+       "not yet",
+       "not yet",
+       "not yet",
+       "not yet"
+      ],
+      [
+       "13:30",
+       "Right lean, still red at 10:30?",
+       "not yet",
+       "not yet",
+       "not yet",
+       "not yet"
+      ],
+      [
+       "18:00",
+       "Down 30 at 10:15 poll",
+       "not yet",
+       "not yet",
+       "not yet",
+       "not yet"
+      ],
+      [
+       "18:05",
+       "Spot the Candle #2 answer",
+       "not yet",
+       "not yet",
+       "not yet",
+       "not yet"
+      ]
+     ],
+     "avg": {
+      "views": 11.5,
+      "likes": 0.9,
+      "comments": 0.0,
+      "clicks": 0.0
+     },
+     "avg_note": "average carried from the 4 Nov report"
+    }
+   ],
+   "best": "Not available yet: Buffer has no refreshed numbers for 5 Nov posts.",
+   "worst": "Not available yet: Buffer has no refreshed numbers for 5 Nov posts.",
+   "followers": "X followers 550, flat vs 5 Nov. YouTube subscribers: no fresh read (last stored 608).",
+   "whop": "Whop not connected. Last known (4 Nov): 49 store visits since 1 Nov, 1 trial, 0 new paid, 20 paid members.",
+   "learned": [],
+   "suggestions": [
+    "Reconnect Whop so visits, trials and paid members can be scored again.",
+    "Today is NFP: keep the no-trade-around-news message as the lead and avoid adding new posts in the release window.",
+    "Check the 5 Nov posts again in tomorrow's report once Buffer refreshes their numbers."
+   ]
+  },
   {
    "date": "2026-11-04",
    "label": "Wed 4 Nov 2026 (London)",
