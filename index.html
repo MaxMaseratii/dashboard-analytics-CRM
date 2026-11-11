@@ -75,7 +75,7 @@ fetch("data.json?"+Date.now()).then(r=>r.json()).then(D=>{
  $("#app").innerHTML=`
 <header><div class="eyebrow">MMM Trading &middot; Marketing, CRM and performance</div><h1>${esc(D.title)}</h1><p class="summary">${esc(D.summary)}</p>
 <div class="meta">Last updated ${esc(D.updated)} &middot; Data as of ${esc(D.data_as_of)}</div>
-<nav>${[["glance","At a glance"],["targets","Targets vs results"],["batch","Next week"],["calendar","Post calendar"],["channels","Channels"],["crm","Pipeline"],["revenue","Revenue"],["backtest","Backtest check"],["approval","Approvals"],["yesterday","How we did yesterday"],["next","Next moves"]].map(([i,t])=>`<a href="#${i}">${t}</a>`).join("")}</nav></header>
+<nav>${[["glance","At a glance"],["targets","Targets vs results"],["batch","Next week"],["calendar","Post calendar"],["channels","Channels"],["crm","Pipeline"],["revenue","Revenue"],["backtest","Backtest check"],["approval","Approvals"],["yesterday","How we did yesterday"],["next","Next moves"]].map(([i,t])=>`<a href="#${i}">${t}</a>`).join("")}<a href="prop-plans.html">Prop firm plans</a></nav></header>
 <div class="cards" id="glance">${D.cards.map(c=>`<div class="card ${c.tone||""}"><div class="l">${esc(c.label)}</div><div class="v">${esc(c.value)}</div><div class="s">${esc(c.sub)}</div></div>`).join("")}</div>
 ${(()=>{const S=D.scoreboard;if(!S)return"";const f=(v,u)=>u==="$"?"$"+v:u==="%"?v+"%":v;
 return `<section id="targets"><h2>${esc(S.title)}</h2><p class="cap">${esc(S.window)} &middot; day ${S.day} of ${S.days}. ${esc(S.note)}</p>
