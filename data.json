@@ -1,13 +1,13 @@
 {
  "title": "MMM Marketing Hub",
  "summary": "Reach is 4,301 views across all posts (YouTube 2,369, X 1,542, Facebook 390). Whop had 15 store visits on 11 Nov and 385 since 1 Nov. 6 Pro trials since 1 Nov, 1 new paid member (the 1 Nov 100% promo trial, moved to paid on 8 Nov). No new trial, sign-up or payment on 11 Nov. Whop MRR is flat at 2,007.54 on 12 Nov (2,147.54 on 9 Nov) after the Perfect Entry membership was canceled on 10 Nov and a paid Perfect Entry member set theirs to cancel on 13 Nov. One trial ends within 48 hours: Fri 13 Nov 20:35.",
- "updated": "Thu 12 Nov 2026, 07:35 London",
- "data_as_of": "2026-11-12 ~07:45 London",
+ "updated": "Fri 13 Nov 2026, 07:35 London",
+ "data_as_of": "2026-11-13 ~07:35 London",
  "cards": [
   {
    "label": "Reach",
-   "value": "4301",
-   "sub": "views: YouTube 2369, X 1542, Facebook 390"
+   "value": "4437",
+   "sub": "views: YouTube 2397, X 1639, Facebook 401"
   },
   {
    "label": "Best post",
@@ -31,7 +31,7 @@
   },
   {
    "label": "Followers",
-   "value": "556 / 618",
+   "value": "554 / 619",
    "sub": "X followers / YouTube subscribers"
   }
  ],
@@ -969,7 +969,7 @@
    "x": null,
    "video": null,
    "yt_views": 21,
-   "fb_impr": 8,
+   "fb_impr": 10,
    "x_impr": 0,
    "likes": 2,
    "comments": 0
@@ -983,8 +983,8 @@
    "facebook": "https://www.facebook.com/reel/1395359342676585/",
    "x": null,
    "video": null,
-   "yt_views": 7,
-   "fb_impr": 1,
+   "yt_views": 10,
+   "fb_impr": 2,
    "x_impr": 0,
    "likes": 0,
    "comments": 0
@@ -999,8 +999,8 @@
    "x": "https://x.com/188479184/status/2120578845929541687",
    "video": null,
    "yt_views": 0,
-   "fb_impr": 4,
-   "x_impr": 23,
+   "fb_impr": 8,
+   "x_impr": 28,
    "likes": 0,
    "comments": 0
   },
@@ -1013,59 +1013,92 @@
    "facebook": "https://www.facebook.com/reel/1131958086484125/",
    "x": "https://x.com/188479184/status/2120630346043592799",
    "video": null,
-   "yt_views": 10,
-   "fb_impr": 1,
-   "x_impr": 40,
+   "yt_views": 19,
+   "fb_impr": 3,
+   "x_impr": 87,
    "likes": 1,
    "comments": 0
   },
   {
-   "title": "70.6% reached +0.5R (YouTube, Facebook)",
+   "title": "When the third candle fades the high",
+   "short": "Third candle fades",
    "when": "Thu 12 Nov 13:30",
-   "status": "Scheduled",
+   "status": "Published",
+   "youtube": "https://www.youtube.com/shorts/fES0uVCugcY",
+   "facebook": "https://www.facebook.com/reel/2037143390284705/",
+   "x": null,
    "video": null,
-   "youtube": null,
-   "facebook": null,
-   "x": null
+   "yt_views": 7,
+   "fb_impr": 2,
+   "x_impr": 0,
+   "likes": 1,
+   "comments": 0
   },
   {
-   "title": "Spot the Candle #5 answer (Facebook)",
-   "when": "Thu 12 Nov 18:00",
-   "status": "Scheduled",
-   "video": null,
+   "title": "Spot the Candle #5 answer",
+   "short": "Spot #5 answer",
+   "when": "Thu 12 Nov 18:03",
+   "status": "Published",
    "youtube": null,
-   "facebook": null,
-   "x": null
+   "facebook": "https://www.facebook.com/122230347332509369/posts/122232227228509369",
+   "x": null,
+   "video": null,
+   "yt_views": 0,
+   "fb_impr": 0,
+   "x_impr": 0,
+   "likes": 0,
+   "comments": 0
   },
   {
-   "title": "Gamma reel (Facebook)",
-   "when": "Sat 14 Nov 15:00",
-   "status": "Scheduled",
+   "title": "A higher win rate was not a stronger result",
+   "short": "Higher win rate",
+   "when": "Thu 12 Nov 21:30",
+   "status": "Published",
+   "youtube": "https://www.youtube.com/shorts/htrGJ32HSCc",
+   "facebook": "https://www.facebook.com/reel/1431584608606056/",
+   "x": "https://x.com/188479184/status/2120992695799676946",
    "video": null,
-   "youtube": null,
-   "facebook": null,
-   "x": null
+   "yt_views": 5,
+   "fb_impr": 0,
+   "x_impr": 27,
+   "likes": 3,
+   "comments": 0
+  },
+  {
+   "title": "No Analysis. No Revenge Trades. Just Follow the Plan.",
+   "short": "Follow the plan",
+   "when": "Fri 13 Nov 00:41",
+   "status": "Published",
+   "youtube": "https://www.youtube.com/shorts/UC-ZQGbNes0",
+   "facebook": "https://www.facebook.com/reel/2272415300283186/",
+   "x": "https://x.com/188479184/status/2121040841040892365",
+   "video": null,
+   "yt_views": 4,
+   "fb_impr": 0,
+   "x_impr": 18,
+   "likes": 1,
+   "comments": 0
   }
  ],
  "channels": [
   {
    "name": "YouTube",
-   "value": 2369,
+   "value": 2397,
    "meta": "views"
   },
   {
    "name": "X",
-   "value": 1542,
+   "value": 1639,
    "meta": "impressions"
   },
   {
    "name": "Facebook",
-   "value": 390,
+   "value": 401,
    "meta": "impressions"
   }
  ],
  "engagement": {
-  "likes": 84,
+  "likes": 89,
   "comments": 19,
   "clicks": 11
  },
@@ -1177,23 +1210,27 @@
   {
    "date": "2026-11-11",
    "v": 15
+  },
+  {
+   "date": "2026-11-12",
+   "v": 11
   }
  ],
  "pipeline": [
   [
    "Free sign-ups (since 1 Nov)",
    "4",
-   "Free Mastery claims on 1, 6, 8 and 9 Nov; Free Master Class sign-ups 0 (173 all time); none on 10 or 11 Nov"
+   "Free Mastery claims on 1, 6, 8 and 9 Nov; Free Master Class sign-ups 0 (173 all time); none since 9 Nov"
   ],
   [
    "New trials (since 1 Nov)",
-   "8",
-   "6 MMM Pro (1 Nov 100% promo, 4 Nov promo code, 7 Nov x2, 8 Nov x2), Perfect Entry 6 Nov, MMM 7 Nov; none on 9, 10 or 11 Nov"
+   "9",
+   "7 MMM Pro (1 Nov 100% promo, 4 Nov promo code, 7 Nov x2, 8 Nov x2, 12 Nov), Perfect Entry 6 Nov, MMM 7 Nov; none on 9, 10 or 11 Nov"
   ],
   [
    "Trial ending within 48 hours",
-   "1",
-   "Perfect Entry trial ends Fri 13 Nov 20:35 (about 37 hours from 12 Nov 07:45). Next: two Pro trials Sat 14 Nov, two Pro trials Sun 15 Nov"
+   "3",
+   "Perfect Entry trial ends Fri 13 Nov 20:35 (about 13 hours from 13 Nov 07:35) and two Pro trials end Sat 14 Nov (15:24, 19:35). Next: two Pro trials Sun 15 Nov, one Thu 19 Nov"
   ],
   [
    "Trial moved to paid",
@@ -1208,7 +1245,7 @@
   [
    "Paid active",
    "20",
-   "Whop count flat at 20 since 17 Oct; MRR 2,007.54 on 10, 11 and 12 Nov (2,077.54 on 10 Nov before, 2,147.54 on 9 Nov) after a paid member set to cancel on 13 Nov"
+   "Whop count flat at 20 since 17 Oct; MRR 2,007.54 on 11, 12 and 13 Nov (2,147.54 on 9 Nov, 2,077.54 on 10 Nov) after a paid member set to cancel on 13 Nov"
   ],
   [
    "Blocked checkouts (4 Nov)",
@@ -1246,15 +1283,15 @@
    "warning"
   ],
   [
-   "Trialists, MMM Pro (4)",
-   "Four Pro trials from 7 and 8 Nov end between Sat 14 and Sun 15 Nov. Welcome or trial-ending note needs Max's approval and a send path.",
+   "Trialists, MMM Pro (5)",
+   "Five Pro trials end between Sat 14 and Thu 19 Nov (two on 14 Nov, two on 15 Nov, one on 19 Nov). Welcome or trial-ending note needs Max's approval and a send path.",
    "Watch",
    "warning"
   ]
  ],
  "revenue": {
   "this_week": {
-   "label": "8 to 12 Nov (so far)",
+   "label": "8 to 13 Nov (so far)",
    "usd": 0.0,
    "renewals": 0
   },
@@ -1277,7 +1314,7 @@
  "scoreboard": {
   "title": "Targets vs results",
   "window": "1 to 30 Nov 2026",
-  "day": 12,
+  "day": 13,
   "days": 30,
   "note": "These are targets we are aiming for, not forecasts. Actuals come from Whop (read-only) and are counts only. Wise payers on 100% codes count as paid.",
   "baselines": [
@@ -1302,16 +1339,16 @@
    {
     "label": "Whop page visits",
     "target": "1,000+",
-    "prorated": 400.0,
-    "actual": 385,
+    "prorated": 433.3,
+    "actual": 396,
     "unit": "",
-    "pct": 38,
+    "pct": 40,
     "status": "On track"
    },
    {
     "label": "Free Master Class sign-ups",
     "target": "30 (target)",
-    "prorated": 12.0,
+    "prorated": 13.0,
     "actual": 0,
     "unit": "",
     "pct": 0,
@@ -1320,8 +1357,8 @@
    {
     "label": "Pro trials started",
     "target": "5 to 10",
-    "prorated": 2.0,
-    "actual": 6,
+    "prorated": 2.2,
+    "actual": 7,
     "unit": "",
     "pct": 100,
     "status": "Ahead"
@@ -1338,16 +1375,16 @@
    {
     "label": "New paying members",
     "target": "2 to 3",
-    "prorated": 0.8,
+    "prorated": 0.9,
     "actual": 1,
     "unit": "",
     "pct": 50,
-    "status": "Ahead"
+    "status": "On track"
    },
    {
     "label": "Added recurring revenue",
     "target": "+$160 to $240 a month",
-    "prorated": 64.0,
+    "prorated": 69.3,
     "actual": -4.25,
     "unit": "$",
     "pct": 0,
@@ -1478,11 +1515,11 @@
   ]
  ],
  "next_moves": [
-  "Swap the 11 Nov 09:00 X and Facebook stat cards (87% daily BuBC+) for a chart-first question, as asked on 10 Nov (needs Max's OK).",
   "Prepare trial-ending notes for the Perfect Entry trial ending Fri 13 Nov and the Pro trials ending 14 and 15 Nov (needs Max's OK).",
   "Put tagged Whop links (youtube, x, facebook) in every caption and bio so trials and visit spikes can be traced.",
   "Lead videos with a plain myth or question, like \"One wick is not a body close\", not a percentage pair like \"0.3% vs 48%\" (5 YouTube views).",
-  "Check why the X copy of the Spot the Candle #4 answer (18:00 on 10 Nov) is missing from Buffer's sent list."
+  "Check why the X copy of the Spot the Candle #4 answer (18:00 on 10 Nov) is missing from Buffer's sent list.",
+  "Queue the next days of posts in Buffer: nothing is scheduled after the 13 Nov promo posts (needs Max's OK)."
  ],
  "links": {
   "site": "https://www.maxmaserati.com",
@@ -1491,6 +1528,117 @@
  },
  "footer": "Education only. Not financial advice. Hypothetical results based on past data. Past results don't guarantee future results.",
  "daily_reports": [
+  {
+   "date": "2026-11-12",
+   "label": "Thu 12 Nov 2026 (London)",
+   "source": "Buffer read 13 Nov ~07:30 London (X and Facebook metrics 01:02 to 01:07, YouTube 05:10; the 21:30 posts were only 4 to 8 hours old then, so their numbers are early). 7-day average = per post, posts published 5 to 11 Nov. Whop read 13 Nov ~07:35 London.",
+   "verdict": "Below expectation",
+   "tone": "bad",
+   "verdict_why": "Social reach stayed low and Whop traffic kept sliding. Month to date (day 13 of 30): 396 Whop visits vs about 433 by today (on pace), 7 Pro trials vs about 2.2 (ahead), 1 new paid vs about 0.9 (ahead), Free Master Class sign-ups 0 vs about 13 (behind), added monthly recurring revenue -$4.25 vs about +$69 (behind, one Perfect Entry cancellation and one scheduled). On 12 Nov YouTube (7 and 5 views) and Facebook (2, 0 and 0 impressions) sat far under their averages; X (27) was under its 39 average. Whop visits fell to 11 (15 on 11 Nov) but one new Pro trial started in the afternoon.",
+   "channels": [
+    {
+     "name": "X",
+     "metric": "impressions",
+     "avg": {
+      "views": 39.4,
+      "likes": 0.1,
+      "comments": 0.1,
+      "clicks": 0.0
+     },
+     "avg_note": "median 37 impressions per post, 19 posts published 5 to 11 Nov",
+     "posts": [
+      [
+       "21:30",
+       "A higher win rate was not a stronger result (video)",
+       27,
+       1,
+       0,
+       0
+      ]
+     ]
+    },
+    {
+     "name": "YouTube",
+     "metric": "views",
+     "avg": {
+      "views": 29.8,
+      "likes": 1.2,
+      "comments": 0.2,
+      "clicks": null
+     },
+     "avg_note": "median 20 views per post, 13 posts published 5 to 11 Nov",
+     "posts": [
+      [
+       "13:30",
+       "When the third candle fades the high",
+       7,
+       1,
+       0,
+       null
+      ],
+      [
+       "21:30",
+       "A higher win rate was not a stronger result",
+       5,
+       2,
+       0,
+       null
+      ]
+     ]
+    },
+    {
+     "name": "Facebook",
+     "metric": "impressions",
+     "avg": {
+      "views": 6.7,
+      "likes": 0.5,
+      "comments": 0.1,
+      "clicks": 0.1
+     },
+     "avg_note": "median 5 impressions per post, 27 posts published 5 to 11 Nov",
+     "posts": [
+      [
+       "13:31",
+       "When the third candle fades the high (video)",
+       2,
+       0,
+       0,
+       0
+      ],
+      [
+       "18:03",
+       "Spot the Candle #5 answer plus poll (image)",
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       "21:30",
+       "A higher win rate was not a stronger result (video)",
+       0,
+       0,
+       0,
+       0
+      ]
+     ]
+    }
+   ],
+   "best": "YouTube 21:30 \"A higher win rate was not a stronger result\": 5 views but 2 likes, the most likes of the day (a 40% like rate). On X the same video got 27 impressions and 1 like, the top X post and the only X like of the day. The 13:30 \"third candle\" video got 7 YouTube views and 1 like.",
+   "worst": "Facebook 18:03 Spot the Candle #5 answer (image with a poll): 0 impressions, no votes or replies. Facebook 21:30 video also got 0 impressions, and the 13:31 video 2, against an average of about 7 per post. Facebook is barely delivering our posts right now, so treat its numbers as a delivery problem before a content problem.",
+   "followers": "X followers 554 (556 on 12 Nov, -2). YouTube subscribers 619 (618 on 12 Nov, +1). No Facebook follower count available through Buffer.",
+   "whop": "11 store visits on 12 Nov (15 on 11 Nov, 396 since 1 Nov). 1 new Pro trial (90-day plan, 16:43 London), 0 free sign-ups, 0 new paid; no payment collected and no failed payment. Whop MRR 2,007.54 (flat). Paid active members 20. Upcoming: the Perfect Entry trial ends Fri 13 Nov 20:35 London, and two Pro trials end Sat 14 Nov.",
+   "learned": [
+    "A plain, comparison-style title (\"A higher win rate was not a stronger result\") drew the most likes on YouTube and the top X result of the day, while the code-heavy titles keep drawing the fewest views.",
+    "The first tagged links went out on 13 Nov (Follow the Plan posts), and 5 tagged site visits (3 facebook, 2 youtube) already show up, so we can now start to trace which channel sends traffic.",
+    "Facebook reach has sunk to 0 to 2 impressions per post even for video, which points to delivery, not only content."
+   ],
+   "suggestions": [
+    "Check the Facebook page for a reach restriction or a recent post-quality notice, and test one post with no link in the caption (needs Max's OK, it only changes how we post).",
+    "Keep the plain comparison style for titles (\"X was not Y\") and put the study code in the caption only; reuse the winning \"win rate\" angle in a short follow-up question people can answer.",
+    "Nothing is scheduled in Buffer after the 13 Nov promo posts, so queue the next days of posts today; also draft a trial-ending note for the Perfect Entry trial (20:35 tonight) and the two Pro trials on 14 Nov (needs Max's OK and a send path)."
+   ]
+  },
   {
    "date": "2026-11-11",
    "label": "Wed 11 Nov 2026 (London)",
@@ -2250,146 +2398,6 @@
     "Use the tagged Whop links (utm_source per channel) in every caption and bio so the next traffic jump can be traced. Changes to scheduled posts need your OK.",
     "For next week's batch, test a number-first hook on the X versions, since concept titles got half the usual reach. Bring it to the Saturday review.",
     "Keep the main video at 21:30 rather than 23:30 for Facebook, and check the 23:30 posts again in tomorrow's report."
-   ]
-  },
-  {
-   "date": "2026-11-05",
-   "label": "Thu 5 Nov 2026 (London)",
-   "source": "Buffer read 7 Nov ~07:40 London (updated from the 6 Nov run, when Buffer had not refreshed these posts). X and Facebook refreshed 7 Nov; YouTube last refreshed 6 Nov 09:20, so YouTube is early numbers. 7-day average = posts published 29 Oct to 4 Nov, per post.",
-   "verdict": "Below expectation",
-   "tone": "bad",
-   "verdict_why": "X held near its average, but YouTube (16 and 20 views at the last Buffer refresh) and 4 of 5 Facebook posts were well under average, Whop had 11 visits (below the roughly 33 a day pace) and there were no new trials or paying members that day.",
-   "channels": [
-    {
-     "name": "X",
-     "metric": "impressions",
-     "avg": {
-      "views": 47.5,
-      "likes": 0.1,
-      "comments": 0.0,
-      "clicks": 0.1
-     },
-     "posts": [
-      [
-       "09:00",
-       "When the 09:30 5m candle was a BC+",
-       46,
-       1,
-       0,
-       0
-      ],
-      [
-       "18:05",
-       "Spot the Candle #2 answer",
-       34,
-       1,
-       0,
-       0
-      ],
-      [
-       "21:30",
-       "Tomorrow I'm not trading (NFP)",
-       47,
-       0,
-       0,
-       0
-      ]
-     ]
-    },
-    {
-     "name": "YouTube",
-     "metric": "views",
-     "avg": {
-      "views": 173.1,
-      "likes": 2.6,
-      "comments": 0.8,
-      "clicks": null
-     },
-     "avg_note": "89 views per post without the one Three engines Short that passed 1,000; YouTube numbers last refreshed 6 Nov 09:20",
-     "posts": [
-      [
-       "13:30",
-       "Right lean, still red at 10:30?",
-       16,
-       1,
-       0,
-       null
-      ],
-      [
-       "21:30",
-       "US jobs report (NFP) news rule",
-       20,
-       1,
-       0,
-       null
-      ]
-     ]
-    },
-    {
-     "name": "Facebook",
-     "metric": "impressions",
-     "avg": {
-      "views": 11.2,
-      "likes": 0.9,
-      "comments": 0.0,
-      "clicks": 0.1
-     },
-     "posts": [
-      [
-       "09:00",
-       "The first 5 minutes of New York",
-       2,
-       0,
-       0,
-       0
-      ],
-      [
-       "13:30",
-       "Right lean, still red at 10:30?",
-       4,
-       0,
-       0,
-       0
-      ],
-      [
-       "18:00",
-       "Down 30 at 10:15 poll",
-       2,
-       0,
-       0,
-       0
-      ],
-      [
-       "18:05",
-       "Spot the Candle #2 answer",
-       7,
-       0,
-       0,
-       0
-      ],
-      [
-       "21:30",
-       "US jobs report (NFP) news rule",
-       14,
-       2,
-       0,
-       0
-      ]
-     ]
-    }
-   ],
-   "best": "The 21:30 NFP news rule post: 47 impressions on X (best of the day) and 14 impressions with 2 likes on Facebook, the only Facebook post above average. A clear rule tied to a real event that day.",
-   "worst": "Facebook 09:00 \"The first 5 minutes of New York\" and the 18:00 poll: 2 impressions each.",
-   "followers": "X followers 550, flat vs 5 Nov. YouTube subscribers: no fresh read (last stored 608).",
-   "whop": "11 store visits on 5 Nov. No new trials or paying members that day; 20 paid members.",
-   "learned": [
-    "Posts tied to a real event (NFP) beat the stat cards on X and Facebook.",
-    "The 09:00 Facebook slot and polls keep getting almost no reach."
-   ],
-   "suggestions": [
-    "Reconnect Whop so visits, trials and paid members can be scored again.",
-    "Today is NFP: keep the no-trade-around-news message as the lead and avoid adding new posts in the release window.",
-    "Check the 5 Nov posts again in tomorrow's report once Buffer refreshes their numbers."
    ]
   }
  ],
@@ -3645,6 +3653,10 @@
   {
    "date": "2026-11-11",
    "v": 15
+  },
+  {
+   "date": "2026-11-12",
+   "v": 11
   }
  ],
  "tradingview": {
@@ -4283,9 +4295,9 @@
    "launch_days": 25,
    "launch_days_up": 14,
    "launch_median_change_pct": 16,
-   "baseline_days": 97,
-   "baseline_median_change_pct": 8,
-   "baseline_share_up_pct": 53
+   "baseline_days": 98,
+   "baseline_median_change_pct": 6,
+   "baseline_share_up_pct": 52
   },
   "sources": [
    {
@@ -4306,11 +4318,11 @@
    },
    {
     "name": "YouTube",
-    "visits": null
+    "visits": 2
    },
    {
     "name": "Facebook",
-    "visits": null
+    "visits": 3
    },
    {
     "name": "X",
@@ -4321,7 +4333,7 @@
     "visits": null
    }
   ],
-  "sources_note": "No visits by source yet. Whop only splits tracked visits by UTM source, and the numbered links start counting once they are in the script descriptions and profile.",
+  "sources_note": null,
   "note": "Whop store page visits per day (London). Launch = first publish date of a TradingView script. Before = average of the 7 days before, after = average of the launch day and 6 days after. Baseline = the same comparison on days with no launch within 7 days."
  },
  "geo": {
@@ -4329,20 +4341,24 @@
    {
     "key": "site",
     "label": "Site visitors (maxmaserati.com)",
-    "total": 160,
+    "total": 168,
     "range": "15 Aug to 12 Nov 2026",
     "countries": [
      {
       "name": "United States",
-      "people": 59
+      "people": 66
      },
      {
       "name": "Haiti",
-      "people": 31
+      "people": 29
      },
      {
       "name": "Brazil",
-      "people": 10
+      "people": 11
+     },
+     {
+      "name": "Dominican Republic",
+      "people": 7
      },
      {
       "name": "France",
@@ -4350,10 +4366,6 @@
      },
      {
       "name": "United Kingdom",
-      "people": 7
-     },
-     {
-      "name": "Dominican Republic",
       "people": 7
      },
      {
@@ -4369,18 +4381,6 @@
       "people": 3
      },
      {
-      "name": "Spain",
-      "people": 2
-     },
-     {
-      "name": "Philippines",
-      "people": 2
-     },
-     {
-      "name": "Sweden",
-      "people": 2
-     },
-     {
       "name": "BG",
       "people": 2
      },
@@ -4389,7 +4389,19 @@
       "people": 2
      },
      {
+      "name": "Spain",
+      "people": 2
+     },
+     {
       "name": "Mexico",
+      "people": 2
+     },
+     {
+      "name": "Philippines",
+      "people": 2
+     },
+     {
+      "name": "Sweden",
       "people": 2
      },
      {
@@ -4480,7 +4492,7 @@
      },
      {
       "name": "Delmas",
-      "people": 8
+      "people": 7
      },
      {
       "name": "Ashburn",
@@ -4491,19 +4503,23 @@
       "people": 4
      },
      {
+      "name": "Prineville",
+      "people": 4
+     },
+     {
       "name": "Pétionville",
       "people": 4
      },
      {
-      "name": "Santo Domingo",
-      "people": 3
+      "name": "Council Bluffs",
+      "people": 4
+     },
+     {
+      "name": "Paris",
+      "people": 4
      },
      {
       "name": "Atlanta",
-      "people": 3
-     },
-     {
-      "name": "Miami",
       "people": 3
      },
      {
@@ -4511,11 +4527,23 @@
       "people": 3
      },
      {
-      "name": "Prineville",
+      "name": "Miami",
+      "people": 3
+     },
+     {
+      "name": "Santo Domingo",
+      "people": 3
+     },
+     {
+      "name": "Forest City",
+      "people": 3
+     },
+     {
+      "name": "Secaucus",
       "people": 3
      }
     ],
-    "note": "Whop pixel page views (pixel live since 31 Oct), IP location, last 90 days. Whop reports 160 people in total; counts come from several country-group queries (a few people appear in more than one country or city, so lists can add up to slightly more than 160) and people with a blank city are not listed. US cities were split by device system to fit the connector limit. Some city traffic (for example Ashburn, Council Bluffs, Boardman, The Dalles, Prineville) looks like data-center traffic."
+    "note": "Whop pixel page views (pixel live since 31 Oct), IP location, last 90 days, re-run 13 Nov. 168 people in total (2 with no country). Country counts come from two country-group queries. City counts were re-queried for every city that had 2 or more people on 12 Nov; cities with 1 person are carried over from 12 Nov. Some city traffic (Ashburn, Council Bluffs, Boardman, The Dalles, Prineville) looks like data-center traffic."
    },
    {
     "key": "store",
@@ -4538,20 +4566,16 @@
    {
     "key": "buyers",
     "label": "Buyers (completed payment)",
-    "total": 59,
+    "total": 60,
     "range": "15 Aug to 12 Nov 2026",
     "countries": [
      {
       "name": "United States",
-      "people": 20
+      "people": 21
      },
      {
       "name": "Haiti",
       "people": 9
-     },
-     {
-      "name": "Unknown",
-      "people": 4
      },
      {
       "name": "United Kingdom",
@@ -4625,17 +4649,17 @@
      },
      {
       "name": "Delmas",
-      "people": 3
+      "people": 4
      },
      {
       "name": "Santo Domingo",
       "people": 3
      }
     ],
-    "note": "People with at least one completed Whop payment (payment.completed), IP location, last 90 days: 59 people, unchanged since 11 Nov (no payment since 9 Nov), so the city list is carried over from 11 Nov (the city query was cut off by the connector)."
+    "note": "People with at least one completed Whop payment (payment.completed, includes $0 trial sign-ups), IP location, last 90 days, re-run 13 Nov: 60 people. City counts re-queried for cities with 2 or more people on 12 Nov; 1-person cities carried over."
    }
   ],
-  "as_of": "12 Nov 2026",
+  "as_of": "13 Nov 2026",
   "note": "People counted once per range. Cities with fewer than 3 people are hidden."
  }
 }
