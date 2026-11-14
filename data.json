@@ -1,7 +1,7 @@
 {
  "title": "MMM Marketing Hub",
- "summary": "Reach is 4,301 views across all posts (YouTube 2,369, X 1,542, Facebook 390). Whop had 15 store visits on 11 Nov and 385 since 1 Nov. 6 Pro trials since 1 Nov, 1 new paid member (the 1 Nov 100% promo trial, moved to paid on 8 Nov). No new trial, sign-up or payment on 11 Nov. Whop MRR is flat at 2,007.54 on 12 Nov (2,147.54 on 9 Nov) after the Perfect Entry membership was canceled on 10 Nov and a paid Perfect Entry member set theirs to cancel on 13 Nov. One trial ends within 48 hours: Fri 13 Nov 20:35.",
- "updated": "Sat 14 Nov 2026, 07:31 London",
+ "summary": "Saturday weekly review is on this page under Weekly reviews (7 to 14 Nov). Reach about 1,108 across 53 posts, down about 68%. Whop: 281 store visits, 3 new trials, 1 trial converted at $0 on a promo, $149.99 from 2 renewals, MRR $2,007.54 with 19 paid. The 15 to 21 Nov batch was reworked around what worked and is awaiting approval. Nothing is scheduled or sent.",
+ "updated": "Sat 14 Nov 2026, 13:03 London",
  "data_as_of": "2026-11-14 ~07:35 London",
  "cards": [
   {
@@ -37,250 +37,316 @@
   }
  ],
  "batch": {
-  "goals": "Week of Sun 8 to Sat 14 Nov. Theme: Demand vs Offer depth (MU, GMU, NBC) with number-first hooks. Two videos a day on YouTube and Facebook, one on X, a stat card at 09:00 and one quiz or prompt at 18:00. CPI Tue 10 Nov 13:30 London, PPI Fri 13 Nov 13:30 London. Tagged Whop links on every caption that links to Whop.",
-  "status": "Approved by Max on 7 Nov. Posting on schedule within the Buffer cap of 10 per channel.",
+  "status": "Awaiting approval. Nothing is in Buffer or sent.",
+  "goals": "Week of Sun 15 to Sat 21 Nov, reworked around what worked: plain myth or contrast titles, number-first lines on X, strongest pieces at 21:30 London, Daily Bias cut to 55 to 75 seconds, chart-first prompts at 09:00 with an 18:00 answer on X. Quizzes, 1 to 4 polls and stat-only posts dropped. Try it for free only on the Tue and Wed 21:30 learning videos.",
   "rows": [
    [
-    "Mon 9",
+    "Sun 15",
     "09:00",
-    "Stat card",
-    "15m BuBC+ took the high 82%",
+    "Chart prompt",
+    "Big green body, closed inside. What does the next day take: the high, the low, b",
     "X, FB",
-    "10,023 candles",
+    "Chart prompt",
     null
    ],
    [
-    "Mon 9",
+    "Sun 15",
     "13:30",
-    "Video",
-    "#20 When buy Demand ends (bearish body close)",
+    "Daily Bias",
+    "A big body is not a change of control",
     "YT, FB",
-    "Demand vs Offer",
+    "Daily Bias",
     null
    ],
    [
-    "Mon 9",
+    "Sun 15",
     "18:00",
-    "Engagement",
-    "Spot the Candle #4",
-    "All",
-    "Reply Demand or Offer",
+    "Chart answer",
+    "Neither. After a close inside, the next day stayed inside only 10%",
+    "X",
+    "Chart answer",
     null
    ],
    [
-    "Mon 9",
+    "Sun 15",
     "21:30",
-    "Video",
-    "#21 Tight stops tested worst",
-    "YT, FB, X",
-    "Site-confirmed lines only",
-    null
-   ],
-   [
-    "Tue 10",
-    "09:00",
-    "Stat card",
-    "News-day skip reminder card",
-    "X, FB",
-    "CPI 13:30 London",
-    null
-   ],
-   [
-    "Tue 10",
-    "13:00",
-    "Video",
-    "#22 1m 0.3% vs 1h 48% (costs)",
-    "YT, FB, X",
-    "Posts before CPI",
-    null
-   ],
-   [
-    "Tue 10",
-    "18:00",
-    "Engagement",
-    "Quiz #4 answer + CPI hands-off prompt",
-    "All",
-    "",
-    null
-   ],
-   [
-    "Tue 10",
-    "21:30",
-    "Video",
-    "#23 NBC = still negotiating",
+    "Learning",
+    "A green candle is not automatically demand",
     "YT, FB",
-    "Demand vs Offer depth",
+    "Learning",
     null
    ],
    [
-    "Wed 11",
+    "Sun 15",
+    "21:30",
+    "Daily Bias",
+    "A big body is not a change of control",
+    "X",
+    "Daily Bias",
+    null
+   ],
+   [
+    "Mon 16",
     "09:00",
-    "Stat card",
-    "Daily BuBC+ next high 89%",
+    "Chart prompt",
+    "It dipped under yesterday's low, then closed back inside. Does the next day take",
     "X, FB",
-    "",
+    "Chart prompt",
     null
    ],
    [
-    "Wed 11",
+    "Mon 16",
     "13:30",
-    "Video",
-    "#24 FVA.M10: 3 candles outside",
+    "Daily Bias",
+    "A long wick is still only a test",
     "YT, FB",
-    "Try it for free",
+    "Daily Bias",
     null
    ],
    [
-    "Wed 11",
+    "Mon 16",
     "18:00",
-    "Engagement",
-    "Spot the Candle #5",
-    "All",
-    "Reply BC+ or BC-",
+    "Chart answer",
+    "Both. After a sweep that closes back inside, both sides got taken 15%",
+    "X",
+    "Chart answer",
     null
    ],
    [
-    "Wed 11",
+    "Mon 16",
     "21:30",
-    "Video",
-    "#25 C.M8 09:30 rule (proof)",
-    "YT, FB, X",
-    "276 trades, PF 1.69, worst 7",
+    "Learning",
+    "A gap after a close is not the same as the close",
+    "YT, X, FB",
+    "Learning",
     null
    ],
    [
-    "Thu 12",
+    "Tue 17",
     "09:00",
-    "Stat card",
-    "5m BeBC+ took the low",
+    "Chart prompt",
+    "New high, then a close near the bottom. Does the next day take its low?",
     "X, FB",
-    "",
+    "Chart prompt",
     null
    ],
    [
-    "Thu 12",
-    "13:00",
-    "Email",
-    "Weekly teaching: Demand ends on a bearish body close",
-    "Members and leads",
-    "Draft; needs a send tool",
-    null
-   ],
-   [
-    "Thu 12",
+    "Tue 17",
     "13:30",
-    "Video",
-    "#26 C.M4 fake rejection",
+    "Daily Bias",
+    "A new high is not a win if it closes back inside",
     "YT, FB",
-    "70.6% reached +0.5R",
+    "Daily Bias",
     null
    ],
    [
-    "Thu 12",
+    "Tue 17",
     "18:00",
-    "Engagement",
-    "Poll (Max) + Quiz #5 answer",
-    "X poll by Max, FB",
-    "",
+    "Chart answer",
+    "Yes. After a poke of the high and a bottom-half close, the next day took the low 68%",
+    "X",
+    "Chart answer",
     null
    ],
    [
-    "Thu 12",
+    "Tue 17",
     "21:30",
-    "Video",
-    "#27 33% win rate beat 62.7%",
-    "YT, FB, X",
-    "Number-first myth",
+    "Learning",
+    "We tested 363,348 combos. One passed.",
+    "YT, X, FB",
+    "Learning",
     null
    ],
    [
-    "Fri 13",
+    "Wed 18",
     "09:00",
-    "Stat card",
-    "PPI day: no new trade window",
+    "Chart prompt",
+    "The whole day stayed inside the last one and closed in its top half. Which side ",
     "X, FB",
-    "PPI 13:30 London",
+    "Chart prompt",
     null
    ],
    [
-    "Fri 13",
-    "13:00",
-    "Video",
-    "#28 Max on camera: a no-trade day counts",
-    "YT, FB, X",
-    "Needs Max footage",
-    null
-   ],
-   [
-    "Fri 13",
-    "18:00",
-    "Engagement",
-    "Spot the Candle #6",
-    "All",
-    "",
-    null
-   ],
-   [
-    "Fri 13",
-    "21:30",
-    "Video",
-    "#29 Liquidity sweeps vs random entry",
+    "Wed 18",
+    "13:30",
+    "Daily Bias",
+    "An inside day is not a day with no read",
     "YT, FB",
-    "",
+    "Daily Bias",
     null
    ],
    [
-    "Sat 14",
-    "15:00",
-    "Video",
-    "#30 Gamma as a map, not a signal",
-    "YT, FB, X",
-    "Honest: did not pass the test",
-    null
-   ],
-   [
-    "Sat 14",
+    "Wed 18",
     "18:00",
-    "Engagement",
-    "Weekly prompt (one-tap) + Quiz #6 answer",
-    "All",
-    "",
+    "Chart answer",
+    "The high. After an inside day with a top-half close, the next day took the high 78%",
+    "X",
+    "Chart answer",
     null
    ],
    [
-    "Ongoing",
-    "Triggered",
-    "Email",
-    "Welcome 1 to 3, trial ending, failed payment",
-    "Whop members and leads",
-    "Drafts; need a send tool",
+    "Wed 18",
+    "21:30",
+    "Learning",
+    "A close above the high is not always a strong close",
+    "YT, X, FB",
+    "Learning",
+    null
+   ],
+   [
+    "Thu 19",
+    "09:00",
+    "Chart prompt",
+    "One day took both yesterday's high and low, then closed in its bottom half. Does",
+    "X, FB",
+    "Chart prompt",
+    null
+   ],
+   [
+    "Thu 19",
+    "13:30",
+    "Daily Bias",
+    "Taking both sides is not a tie",
+    "YT, FB",
+    "Daily Bias",
+    null
+   ],
+   [
+    "Thu 19",
+    "18:00",
+    "Chart answer",
+    "Yes. After an outside day with a bottom-half close, the next day took the low 66%",
+    "X",
+    "Chart answer",
+    null
+   ],
+   [
+    "Thu 19",
+    "21:30",
+    "Learning",
+    "One candle is not one read",
+    "YT, FB",
+    "Learning",
+    null
+   ],
+   [
+    "Thu 19",
+    "21:30",
+    "Daily Bias",
+    "Taking both sides is not a tie",
+    "X",
+    "Daily Bias",
+    null
+   ],
+   [
+    "Fri 20",
+    "09:00",
+    "Chart prompt",
+    "Closed below yesterday's low, right near its own low. Does the next day take thi",
+    "X, FB",
+    "Chart prompt",
+    null
+   ],
+   [
+    "Fri 20",
+    "13:30",
+    "Daily Bias",
+    "When sell demand actually ends",
+    "YT, FB",
+    "Daily Bias",
+    null
+   ],
+   [
+    "Fri 20",
+    "18:00",
+    "Chart answer",
+    "Yes. After a strong red close, the next day took the low 81%",
+    "X",
+    "Chart answer",
+    null
+   ],
+   [
+    "Fri 20",
+    "21:30",
+    "Learning",
+    "A weak red close is close to a coin flip",
+    "YT, FB",
+    "Learning",
+    null
+   ],
+   [
+    "Fri 20",
+    "21:30",
+    "Daily Bias",
+    "When sell demand actually ends",
+    "X",
+    "Daily Bias",
+    null
+   ],
+   [
+    "Sat 21",
+    "09:00",
+    "Chart prompt",
+    "Above yesterday's high, but a weak close. Does the next day take this high?",
+    "X, FB",
+    "Chart prompt",
+    null
+   ],
+   [
+    "Sat 21",
+    "13:30",
+    "Daily Bias",
+    "Seven daily candles, seven different reads",
+    "YT, FB",
+    "Daily Bias",
+    null
+   ],
+   [
+    "Sat 21",
+    "18:00",
+    "Chart answer",
+    "No. After a weak green close, the next day took the high only 57%",
+    "X",
+    "Chart answer",
+    null
+   ],
+   [
+    "Sat 21",
+    "21:30",
+    "Learning",
+    "A no-trade day is still the plan",
+    "YT, FB",
+    "Learning",
+    null
+   ],
+   [
+    "Sat 21",
+    "21:30",
+    "Daily Bias",
+    "Seven daily candles, seven different reads",
+    "X",
+    "Daily Bias",
     null
    ]
   ],
   "notes": [
    [
-    "Sun 8 Nov, done",
-    "Stat card, #18 GMU: 3 candles, one gap, Demand quiz and #19 One wick is not a body close all published.",
-    "Published",
+    "Videos",
+    "13 videos are script-ready but not rendered. Target 55 to 75 seconds, question on screen in 2 seconds. Sat 21:30 needs footage by Fri 20 Nov 18:00 London or that slot is skipped.",
+    "Needs render",
+    "warning"
+   ],
+   [
+    "Emails",
+    "Trial-ending and failed-payment drafts are ready for review. Need a send path. Nothing has been sent.",
+    "Needs send path",
+    "neutral"
+   ],
+   [
+    "Promo",
+    "Try it for free only on two 21:30 learning videos (Tue combos and Wed strong versus weak close).",
+    "Modest",
     "success"
-   ],
-   [
-    "Videos #20 onward",
-    "Need new renders; they are paced into free Buffer slots after approval, 10 per channel at a time.",
-    "In progress",
-    "neutral"
-   ],
-   [
-    "6 email drafts",
-    "Welcome 1, 2 and 3, trial ending, failed payment and the Thu weekly teaching email.",
-    "Needs send tool",
-    "neutral"
-   ],
-   [
-    "By hand",
-    "X polls (Thu) are posted by Max in the X app. YouTube community posts go through YouTube Studio.",
-    "Max",
-    "neutral"
    ]
   ]
  },
@@ -1576,6 +1642,12 @@
  },
  "approvals": [
   [
+   "Weekly batch, Nov 15 to 21",
+   "Reworked around what worked last week. Quizzes and stat-only posts dropped. Titles in the myth or contrast style. Awaiting Max's OK. Nothing scheduled or sent.",
+   "Needs your OK",
+   "warning"
+  ],
+  [
    "Weekly batch, Nov 8 to 14",
    "Approved 7 Nov. Videos #18 and #19 published 8 Nov; #20 onward paced into free slots.",
    "Approved",
@@ -1613,11 +1685,10 @@
   ]
  ],
  "next_moves": [
-  "Prepare check-in notes for the Pro trials ending 14 Nov (15:24 and 19:35 London) and 15 Nov (14:18 and 21:31), and a card-update note for the past-due Perfect Entry charge (retry 17 Nov about 01:46 London) (needs Max's OK).",
-  "Put tagged Whop links (youtube, x, facebook) in every caption and bio so trials and visit spikes can be traced.",
-  "Lead videos with a plain myth or question, like \"One wick is not a body close\", not a percentage pair like \"0.3% vs 48%\" (5 YouTube views).",
-  "Put one reply-able question at the top of each Daily Bias caption (no one has replied to a post this week).",
-  "Queue the next days of posts in Buffer: nothing is scheduled after the 14 Nov 18:00 posts (needs Max's OK)."
+  "Review and approve the reworked 15 to 21 Nov batch (Weekly reviews on this page). Nothing is scheduled or sent.",
+  "Render Daily Bias and learning videos at 55 to 75 seconds after the scripts are approved, then send stills before anything is queued.",
+  "Review the trial-ending notes for 15 Nov (14:18 and 21:31 London) and the failed-payment note before the 17 Nov 01:46 London retry. Need a send path. (needs Max's OK).",
+  "Keep answering real replies within 24 hours. Lead X with a number and YouTube with a plain myth or contrast title."
  ],
  "links": {
   "site": "https://www.maxmaserati.com",
@@ -2483,6 +2554,315 @@
     "Add tagged Whop links to captions and bios so spikes like 7 Nov can be traced to a channel.",
     "Follow up with the three new trialists once Max approves a welcome or trial message (needs a send path)."
    ]
+  }
+ ],
+ "weekly_reviews": [
+  {
+   "id": "2026-11-07-to-14",
+   "label": "7 to 14 Nov 2026",
+   "as_of": "Sat 14 Nov 2026, about 11:00 London",
+   "window": {
+    "start": "2026-11-07",
+    "end": "2026-11-14"
+   },
+   "headline": "Soft week. Reach about 1,108 across 53 posts, down about 68%.",
+   "numbers": {
+    "channels": [
+     {
+      "name": "YouTube",
+      "posts": 13,
+      "reach": 273,
+      "reach_label": "273 views",
+      "per_post": "21 avg / 18 median",
+      "engagement": "13 likes, 3 comments",
+      "clicks": null,
+      "followers": "621 subscribers, up 7"
+     },
+     {
+      "name": "X",
+      "posts": 16,
+      "reach": 701,
+      "reach_label": "701 impressions",
+      "per_post": "43.8 avg / 40.5 median",
+      "engagement": "1 like, 3 replies",
+      "clicks": 0,
+      "followers": "555, up 5"
+     },
+     {
+      "name": "Facebook",
+      "posts": 24,
+      "reach": 134,
+      "reach_label": "134 impressions",
+      "per_post": "5.6 avg / 3 median",
+      "engagement": "5 reactions, 0 comments",
+      "clicks": 0,
+      "followers": "not available"
+     }
+    ],
+    "total_posts": 53,
+    "total_reach": 1108,
+    "reach_note": "Down about 68% from about 3,492 the week before, which was carried by a 1,013-view Short. No post broke out this week. Links got 0 clicks.",
+    "likes": 19,
+    "comments": 6,
+    "clicks": 0
+   },
+   "best": "One wick is not a body close was the only post that worked on all three channels (35 YouTube views, 68 X impressions, 44 Facebook, the only Facebook post above 11). When buy Demand ends led YouTube with 51 views. The 276 trades / profit factor 1.69 line led X with 99 impressions.",
+   "worst": "A sweep is not proof of an edge had 7 YouTube views and 0 Facebook impressions. Code-led titles such as 3 candles outside had 11 YouTube views. Daily Bias Day 1 Part A at 110 seconds had 18 YouTube views, 31 X impressions, 3 Facebook, and no likes.",
+   "whop": "Store visits 7 to 13 Nov: 281 (up from 146), but they slowed to 10 to 15 a day late in the week. Month to date: 406 visits. New trials 8 to 14 Nov: 3 (down from 7). 1 trial converted, at $0 on a promo. Revenue 8 to 14 Nov: $149.99 from 2 renewals, versus $54.99 the week before. MRR $2,007.54, 19 paid members. Free Master Class sign-ups: 0 since 1 Nov. No tagged trial or sale. One Perfect Entry $70 first charge has been past due since 13 Nov 20:36 London; retry 17 Nov about 01:46 London.",
+   "worked": [
+    "Plain myth or contrast titles beat study-code titles. One wick is not a body close and When buy Demand ends led the week. Code-style titles got 7 to 12 YouTube views.",
+    "The 21:30 London slot. The top three X posts and the top Facebook post all went out at 21:30.",
+    "Number-first lines on X. The 276 trades / profit factor 1.69 post got 99 impressions on X and was a weak Short (20 views) under a different hook.",
+    "Specific, testable claims started a real conversation. A concept plus a clear question is still the all-time best post."
+   ],
+   "did_not_work": [
+    "Facebook overall: 5.6 impressions a post, median 3, 0 comments. The 110-second Daily Bias went out as a feed video, not a Reel.",
+    "One-tap quizzes and stat images: 23 to 44 impressions on X and no answers.",
+    "Daily Bias Day 1 at 110 seconds: the same small numbers as everything else, no likes. Too long, and the question came last.",
+    "Links got 0 clicks, and no visit or trial could be tagged to a channel. Whop visits rose, but trials fell (3 versus 7)."
+   ],
+   "next_week": {
+    "label": "15 to 21 Nov 2026",
+    "status": "Awaiting approval",
+    "goals": "Fewer, better posts built around what worked: plain myth or contrast titles, number-first lines on X, chart-first prediction prompts with a same-day answer, and the strongest pieces in the 21:30 London slot. Daily Bias episodes cut to 55 to 75 seconds, with the question on screen in the first 2 seconds. Try it for free stays modest (only the two strongest 21:30 learning videos). Nothing is scheduled or sent until Max approves.",
+    "changes": [
+     "Dropped Spot the Candle quizzes, the Which candle is hardest 1 to 4 quiz, weekly vote prompts, and stat-only posts.",
+     "18:00 is now the answer to the 09:00 chart prompt, on X only. Facebook keeps the 09:00 chart and the videos, not the weak engagement slots.",
+     "Titles rewritten in the myth or contrast style. Daily Bias titles no longer lead with a series prefix or a code.",
+     "X 21:30 captions lead with a number. Daily Bias target length is 55 to 75 seconds so it can run as a Facebook Reel.",
+     "Try it for free only on the Tue and Wed 21:30 learning videos. Numeric link codes stay as a proposal."
+    ],
+    "plan": [
+     {
+      "day": "Sun 15",
+      "slots": [
+       {
+        "time": "09:00",
+        "type": "Chart prompt",
+        "title": "Big green body, closed inside. What does the next day take: the high, the low, b",
+        "channels": "X, FB"
+       },
+       {
+        "time": "13:30",
+        "type": "Daily Bias",
+        "title": "A big body is not a change of control",
+        "channels": "YT, FB"
+       },
+       {
+        "time": "18:00",
+        "type": "Chart answer",
+        "title": "Neither. After a close inside, the next day stayed inside only 10%",
+        "channels": "X"
+       },
+       {
+        "time": "21:30",
+        "type": "Learning",
+        "title": "A green candle is not automatically demand",
+        "channels": "YT, FB"
+       },
+       {
+        "time": "21:30",
+        "type": "Daily Bias",
+        "title": "A big body is not a change of control",
+        "channels": "X"
+       }
+      ]
+     },
+     {
+      "day": "Mon 16",
+      "slots": [
+       {
+        "time": "09:00",
+        "type": "Chart prompt",
+        "title": "It dipped under yesterday's low, then closed back inside. Does the next day take",
+        "channels": "X, FB"
+       },
+       {
+        "time": "13:30",
+        "type": "Daily Bias",
+        "title": "A long wick is still only a test",
+        "channels": "YT, FB"
+       },
+       {
+        "time": "18:00",
+        "type": "Chart answer",
+        "title": "Both. After a sweep that closes back inside, both sides got taken 15%",
+        "channels": "X"
+       },
+       {
+        "time": "21:30",
+        "type": "Learning",
+        "title": "A gap after a close is not the same as the close",
+        "channels": "YT, X, FB"
+       }
+      ]
+     },
+     {
+      "day": "Tue 17",
+      "slots": [
+       {
+        "time": "09:00",
+        "type": "Chart prompt",
+        "title": "New high, then a close near the bottom. Does the next day take its low?",
+        "channels": "X, FB"
+       },
+       {
+        "time": "13:30",
+        "type": "Daily Bias",
+        "title": "A new high is not a win if it closes back inside",
+        "channels": "YT, FB"
+       },
+       {
+        "time": "18:00",
+        "type": "Chart answer",
+        "title": "Yes. After a poke of the high and a bottom-half close, the next day took the low 68%",
+        "channels": "X"
+       },
+       {
+        "time": "21:30",
+        "type": "Learning",
+        "title": "We tested 363,348 combos. One passed.",
+        "channels": "YT, X, FB"
+       }
+      ]
+     },
+     {
+      "day": "Wed 18",
+      "slots": [
+       {
+        "time": "09:00",
+        "type": "Chart prompt",
+        "title": "The whole day stayed inside the last one and closed in its top half. Which side ",
+        "channels": "X, FB"
+       },
+       {
+        "time": "13:30",
+        "type": "Daily Bias",
+        "title": "An inside day is not a day with no read",
+        "channels": "YT, FB"
+       },
+       {
+        "time": "18:00",
+        "type": "Chart answer",
+        "title": "The high. After an inside day with a top-half close, the next day took the high 78%",
+        "channels": "X"
+       },
+       {
+        "time": "21:30",
+        "type": "Learning",
+        "title": "A close above the high is not always a strong close",
+        "channels": "YT, X, FB"
+       }
+      ]
+     },
+     {
+      "day": "Thu 19",
+      "slots": [
+       {
+        "time": "09:00",
+        "type": "Chart prompt",
+        "title": "One day took both yesterday's high and low, then closed in its bottom half. Does",
+        "channels": "X, FB"
+       },
+       {
+        "time": "13:30",
+        "type": "Daily Bias",
+        "title": "Taking both sides is not a tie",
+        "channels": "YT, FB"
+       },
+       {
+        "time": "18:00",
+        "type": "Chart answer",
+        "title": "Yes. After an outside day with a bottom-half close, the next day took the low 66%",
+        "channels": "X"
+       },
+       {
+        "time": "21:30",
+        "type": "Learning",
+        "title": "One candle is not one read",
+        "channels": "YT, FB"
+       },
+       {
+        "time": "21:30",
+        "type": "Daily Bias",
+        "title": "Taking both sides is not a tie",
+        "channels": "X"
+       }
+      ]
+     },
+     {
+      "day": "Fri 20",
+      "slots": [
+       {
+        "time": "09:00",
+        "type": "Chart prompt",
+        "title": "Closed below yesterday's low, right near its own low. Does the next day take thi",
+        "channels": "X, FB"
+       },
+       {
+        "time": "13:30",
+        "type": "Daily Bias",
+        "title": "When sell demand actually ends",
+        "channels": "YT, FB"
+       },
+       {
+        "time": "18:00",
+        "type": "Chart answer",
+        "title": "Yes. After a strong red close, the next day took the low 81%",
+        "channels": "X"
+       },
+       {
+        "time": "21:30",
+        "type": "Learning",
+        "title": "A weak red close is close to a coin flip",
+        "channels": "YT, FB"
+       },
+       {
+        "time": "21:30",
+        "type": "Daily Bias",
+        "title": "When sell demand actually ends",
+        "channels": "X"
+       }
+      ]
+     },
+     {
+      "day": "Sat 21",
+      "slots": [
+       {
+        "time": "09:00",
+        "type": "Chart prompt",
+        "title": "Above yesterday's high, but a weak close. Does the next day take this high?",
+        "channels": "X, FB"
+       },
+       {
+        "time": "13:30",
+        "type": "Daily Bias",
+        "title": "Seven daily candles, seven different reads",
+        "channels": "YT, FB"
+       },
+       {
+        "time": "18:00",
+        "type": "Chart answer",
+        "title": "No. After a weak green close, the next day took the high only 57%",
+        "channels": "X"
+       },
+       {
+        "time": "21:30",
+        "type": "Learning",
+        "title": "A no-trade day is still the plan",
+        "channels": "YT, FB"
+       },
+       {
+        "time": "21:30",
+        "type": "Daily Bias",
+        "title": "Seven daily candles, seven different reads",
+        "channels": "X"
+       }
+      ]
+     }
+    ]
+   },
+   "source": "Buffer, public YouTube pages, X public metrics and Whop, read Sat 14 Nov 2026 about 10:30 to 11:00 London. Plan reworked later the same day around what worked."
   }
  ],
  "visits_history": [
