@@ -1,13 +1,13 @@
 {
  "title": "MMM Marketing Hub",
  "summary": "Saturday weekly review is on this page under Weekly reviews (7 to 14 Nov). Reach about 1,108 across 53 posts, down about 68%. Whop: 281 store visits, 3 new trials, 1 trial converted at $0 on a promo, $149.99 from 2 renewals, MRR $2,007.54 with 19 paid. The 15 to 21 Nov batch was reworked around what worked and is awaiting approval. Nothing is scheduled or sent.",
- "updated": "Fri 20 Nov 2026, 07:36 London",
- "data_as_of": "2026-11-20 ~07:30 London",
+ "updated": "Sat 21 Nov 2026, 07:34 London",
+ "data_as_of": "2026-11-21 ~07:30 London",
  "cards": [
   {
    "label": "Reach",
-   "value": "5179",
-   "sub": "views: YouTube 2587, X 2133, Facebook 459"
+   "value": "5281",
+   "sub": "views: YouTube 2596, X 2226, Facebook 459"
   },
   {
    "label": "Best post",
@@ -1350,7 +1350,7 @@
    "facebook": null,
    "x": null,
    "video": null,
-   "yt_views": 11,
+   "yt_views": 14,
    "fb_impr": 0,
    "x_impr": 0,
    "likes": 1,
@@ -1365,7 +1365,7 @@
    "facebook": null,
    "x": "https://x.com/188479184/status/2123167072624492671",
    "video": null,
-   "yt_views": 10,
+   "yt_views": 12,
    "fb_impr": 0,
    "x_impr": 39,
    "likes": 0,
@@ -1382,7 +1382,7 @@
    "video": null,
    "yt_views": 0,
    "fb_impr": 0,
-   "x_impr": 24,
+   "x_impr": 29,
    "likes": 1,
    "comments": 1
   },
@@ -1397,7 +1397,7 @@
    "video": null,
    "yt_views": 0,
    "fb_impr": 0,
-   "x_impr": 0,
+   "x_impr": 26,
    "likes": 0,
    "comments": 0
   },
@@ -1410,22 +1410,70 @@
    "facebook": null,
    "x": "https://x.com/188479184/status/2123529488130511121",
    "video": null,
-   "yt_views": 2,
+   "yt_views": 6,
+   "fb_impr": 0,
+   "x_impr": 36,
+   "likes": 2,
+   "comments": 0
+  },
+  {
+   "title": "P71_close_near_low_question",
+   "short": "P71_close_near_low_question",
+   "when": "Fri 20 Nov 09:02",
+   "status": "Published",
+   "youtube": null,
+   "facebook": null,
+   "x": "https://x.com/188479184/status/2123703418518651374",
+   "video": null,
+   "yt_views": 0,
+   "fb_impr": 0,
+   "x_impr": 26,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "title": "P72_close_near_low_answer",
+   "short": "P72_close_near_low_answer",
+   "when": "Fri 20 Nov 18:04",
+   "status": "Published",
+   "youtube": null,
+   "facebook": null,
+   "x": "https://x.com/188479184/status/2123839862650384816",
+   "video": null,
+   "yt_views": 0,
    "fb_impr": 0,
    "x_impr": 0,
-   "likes": 1,
+   "likes": 0,
    "comments": 0
+  },
+  {
+   "title": "X: Above yesterday's high, but a weak close (chart question)",
+   "when": "Sat 21 Nov 09:00",
+   "status": "Scheduled",
+   "video": null,
+   "youtube": null,
+   "facebook": null,
+   "x": null
+  },
+  {
+   "title": "X: Answer: 6 Oct did not take the high",
+   "when": "Sat 21 Nov 18:00",
+   "status": "Scheduled",
+   "video": null,
+   "youtube": null,
+   "facebook": null,
+   "x": null
   }
  ],
  "channels": [
   {
    "name": "YouTube",
-   "value": 2587,
+   "value": 2596,
    "meta": "views"
   },
   {
    "name": "X",
-   "value": 2133,
+   "value": 2226,
    "meta": "impressions"
   },
   {
@@ -1435,7 +1483,7 @@
   }
  ],
  "engagement": {
-  "likes": 104,
+  "likes": 105,
   "comments": 20,
   "clicks": 11
  },
@@ -1579,6 +1627,10 @@
   {
    "date": "2026-11-19",
    "v": 7
+  },
+  {
+   "date": "2026-11-20",
+   "v": 49
   }
  ],
  "pipeline": [
@@ -1674,7 +1726,7 @@
  ],
  "revenue": {
   "this_week": {
-   "label": "15 to 20 Nov (so far)",
+   "label": "15 to 21 Nov (so far)",
    "usd": 0.0,
    "renewals": 0
   },
@@ -1721,7 +1773,7 @@
  "scoreboard": {
   "title": "Targets vs results",
   "window": "1 to 30 Nov 2026",
-  "day": 20,
+  "day": 21,
   "days": 30,
   "note": "These are targets we are aiming for, not forecasts. Actuals come from Whop (read-only) and are counts only. Wise payers on 100% codes count as paid.",
   "baselines": [
@@ -1746,16 +1798,16 @@
    {
     "label": "Whop page visits",
     "target": "1,000+",
-    "prorated": 666.7,
-    "actual": 494,
+    "prorated": 700.0,
+    "actual": 543,
     "unit": "",
-    "pct": 49,
+    "pct": 54,
     "status": "Behind"
    },
    {
     "label": "Free Master Class sign-ups",
     "target": "30 (target)",
-    "prorated": 20.0,
+    "prorated": 21.0,
     "actual": 0,
     "unit": "",
     "pct": 0,
@@ -1764,7 +1816,7 @@
    {
     "label": "Pro trials started",
     "target": "5 to 10",
-    "prorated": 3.3,
+    "prorated": 3.5,
     "actual": 9,
     "unit": "",
     "pct": 100,
@@ -1782,7 +1834,7 @@
    {
     "label": "New paying members",
     "target": "2 to 3",
-    "prorated": 1.3,
+    "prorated": 1.4,
     "actual": 1,
     "unit": "",
     "pct": 50,
@@ -1791,7 +1843,7 @@
    {
     "label": "Added recurring revenue",
     "target": "+$160 to $240 a month",
-    "prorated": 106.7,
+    "prorated": 112.0,
     "actual": -4.25,
     "unit": "$",
     "pct": 0,
@@ -1801,13 +1853,13 @@
   "channels": [
    {
     "name": "YouTube",
-    "trials": null,
-    "sales": null
+    "trials": 0,
+    "sales": 0
    },
    {
     "name": "Facebook",
-    "trials": null,
-    "sales": null
+    "trials": 0,
+    "sales": 0
    },
    {
     "name": "X",
@@ -1815,7 +1867,7 @@
     "sales": null
    }
   ],
-  "channel_note": "Not enough data yet: no tracked trials or sales from UTM links so far."
+  "channel_note": null
  },
  "backtest": {
   "caption": "Study claims vs recomputed on Yahoo NQ data, Aug to Oct 2026 (1h from Jun 2024).",
@@ -1941,6 +1993,83 @@
  },
  "footer": "Education only. Not financial advice. Hypothetical results based on past data. Past results don't guarantee future results.",
  "daily_reports": [
+  {
+   "date": "2026-11-20",
+   "label": "Fri 20 Nov 2026 (London)",
+   "source": "Buffer read 21 Nov ~08:30 Amsterdam (X metrics 20 Nov 17:04 UTC for the morning post, YouTube 21 Nov 04:03 UTC). 7-day average = per post, posts published 13 to 19 Nov (the 18:04 post of 20 Nov is left out because Buffer measured it 9 seconds after posting). Whop read 21 Nov ~08:30 Amsterdam.",
+   "verdict": "Below expectation",
+   "tone": "bad",
+   "verdict_why": "Two X posts went out on 20 Nov and no YouTube Short or Facebook post (the Buffer Facebook channel is still disconnected). Only the 09:02 X post has a real reading (26 impressions, 0 likes), below the 7-day X average of 40.4 impressions; the 18:04 answer post was measured 9 seconds after posting, so its 0 is stale. Whop had 49 store visits (the most since 7 Nov, source unknown, since 252 of 259 visitors since 1 Nov are untagged) but 0 new trials, 0 new paid and $0 collected. Month to date (day 20 of 30): 543 Whop visits vs about 667 by now (81%, behind), 9 Pro trials vs about 3.3 to 6.7 (ahead), 1 new paid vs about 1.3 to 2 (slightly behind), Free Master Class sign-ups 0 vs 20 (behind), added monthly recurring revenue -$4.25 vs about +$107 to $160 (behind).",
+   "channels": [
+    {
+     "name": "X",
+     "metric": "impressions",
+     "avg": {
+      "views": 40.4,
+      "likes": 0.1,
+      "comments": 0.1,
+      "clicks": 0.0
+     },
+     "avg_note": "median 36.5 impressions per post, 14 posts published 13 to 19 Nov",
+     "posts": [
+      [
+       "09:02",
+       "Closed below yesterday's low, right near its own low: does the next day take it again? (chart question)",
+       26,
+       0,
+       0,
+       0
+      ],
+      [
+       "18:04",
+       "Answer: yes, 22 Oct took the low (80.5% stat)",
+       null,
+       null,
+       null,
+       null
+      ]
+     ]
+    },
+    {
+     "name": "YouTube",
+     "metric": "views",
+     "avg": {
+      "views": 17.9,
+      "likes": 1.2,
+      "comments": 0.0,
+      "clicks": null
+     },
+     "avg_note": "median 14 views per post, 11 posts published 13 to 19 Nov",
+     "posts": []
+    },
+    {
+     "name": "Facebook",
+     "metric": "impressions",
+     "avg": {
+      "views": 5.6,
+      "likes": 0.3,
+      "comments": 0.0,
+      "clicks": 0.0
+     },
+     "avg_note": "median 6 impressions per post, 10 posts published 13 to 19 Nov",
+     "posts": []
+    }
+   ],
+   "best": "X chart question at 09:02 (26 impressions, 0 likes, 0 comments): the only post of the day with a real reading, and it reached fewer people than the 7-day X average. It is the best only by default.",
+   "worst": "No post can be called worst on real data: the X 18:04 answer shows 0 impressions only because Buffer measured it 9 seconds after posting. The real miss is no YouTube Short on 20 Nov and nothing on Facebook, which has been disconnected in Buffer since 17 Nov.",
+   "followers": "X followers 552 and YouTube subscribers 625 (no change since 18 Nov). No Facebook follower count available.",
+   "whop": "49 store visits on 20 Nov (7 on 19 Nov, 543 since 1 Nov). 0 new trials, 0 free Mastery claims, 0 new paid, $0 collected. No new failed payment; the Pro 90-day first charge of $219.99 (card expired) is still past due after its 21 Nov 02:02 retry. Whop MRR was not re-read (last 2,296.61 on 20 Nov, includes uncollected charges).",
+   "learned": [
+    "Visits jumped to 49 on 20 Nov with no tagged source and no sign-up, so the traffic is not yet traceable to a post.",
+    "Reach per post is flat (X median about 36 impressions, YouTube about 14 views) and followers have not moved (X 552, YouTube 625).",
+    "Facebook has now been silent for 4 days because of lost authorization."
+   ],
+   "suggestions": [
+    "Reconnect the Facebook page in Buffer today; the 21 Nov 09:00 Facebook post will fail otherwise.",
+    "Put a tagged link (utm_source=youtube, facebook or x) in every caption so the next visit spike and the next trial can be traced to a channel.",
+    "Post a YouTube Short every day again (none went out on 20 Nov) and keep the chart-first question format for X, then check whether the 49-visit day repeats."
+   ]
+  },
   {
    "date": "2026-11-19",
    "label": "Thu 19 Nov 2026 (London)",
@@ -2500,157 +2629,6 @@
     "Trial ends today at 21:31 London ($79.99 monthly): draft a short check-in note (needs Max's OK and a send path).",
     "Three first charges are past due and retry on 17 Nov at about 01:46, 02:09 and 03:27 London: consider short card-update notes before then (needs Max's OK). One failure was a bank restriction on online payments, so a different card may be needed.",
     "Two posts are queued for today (13:30 and 21:30). Nothing is queued after that, so schedule Monday onward today and put the reply-able question in the first line of each caption."
-   ]
-  },
-  {
-   "date": "2026-11-13",
-   "label": "Fri 13 Nov 2026 (London)",
-   "source": "Buffer read 14 Nov ~07:30 London (X and Facebook metrics updated 00:02 to 00:08, YouTube 04:03; the 21:30 posts were only 2.5 to 6.5 hours old then, so their numbers are early). 7-day average = per post, posts published 6 to 12 Nov. Whop read 14 Nov ~07:35 London.",
-   "verdict": "Below expectation",
-   "tone": "bad",
-   "verdict_why": "Social reach stayed small and the two big targets are still behind. Month to date (day 14 of 30): 406 Whop visits vs about 467 by today (on pace, 87%), 7 Pro trials vs about 2.3 (ahead), 1 new paid vs about 0.9 (on track), Free Master Class sign-ups 0 vs about 14 (behind), added monthly recurring revenue -$4.25 vs about +$75 (behind). On 13 Nov X posts got 23 to 44 impressions each, YouTube 7 to 18 views and Facebook 0 to 10 impressions. Whop visits were 10 (11 on 12 Nov), no new trial and no free sign-up. Two existing members renewed ($149.99), but one $70 Perfect Entry first charge failed to collect.",
-   "channels": [
-    {
-     "name": "X",
-     "metric": "impressions",
-     "avg": {
-      "views": 38.9,
-      "likes": 0.1,
-      "comments": 0.1,
-      "clicks": 0.0
-     },
-     "avg_note": "median 37 impressions per post, 17 posts published 6 to 12 Nov",
-     "posts": [
-      [
-       "00:41",
-       "No Analysis. No Revenge Trades. Just Follow the Plan. (video)",
-       44,
-       0,
-       0,
-       0
-      ],
-      [
-       "09:01",
-       "PPI release at 13:30 London (image)",
-       35,
-       0,
-       0,
-       0
-      ],
-      [
-       "13:30",
-       "Daily Bias: day closes below yesterday's low (video)",
-       31,
-       0,
-       0,
-       0
-      ],
-      [
-       "18:04",
-       "Spot the Candle #6 (image)",
-       23,
-       0,
-       0,
-       0
-      ]
-     ]
-    },
-    {
-     "name": "YouTube",
-     "metric": "views",
-     "avg": {
-      "views": 28.4,
-      "likes": 1.3,
-      "comments": 0.2,
-      "clicks": null
-     },
-     "avg_note": "median 20 views per post, 13 posts published 6 to 12 Nov",
-     "posts": [
-      [
-       "02:18",
-       "No Analysis. No Revenge Trades. Just Follow the Plan.",
-       18,
-       2,
-       0,
-       null
-      ],
-      [
-       "13:30",
-       "Daily Bias: day closes below yesterday's low",
-       11,
-       0,
-       0,
-       null
-      ],
-      [
-       "21:30",
-       "A sweep is not proof of an edge",
-       7,
-       0,
-       0,
-       null
-      ]
-     ]
-    },
-    {
-     "name": "Facebook",
-     "metric": "impressions",
-     "avg": {
-      "views": 6.2,
-      "likes": 0.5,
-      "comments": 0.1,
-      "clicks": 0.1
-     },
-     "avg_note": "median 4 impressions per post, 25 posts published 6 to 12 Nov",
-     "posts": [
-      [
-       "00:41",
-       "No Analysis. No Revenge Trades. Just Follow the Plan. (video)",
-       3,
-       0,
-       0,
-       0
-      ],
-      [
-       "13:30",
-       "Daily Bias: day closes below yesterday's low (video)",
-       3,
-       0,
-       0,
-       0
-      ],
-      [
-       "18:03",
-       "Spot the Candle #6 (image)",
-       10,
-       0,
-       0,
-       0
-      ],
-      [
-       "21:30",
-       "A sweep is not proof of an edge (video)",
-       0,
-       0,
-       0,
-       0
-      ]
-     ]
-    }
-   ],
-   "best": "YouTube 02:18 \"No Analysis. No Revenge Trades. Just Follow the Plan.\": 18 views and 2 likes, the most views and the most likes of the day on YouTube (11% like rate). On X the same video got 44 impressions, the top X post of the day, but no likes. Facebook 18:03 Spot the Candle #6 got 10 impressions, the best Facebook post of the day.",
-   "worst": "Facebook 21:30 \"A sweep is not proof of an edge\" reel: 0 impressions (only 3 hours old at the read, so early). The 13:30 Daily Bias video, the first one in the new series, got 31 impressions on X, 11 views on YouTube and 3 on Facebook, with no likes or replies anywhere, even though the video runs almost 2 minutes. Nobody commented on any post.",
-   "followers": "X followers 555 (554 on 13 Nov, +1). YouTube subscribers 619 (619 on 13 Nov, no change). No Facebook follower count available through Buffer.",
-   "whop": "10 store visits on 13 Nov (11 on 12 Nov, 406 since 1 Nov). 0 new Pro trials, 0 free sign-ups, 0 new paid; 2 renewals of existing members collected ($79.99 Pro and $70.00 Perfect Entry, ex-tax) and 1 failed payment (a $70 Perfect Entry first charge after trial, past due, retry 17 Nov about 01:46 London). Whop MRR 2,007.54 at the end of 13 Nov. Paid active members 19. Upcoming: two Pro trials end today (15:24 and 19:35 London), two end Sun 15 Nov.",
-   "learned": [
-    "The first Daily Bias video (13:30) drew almost the same small numbers as the other posts, so the series needs the question, not the length, to earn replies.",
-    "A plain \"no analysis, no revenge trades\" title again got the top YouTube views and likes, consistent with plain comparison and myth titles beating study-code titles.",
-    "The 7 tagged site visits since 1 Nov (3 facebook, 2 youtube, 2 chatgpt.com) show that tagged links work, but none has turned into a trial yet."
-   ],
-   "suggestions": [
-    "Trials ending today (15:24 and 19:35 London) and Sunday (14:18 and 21:31): draft a short check-in note for those trialists (needs Max's OK and a send path); the 15:24 one is on the $799.99 yearly plan.",
-    "The $70 Perfect Entry charge that failed on 13 Nov will retry on 17 Nov about 01:46 London: consider a short card-update note to that member before then (needs Max's OK).",
-    "Nothing is queued in Buffer after the 14 Nov 18:00 posts, so schedule the next days of Daily Bias and engagement posts today, and end each Daily Bias caption with one reply-able question (for example \"Strong, weak or sweep?\") as the first line, not the last."
    ]
   }
  ],
@@ -4247,6 +4225,10 @@
   {
    "date": "2026-11-19",
    "v": 7
+  },
+  {
+   "date": "2026-11-20",
+   "v": 49
   }
  ],
  "tradingview": {
@@ -4885,9 +4867,9 @@
    "launch_days": 25,
    "launch_days_up": 14,
    "launch_median_change_pct": 16,
-   "baseline_days": 105,
+   "baseline_days": 106,
    "baseline_median_change_pct": -1,
-   "baseline_share_up_pct": 49
+   "baseline_share_up_pct": 48
   },
   "sources": [
    {
@@ -4931,12 +4913,12 @@
    {
     "key": "site",
     "label": "Site visitors (maxmaserati.com)",
-    "total": 254,
-    "range": "24 Aug to 20 Nov 2026",
+    "total": 262,
+    "range": "25 Aug to 21 Nov 2026",
     "countries": [
      {
       "name": "United States",
-      "people": 94
+      "people": 96
      },
      {
       "name": "Haiti",
@@ -4948,10 +4930,10 @@
      },
      {
       "name": "Dominican Republic",
-      "people": 10
+      "people": 11
      },
      {
-      "name": "United Kingdom",
+      "name": "France",
       "people": 9
      },
      {
@@ -4959,7 +4941,7 @@
       "people": 8
      },
      {
-      "name": "France",
+      "name": "United Kingdom",
       "people": 8
      },
      {
@@ -4968,7 +4950,11 @@
      },
      {
       "name": "China",
-      "people": 5
+      "people": 6
+     },
+     {
+      "name": "Philippines",
+      "people": 4
      },
      {
       "name": "Germany",
@@ -4983,7 +4969,7 @@
       "people": 3
      },
      {
-      "name": "Philippines",
+      "name": "Mexico",
       "people": 3
      },
      {
@@ -4999,7 +4985,7 @@
       "people": 2
      },
      {
-      "name": "Mexico",
+      "name": "Netherlands",
       "people": 2
      },
      {
@@ -5032,6 +5018,10 @@
      },
      {
       "name": "Bolivia",
+      "people": 1
+     },
+     {
+      "name": "BS",
       "people": 1
      },
      {
@@ -5079,10 +5069,6 @@
       "people": 1
      },
      {
-      "name": "Netherlands",
-      "people": 1
-     },
-     {
       "name": "Panama",
       "people": 1
      },
@@ -5118,14 +5104,18 @@
     "cities": [
      {
       "name": "Port-au-Prince",
-      "people": 27
+      "people": 26
      },
      {
       "name": "Delmas",
-      "people": 11
+      "people": 12
      },
      {
       "name": "Pétionville",
+      "people": 8
+     },
+     {
+      "name": "Council Bluffs",
       "people": 8
      },
      {
@@ -5133,16 +5123,20 @@
       "people": 7
      },
      {
-      "name": "Council Bluffs",
-      "people": 7
+      "name": "Prineville",
+      "people": 5
      },
      {
-      "name": "Prineville",
+      "name": "Santo Domingo Este",
       "people": 5
      },
      {
       "name": "London",
       "people": 5
+     },
+     {
+      "name": "Dallas",
+      "people": 4
      },
      {
       "name": "Miami",
@@ -5153,19 +5147,11 @@
       "people": 4
      },
      {
-      "name": "Santo Domingo Este",
-      "people": 4
-     },
-     {
       "name": "Atlanta",
       "people": 3
      },
      {
       "name": "Boardman",
-      "people": 3
-     },
-     {
-      "name": "Dallas",
       "people": 3
      },
      {
@@ -5189,6 +5175,10 @@
       "people": 3
      },
      {
+      "name": "Paris",
+      "people": 3
+     },
+     {
       "name": "Toronto",
       "people": 3
      },
@@ -5197,7 +5187,7 @@
       "people": 3
      }
     ],
-    "note": "Whop pixel page views, IP location, last 90 days (24 Aug to 20 Nov), re-run 20 Nov. 254 people in total (2 with no country). Cities re-queried by country group (Haiti, US, Dominican Republic, UK, Brazil, India, France, Canada, Ireland); cities in other countries and a few late-alphabet US cities are not listed, each has at most 2 people. Some city traffic (Ashburn, Council Bluffs, Boardman, The Dalles, Prineville, Forest City) looks like data-center traffic. The country list is cut off after the single-person countries at the end of the alphabet, so a few single-person countries are missing."
+    "note": "Whop pixel page views, IP location, last 90 days (25 Aug to 21 Nov), re-run 21 Nov. 262 people in total. Cities re-queried by country group (Haiti, US, Dominican Republic, UK, Brazil, India, France, Canada, Ireland); cities in other countries and a few late-alphabet US cities are not listed. Some US city traffic (Ashburn, Council Bluffs, Boardman, The Dalles, Prineville, Forest City) looks like data-center traffic. The country list is cut off after the single-person countries, so a few single-person countries are missing."
    },
    {
     "key": "store",
@@ -5220,8 +5210,8 @@
    {
     "key": "buyers",
     "label": "Buyers (completed payment)",
-    "total": 61,
-    "range": "24 Aug to 20 Nov 2026",
+    "total": 60,
+    "range": "25 Aug to 21 Nov 2026",
     "countries": [
      {
       "name": "United States",
@@ -5229,7 +5219,7 @@
      },
      {
       "name": "Haiti",
-      "people": 8
+      "people": 7
      },
      {
       "name": "United Kingdom",
@@ -5299,17 +5289,17 @@
     "cities": [
      {
       "name": "Port-au-Prince",
-      "people": 5
+      "people": 4
      },
      {
       "name": "Santo Domingo",
       "people": 3
      }
     ],
-    "note": "People with at least one completed Whop payment (payment.completed, includes $0 trial and free sign-ups), IP location, last 90 days, re-run 20 Nov: 61 people (4 with no country); the window moved forward, so the count dropped from 63. City list is from one query and partly cut off (46 of 61 listed), treat as partial."
+    "note": "People with at least one completed Whop payment (payment.completed, includes $0 trial and free sign-ups), IP location, last 90 days, re-run 21 Nov: 60 people. City list is from one query and may be partly cut off, treat as partial."
    }
   ],
-  "as_of": "20 Nov 2026",
+  "as_of": "21 Nov 2026",
   "note": "People counted once per range. Cities with fewer than 3 people are hidden."
  }
 }
